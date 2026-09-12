@@ -30,3 +30,37 @@
 ## 语言
 
 反馈与讨论用中文或英文都可以。仓库优先中文，但不必为了统一语言把自己的描述改写成中文。
+
+---
+
+# Contributing to Yanbai (English)
+
+This file explains how to report a problem and how to suggest an improvement. The terms for using the software are in `LICENSE.md` and `LICENSE_zh.md`; this file does not change them.
+
+## Reporting a problem or asking a question
+
+You do not need to download or install the software to report something. Pick the channel that fits:
+
+- **Public channel**: [issues in Yanbai-Releases](https://github.com/Speechlessmanbilibili/Yanbai-Releases/issues). Use it for ordinary defects, feature suggestions, and questions about usage.
+- **Electronic mail**: <speechlessmans@outlook.com>. Use it for anything confidential, personal, or otherwise unsuitable for a public issue. Issues are public and searchable, so do not put such material in one.
+
+A defect report is much easier to act on when it states:
+
+1. the version (the file version of `Yanbai.exe` in the installation directory, or the archive file name);
+2. your operating system and architecture (Windows 10 or 11, x64 or ARM64; the distribution and kernel version on Linux);
+3. the steps that reproduce the problem, as precisely as you can;
+4. what you expected and what happened instead;
+5. a minimal sample document that can be shared. **Do not attach documents that contain confidential or personal information**; redact them or build a sample instead.
+
+### Feedback license
+
+You do not need to download the software or accept any agreement in order to report something. If you submit feedback, suggestions, or defect reports, you grant the Licensor a perpetual, worldwide, royalty-free, irrevocable, non-exclusive license to use, reproduce, modify, and distribute that material and to incorporate it into the software, without any obligation of confidentiality, attribution, or compensation. Feedback is not treated as confidential: do not include confidential information, personal data, or document content in a report. You are not required to submit feedback.
+
+## About code changes
+
+The source code is not public, and the repository does not accept external pull requests or patches. Feature suggestions and improvement ideas are welcome: open an issue and describe the situation and the result you expect. Whether to adopt an idea and when to implement it are the author's decision alone; suggesting something creates no obligation to implement it or to provide support, and the author is not obliged to reply.
+
+## Language
+
+Feedback and discussion may be in Chinese or English. Chinese is preferred in this repository, but you do not need to rewrite your report in Chinese for consistency.
+
