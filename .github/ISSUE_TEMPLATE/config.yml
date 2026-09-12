@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 反馈许可与报告要点 / Feedback license and what to include
+    url: https://github.com/Speechlessmanbilibili/Yanbai-Releases/blob/main/CONTRIBUTING.md
+    about: 提交 Issue 即表示你同意贡献指南中的反馈许可条款。写清版本、系统与复现步骤会快很多。Submitting an issue means you agree to the feedback license in the contributing guide.

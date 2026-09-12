@@ -86,7 +86,7 @@ cd Yanbai-<版本号>-linux-x86_64
 
 ## 问题反馈
 
-用着有问题或者想要新功能，到 [Issues](https://github.com/Speechlessmanbilibili/Yanbai-Releases/issues) 提。写清触发步骤，能给一个最小复现样例最好。不要附含机密信息或个人信息的内容：Issue 是公开的，协议也把反馈按非保密信息处理。
+用着有问题或者想要新功能，到 [Issues](https://github.com/Speechlessmanbilibili/Yanbai-Releases/issues) 提。写清触发步骤，能给一个最小复现样例最好。不要附含机密信息或个人信息的内容：Issue 是公开的，协议也把反馈按非保密信息处理。提交 Issue 即表示你同意[贡献指南](CONTRIBUTING.md)里的反馈许可条款。
 
 ---
 
