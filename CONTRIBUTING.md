@@ -21,8 +21,6 @@
 
 不需要先下载或同意任何协议就能提反馈。你提交反馈、建议或缺陷报告的，即授予许可方一项永久的、全球范围的、免许可费的、不可撤销的、非独占的许可，用于使用、复制、修改、分发这些内容并将其纳入本软件；许可方不承担保密、署名或支付报酬的义务。反馈不按保密信息处理：请不要在报告中写入机密信息、个人信息或文档内容。你并无提交反馈的义务。
 
-> **In English.** You do not need to download the software or accept any agreement in order to report something. If you submit feedback, suggestions, or defect reports, you grant the Licensor a perpetual, worldwide, royalty-free, irrevocable, non-exclusive license to use, reproduce, modify, and distribute that material and to incorporate it into the software, without any obligation of confidentiality, attribution, or compensation. Feedback is not treated as confidential: do not include confidential information, personal data, or document content in a report. You are not required to submit feedback.
-
 ## 关于代码改动
 
 源码不公开，仓库不接受外部 Pull Request 或补丁。功能建议与改进想法欢迎提，写在 Issue 里，说清使用场景与期望结果即可。是否采纳、何时实现由作者自行决定；提出建议不产生任何实现或支持义务，作者也没有必须回复的义务。
