@@ -86,7 +86,7 @@ cd Yanbai-<version>-linux-x86_64
 
 ## Feedback
 
-Found a bug or want a feature? Open an [issue](https://github.com/Speechlessmanbilibili/Yanbai-Releases/issues). Crash reports are easier to act on when you include the document that triggered the problem, if it can be shared.
+Found a bug or want a feature? Open an [issue](https://github.com/Speechlessmanbilibili/Yanbai-Releases/issues). Describe the steps that triggered the problem and, if you can, a minimal sample that reproduces it. Do not attach documents that contain confidential or personal information: issues are public, and the license treats feedback as non-confidential.
 
 ---
 

@@ -2,7 +2,7 @@
 
 **English** | [简体中文](LICENSE_zh.md)
 
-Version 1.3 · Effective 12 September 2026
+Version 1.5 · Effective 12 September 2026
 
 Copyright © 2026 SilentPerson. All rights reserved.
 
@@ -12,9 +12,9 @@ PLEASE READ THIS AGREEMENT CAREFULLY. This End User License Agreement (the “Ag
 
 1.1 “Software” means the computer program known as Yanbai (砚白) in object code form, together with the installers, archives, documentation, and any updates or supplements distributed by the Licensor, but excluding the Third-Party Components defined in Section 1.6.
 
-1.2 “Official Distribution Channel” means the release pages published by the Licensor at <https://github.com/Speechlessmanbilibili/Yanbai-Releases>.
+1.2 “Official Distribution Channel” means the repository published by the Licensor at <https://github.com/Speechlessmanbilibili/Yanbai-Releases>, including its release pages and its issue tracker.
 
-1.3 “you” and “Licensee” mean the individual person, or the legal entity together with its affiliates and with those of its employees and contractors who act on its behalf, that downloads, installs, or uses the Software. Where you use the Software on behalf of a legal entity, you represent that you are authorised to bind that entity to this Agreement.
+1.3 “you” and “Licensee” mean the individual person, or the legal entity, that downloads, installs, or uses the Software. Where a legal entity is the Licensee, “you” also includes (a) that entity's affiliates, and (b) the employees and contractors of that entity and of its affiliates, in each case only when they act on the entity's behalf. Where you use the Software on behalf of a legal entity, you represent that you are authorised to bind that entity to this Agreement.
 
 1.4 “Commercial Use” means any use of the Software by a commercial entity, or any use for or on behalf of a commercial entity, or in the course of a trade, business, or profession, whether or not for direct monetary compensation.
 
@@ -24,15 +24,17 @@ PLEASE READ THIS AGREEMENT CAREFULLY. This End User License Agreement (the “Ag
 
 1.7 “Notice” means a written communication sent through the channel designated in Section 14.
 
+1.8 “your organisation” means you and, where you are a legal entity, your affiliates, together with the employees and contractors of each of them.
+
 ## 2. Grant of License
 
-2.1 Subject to your compliance with this Agreement, the Licensor grants you a limited, non-exclusive, non-transferable, non-sublicensable, revocable, royalty-free license to:
+2.1 Subject to your compliance with this Agreement, the Licensor grants you a limited, non-exclusive, non-transferable, non-sublicensable, royalty-free license, terminable only as provided in Section 2.3, to:
 
 (a) download and install copies of the Software obtained from the Official Distribution Channel;
 
 (b) use the Software for personal purposes and for Commercial Use, without limitation as to the number of documents, the number of users, or duration;
 
-(c) reproduce a reasonable number of copies of the Software for backup and archival purposes; and
+(c) reproduce a reasonable number of copies of the Software for backup and archival purposes, including copies held by colleagues within your organisation as part of Internal Deployment; and
 
 (d) carry out Internal Deployment.
 
@@ -66,7 +68,7 @@ PLEASE READ THIS AGREEMENT CAREFULLY. This End User License Agreement (the “Ag
 
 4.2 Third-Party Components are governed exclusively by their own license terms. This Agreement does not modify, restrict, or supersede those terms, and it grants no rights in respect of Third-Party Components beyond those conferred by their own licenses. Where a Third-Party Component is offered under more than one license, the Licensor relies on the option recorded in the “Selected” column of `THIRD_PARTY_NOTICES.md`.
 
-4.3 You are responsible for complying with those terms when redistributing or commercially exploiting Third-Party Components.
+4.3 Within the scope of your use of the Software under this Agreement, you are responsible for complying with those terms. The license texts of the bundled fonts are distributed in the directory `THIRD_PARTY_LICENSES/`.
 
 ## 5. Source Code
 
@@ -86,7 +88,9 @@ PLEASE READ THIS AGREEMENT CAREFULLY. This End User License Agreement (the “Ag
 
 6.5 This Section describes the Software itself. The operating system, the WebView runtime, and other software on your device may perform their own network activity, which is outside the Licensor's control.
 
-6.6 If a future version changes how data is handled, the Licensor will state the change in that version's release notes.
+6.6 The Software keeps a crash-recovery draft of open documents in a file named `recovery.json` inside its application data directory. That file contains the full text of the documents you have open, in clear text and unencrypted, together with the file paths involved. It is written while you edit and is cleared when you close the documents normally. Anyone with access to that directory, including administrators of a shared or roaming profile, can read it; delete the file if you do not want the draft to remain.
+
+6.7 If a future version changes how data is handled, the Licensor will state the change in that version's release notes.
 
 ## 7. Your Content
 
@@ -108,7 +112,7 @@ PLEASE READ THIS AGREEMENT CAREFULLY. This End User License Agreement (the “Ag
 
 10.1 This Agreement takes effect upon your first download, installation, or use of the Software and continues until terminated.
 
-10.2 Your rights under this Agreement terminate if you materially breach any provision of this Agreement and fail to remedy the breach within the period given under Section 2.3. Upon termination you must cease all use of the Software and delete or destroy all copies in your possession or control.
+10.2 Your rights under this Agreement terminate if you materially breach any provision of this Agreement, the Licensor has given you Notice of the breach under Section 2.3, and you have failed to remedy it within the period stated in that Notice. Upon termination you must cease all use of the Software and delete or destroy all copies in your possession or control.
 
 10.3 The Licensor may revise this Agreement for future releases. A release already distributed remains governed by the version of this Agreement that accompanied it.
 
@@ -116,7 +120,7 @@ PLEASE READ THIS AGREEMENT CAREFULLY. This End User License Agreement (the “Ag
 
 ## 11. Disclaimer of Warranty
 
-11.1 THE SOFTWARE IS PROVIDED “AS IS” AND “AS AVAILABLE”, WITHOUT WARRANTY OF ANY KIND, WHETHER EXPRESS, IMPLIED, STATUTORY, OR OTHERWISE, INCLUDING WITHOUT LIMITATION ANY WARRANTY OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, QUIET ENJOYMENT, OR NON-INFRINGEMENT.
+11.1 THE SOFTWARE IS PROVIDED “AS IS” AND “AS AVAILABLE”, WITHOUT WARRANTY OF ANY KIND, WHETHER EXPRESS, IMPLIED, STATUTORY, OR OTHERWISE, INCLUDING WITHOUT LIMITATION ANY WARRANTY OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT.
 
 11.2 WITHOUT LIMITING SECTION 11.1, THE LICENSOR DOES NOT WARRANT THAT THE SOFTWARE WILL BE ERROR-FREE OR OPERATE WITHOUT INTERRUPTION, OR THAT IT WILL PRESERVE OR CORRECTLY PROCESS ANY DOCUMENT.
 
@@ -138,11 +142,11 @@ PLEASE READ THIS AGREEMENT CAREFULLY. This End User License Agreement (the “Ag
 
 13.1 You shall comply with all applicable export control and economic sanctions laws and regulations, and shall not export, re-export, transfer, or use the Software in violation of them, including by providing it to any person or entity on a restricted-party list, or for any restricted end use such as the development or production of weapons of mass destruction.
 
-13.2 The Software includes cryptographic functionality (SHA-256 hashing) but does not encrypt communications. You are responsible for determining whether your use requires an export authorisation or classification in your jurisdiction.
+13.2 The Software implements the SHA-256 digest algorithm for file fingerprinting and does not encrypt communications. You are responsible for determining whether your use requires an export authorisation or classification in your jurisdiction.
 
 ## 14. Notices
 
-14.1 Notices to the Licensor, including requests for the written consent required by this Agreement, must be sent through the issue tracker of the Official Distribution Channel at <https://github.com/Speechlessmanbilibili/Yanbai-Releases/issues>, or, if the Licensor publishes an electronic mail address or another contact channel on that page, through that channel. A consent request should be marked as such; the Licensor will treat it as a business enquiry and will not disclose its contents without your agreement.
+14.1 Notices to the Licensor must be sent by electronic mail to <speechlessmans@outlook.com>. Matters that are not confidential, such as a general question or a permission enquiry, may also be raised through the issue tracker of the Official Distribution Channel at <https://github.com/Speechlessmanbilibili/Yanbai-Releases/issues>. Notices of breach, requests for the written consent required by this Agreement, and anything containing confidential information must be sent by electronic mail. The Licensor will not disclose the contents of an electronic mail notice without your agreement.
 
 14.2 Notices to you may be given by publishing a revised version of this Agreement or a notice on the Official Distribution Channel. Such notice takes effect on publication.
 
