@@ -60,6 +60,7 @@ Grab the build for your platform from the [latest release](https://github.com/Sp
 | :--- | :--- | :--- | :--- |
 | **Windows** | x64 | `Yanbai-*-win64-installer.exe` | Recommended. NSIS installer, can register file associations and the context menu entry |
 | **Windows** | x64 | `Yanbai-*-win64.zip` | Portable, extract and run |
+| **Windows** | ARM64 | `Yanbai-*-win-arm64-installer.exe` | NSIS installer for Windows on ARM, native ARM64 build |
 | **Windows** | ARM64 | `Yanbai-*-win-arm64.zip` | Portable, extract and run |
 | **Linux** | x86_64 | `Yanbai-*-linux-x86_64.tar.gz` | Prebuilt archive |
 | **Linux** | ARM64 | `Yanbai-*-linux-arm64.tar.gz` | Prebuilt archive |
@@ -91,6 +92,6 @@ Found a bug or want a feature? Open an [issue](https://github.com/Speechlessmanb
 
 ## Copyright & License
 
-The builds in this repository are distributed under the [Yanbai End User License](LICENSE.md): download, install, and use them for personal or commercial work free of charge; redistributing, reselling, or publishing modified builds is not permitted. The source code is not public, and this license grants no access to it.
+The builds in this repository are distributed under the [Yanbai End User License Agreement](LICENSE.md) (Chinese version: [LICENSE_zh.md](LICENSE_zh.md)): you may download, install, and use them for personal or commercial purposes free of charge; redistributing, reselling, or publishing modified builds is not permitted. The source code is not public, and this license grants no access to it.
 
 Copyright © 2026 SilentPerson. All rights reserved.

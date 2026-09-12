@@ -60,6 +60,7 @@
 | :--- | :--- | :--- | :--- |
 | **Windows** | x64 | `Yanbai-*-win64-installer.exe` | 推荐。NSIS 安装程序，可注册文件关联与右键菜单 |
 | **Windows** | x64 | `Yanbai-*-win64.zip` | 便携包，解压即用 |
+| **Windows** | ARM64 | `Yanbai-*-win-arm64-installer.exe` | Windows on ARM 的 NSIS 安装程序，原生 ARM64 构建 |
 | **Windows** | ARM64 | `Yanbai-*-win-arm64.zip` | 便携包，解压即用 |
 | **Linux** | x86_64 | `Yanbai-*-linux-x86_64.tar.gz` | 预编译压缩包 |
 | **Linux** | ARM64 | `Yanbai-*-linux-arm64.tar.gz` | 预编译压缩包 |
@@ -91,6 +92,6 @@ cd Yanbai-<版本号>-linux-x86_64
 
 ## 版权说明
 
-本仓库分发的安装包按[最终用户使用许可](LICENSE.md)授权：可以免费下载、安装，并在个人或商业环境中使用；不得再分发、售卖或发布修改版。源码不公开，本许可不授予源码访问权。
+本仓库分发的安装包按[最终用户使用许可协议](LICENSE_zh.md)（英文版：[LICENSE.md](LICENSE.md)）授权：可以免费下载、安装，并在个人或商业环境中使用；不得再分发、售卖或发布修改版。源码不公开，本许可不授予源码访问权。
 
 Copyright © 2026 SilentPerson. All rights reserved.

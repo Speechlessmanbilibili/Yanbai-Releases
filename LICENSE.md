@@ -1,75 +1,103 @@
-# 砚白最终用户使用许可
+# Yanbai End User License Agreement
 
-版权所有 © 2026 SilentPerson。保留所有权利。
+**English** | [简体中文](LICENSE_zh.md)
 
-砚白（Yanbai，以下简称“本软件”）不是开源软件。作者保留全部版权，只按下列条款授予你使用许可。下载、安装或以任何方式使用本软件，即表示你接受这些条款；不接受请不要使用。
-
-## 一、授予的权利
-
-1. 你可以免费下载并安装作者在官方发布页 <https://github.com/Speechlessmanbilibili/Yanbai-Releases/releases> 发布的安装包与压缩包。
-2. 你可以在个人或商业环境中使用本软件处理自己的文档，不限份数、人数与期限。
-3. 你可以把本软件推荐给别人，但只能给出官方发布页链接，不要代为分发安装包。
-
-## 二、限制
-
-未经作者书面许可，你不得：
-
-1. 再分发、转售、出租或出借本软件及其修改版，包括把它打进其它产品、安装介质与软件仓库。包管理器要收录官方产物，请先联系作者。
-2. 移除、隐藏或改动本软件里的版权声明、作者署名与本许可文本。
-3. 用“砚白”“Yanbai”名称或作者名义宣传修改版与衍生品，使人误以为出自作者。
-
-## 三、第三方组件
-
-本软件包含第三方组件与内置字体，包括但不限于 Rust 生态的依赖、Tauri、KaTeX、Mermaid，以及 HarmonyOS Sans SC 与 ThGrotesk 字体。这些组件各自遵循其原始许可条款，本许可不改变也不替代它们。再分发或商用这些组件时，请遵守各自的原始许可。
-
-## 四、无担保与责任限制
-
-本软件按“现状”提供，不附带任何明示或默示的担保，包括适销性、特定用途适用性与不侵权的担保。在适用法律允许的最大范围内，作者不对使用本软件造成的直接、间接、附带或后果性损失负责，包括数据丢失、文档损坏与业务中断。处理重要文档前请自行备份。
-
-## 五、许可终止
-
-你违反上述任一条款时，本许可自动终止，你应停止使用并删除本软件的全部副本。作者可以更新本许可：已经发布的版本继续按发布时的条款授权，新版本适用新条款。
-
-## 六、其它
-
-本软件只以构建产物形式发布，源码不公开；本许可不授予任何源码访问权，也不构成开源许可。作者保留本许可未明确授予的一切权利。
-
----
-
-# Yanbai End User License
+Version 1.1 · Effective 12 September 2026
 
 Copyright © 2026 SilentPerson. All rights reserved.
 
-Yanbai (the “Software”) is not open source. The author retains all copyright and grants you a license to use the Software only under the terms below. By downloading, installing, or otherwise using the Software you accept these terms; if you do not accept them, do not use the Software.
+PLEASE READ THIS AGREEMENT CAREFULLY. This End User License Agreement (the “Agreement”) is a legal agreement between you (“you”, the “Licensee”) and the copyright holder of the software known as Yanbai (砚白) (the “Licensor”), and it governs your use of that software. By downloading, installing, copying, or otherwise using the software, you confirm that you have read, understood, and agree to be bound by this Agreement. If you do not agree to any part of this Agreement, you must not download, install, or use the software.
 
-**1. Rights granted**
+## 1. Definitions
 
-1. You may download and install, free of charge, the installers and archives published by the author on the official releases page <https://github.com/Speechlessmanbilibili/Yanbai-Releases/releases>.
-2. You may use the Software for personal or commercial work on your own documents, without limit on the number of documents, users, or duration.
-3. You may recommend the Software to others, but only by linking to the official releases page; do not hand out installers yourself.
+1.1 “Software” means the computer program known as Yanbai (砚白) in object code form, together with the installers, archives, documentation, and any updates or supplements distributed by the Licensor, but excluding the Third-Party Components defined in Section 4.
 
-**2. Restrictions**
+1.2 “Official Distribution Channel” means the release pages published by the Licensor at <https://github.com/Speechlessmanbilibili/Yanbai-Releases>.
 
-Without the author's written permission, you may not:
+1.3 “Commercial Use” means any use of the Software by or for a commercial entity, or in the course of a trade, business, or profession, whether or not for direct monetary compensation.
 
-1. Redistribute, resell, rent, or lend the Software or any modified build, including bundling it into another product, installation media, or software repository. Package managers that want to carry the official artifacts should contact the author first.
-2. Remove, hide, or alter the copyright notice, attribution, or this license text inside the Software.
-3. Use the names “砚白” or “Yanbai”, or the author's name, to promote modified or derivative builds in a way that suggests they come from the author.
+1.4 “Third-Party Components” means the software libraries, runtimes, and fonts, in source or binary form, that are incorporated in or distributed with the Software and that are owned by parties other than the Licensor.
 
-**3. Third-party components**
+## 2. Grant of License
 
-The Software bundles third-party components and fonts, including but not limited to Rust ecosystem dependencies, Tauri, KaTeX, Mermaid, and the HarmonyOS Sans SC and ThGrotesk fonts. Those components remain under their own original licenses, which this license neither changes nor replaces. Redistributing or commercially using them requires compliance with their own terms.
+2.1 Subject to your compliance with this Agreement, the Licensor grants you a limited, non-exclusive, non-transferable, non-sublicensable, revocable, royalty-free license to:
 
-**4. No warranty and limitation of liability**
+(a) download and install copies of the Software obtained from the Official Distribution Channel;
 
-The Software is provided “as is”, without warranty of any kind, express or implied, including merchantability, fitness for a particular purpose, and non-infringement. To the maximum extent permitted by applicable law, the author is not liable for any direct, indirect, incidental, or consequential damages arising from use of the Software, including lost data, corrupted documents, and business interruption. Back up important documents before working on them.
+(b) use the Software for personal purposes and for Commercial Use, without limitation as to the number of documents, the number of users, or duration; and
 
-**5. Termination**
+(c) reproduce a reasonable number of copies of the Software for backup and archival purposes.
 
-If you breach any term above, this license terminates automatically and you must stop using the Software and delete all copies. The author may update this license: released versions stay licensed under the terms in force at their release, and new versions are covered by the new terms.
+2.2 All rights not expressly granted in this Agreement are reserved by the Licensor.
 
-**6. Miscellaneous**
+## 3. Restrictions
 
-The Software is distributed as build artifacts only; the source code is not public. This license grants no access to the source and is not an open-source license. The author reserves all rights not expressly granted here.
+3.1 You shall not, and shall not permit any third party to:
 
-The Chinese text above is authoritative; this English translation is provided for convenience only.
+(a) distribute, sublicense, sell, resell, rent, lease, lend, or otherwise make the Software available to any third party;
+
+(b) incorporate the Software into another product, installation medium, or software repository, or distribute it as part of a bundle, without the prior written consent of the Licensor;
+
+(c) reverse engineer, decompile, or disassemble the Software, except to the extent that such a restriction is expressly prohibited by applicable law;
+
+(d) remove, obscure, or alter any copyright notice, attribution, or license text contained in or displayed by the Software;
+
+(e) use the names “Yanbai” or “砚白”, or the name of the Licensor, to promote a modified or derivative build in a manner that suggests that the build originates from, or is endorsed by, the Licensor; or
+
+(f) use the Software for any purpose that is unlawful under applicable law.
+
+3.2 Package managers, software repositories, and other distributors that wish to carry the official artifacts must obtain the prior written consent of the Licensor.
+
+## 4. Third-Party Components
+
+4.1 The Software incorporates Third-Party Components, including but not limited to components of the Rust ecosystem, Tauri, KaTeX, and Mermaid, and the HarmonyOS Sans SC and ThGrotesk fonts.
+
+4.2 Third-Party Components are governed exclusively by their own license terms. This Agreement does not modify, restrict, or supersede those terms, and it grants no rights in respect of Third-Party Components beyond those conferred by their own licenses. You are responsible for complying with those terms when redistributing or commercially exploiting Third-Party Components.
+
+## 5. Source Code
+
+5.1 The Software is distributed solely in object code form. The source code of the Software is not published by the Licensor, and this Agreement grants no right of access to the source code and no right to use or modify it.
+
+5.2 Nothing in this Agreement shall be construed as an open source license.
+
+## 6. Updates and Support
+
+6.1 The Licensor may, but is not obliged to, release updates, upgrades, or new versions of the Software. Any such release is governed by this Agreement unless it is accompanied by a separate license agreement.
+
+6.2 The Licensor provides no warranty and assumes no support obligation under this Agreement, whether through an issue tracker, by electronic mail, or otherwise.
+
+## 7. Disclaimer of Warranty
+
+7.1 THE SOFTWARE IS PROVIDED “AS IS” AND “AS AVAILABLE”, WITHOUT WARRANTY OF ANY KIND, WHETHER EXPRESS, IMPLIED, STATUTORY, OR OTHERWISE, INCLUDING WITHOUT LIMITATION ANY WARRANTY OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, QUIET ENJOYMENT, OR NON-INFRINGEMENT.
+
+7.2 WITHOUT LIMITING SECTION 7.1, THE LICENSOR DOES NOT WARRANT THAT THE SOFTWARE WILL BE ERROR-FREE OR OPERATE WITHOUT INTERRUPTION, OR THAT IT WILL PRESERVE OR CORRECTLY PROCESS ANY DOCUMENT. You are solely responsible for maintaining adequate backups of your documents.
+
+7.3 No advice or information, whether oral or written, obtained from the Licensor shall create any warranty not expressly stated in this Agreement.
+
+## 8. Limitation of Liability
+
+8.1 TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE LICENSOR SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, PUNITIVE, OR CONSEQUENTIAL DAMAGES, OR FOR ANY LOSS OF DATA, CORRUPTION OF DOCUMENTS, LOSS OF PROFITS, LOSS OF GOODWILL, OR BUSINESS INTERRUPTION, HOWEVER CAUSED AND UNDER ANY THEORY OF LIABILITY, ARISING OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THIS AGREEMENT, EVEN IF THE LICENSOR HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+
+8.2 TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE AGGREGATE LIABILITY OF THE LICENSOR UNDER OR IN CONNECTION WITH THIS AGREEMENT SHALL NOT EXCEED THE AMOUNT ACTUALLY PAID BY YOU TO THE LICENSOR FOR THE SOFTWARE, WHICH IS ZERO.
+
+8.3 Nothing in this Agreement excludes or limits any liability that cannot be excluded or limited under applicable law.
+
+## 9. Term and Termination
+
+9.1 This Agreement takes effect upon your first download, installation, or use of the Software and continues until terminated.
+
+9.2 Your rights under this Agreement terminate automatically, without notice, if you breach any provision of this Agreement. Upon termination you must cease all use of the Software and delete or destroy all copies in your possession or control.
+
+9.3 Sections 3, 4, 5, 7, 8, and 10 survive termination.
+
+9.4 The Licensor may revise this Agreement for future releases. A release already distributed remains governed by the version of this Agreement that accompanied it.
+
+## 10. Miscellaneous
+
+10.1 This Agreement constitutes the entire agreement between you and the Licensor with respect to the Software and supersedes all prior or contemporaneous understandings regarding its subject matter.
+
+10.2 If any provision of this Agreement is held to be invalid or unenforceable, that provision shall be severed and the remaining provisions shall remain in full force and effect.
+
+10.3 No failure or delay by the Licensor in exercising any right under this Agreement constitutes a waiver of that right.
+
+10.4 This Agreement is executed in the English and Chinese languages. Both texts are equally authentic; in the event of any discrepancy, the English text prevails.
