@@ -17,6 +17,12 @@
 4. 期望的结果与实际结果；
 5. 能公开的最小样例文档。**不要附含机密或个人信息的文档**，需要时请自行脱敏或另造一份样例。
 
+### 反馈许可
+
+不需要先下载或同意任何协议就能提反馈。你提交反馈、建议或缺陷报告的，即授予许可方一项永久的、全球范围的、免许可费的、不可撤销的、非独占的许可，用于使用、复制、修改、分发这些内容并将其纳入本软件；许可方不承担保密、署名或支付报酬的义务。反馈不按保密信息处理：请不要在报告中写入机密信息、个人信息或文档内容。你并无提交反馈的义务。
+
+> **In English.** You do not need to download the software or accept any agreement in order to report something. If you submit feedback, suggestions, or defect reports, you grant the Licensor a perpetual, worldwide, royalty-free, irrevocable, non-exclusive license to use, reproduce, modify, and distribute that material and to incorporate it into the software, without any obligation of confidentiality, attribution, or compensation. Feedback is not treated as confidential: do not include confidential information, personal data, or document content in a report. You are not required to submit feedback.
+
 ## 关于代码改动
 
 源码不公开，仓库也不接受外部 Pull Request 或补丁。想改什么、想要什么功能，请在 Issue 里写清使用场景与期望结果，作者自己来实现。
