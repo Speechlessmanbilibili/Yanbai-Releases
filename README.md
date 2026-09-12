@@ -92,6 +92,6 @@ Found a bug or want a feature? Open an [issue](https://github.com/Speechlessmanb
 
 ## Copyright & License
 
-The builds in this repository are distributed under the [Yanbai End User License Agreement](LICENSE.md) (Chinese version: [LICENSE_zh.md](LICENSE_zh.md)): you may download, install, and use them for personal or commercial purposes free of charge; redistributing, reselling, or publishing modified builds is not permitted. The source code is not public, and this license grants no access to it. Third-party components and their own license terms are listed in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+The builds in this repository are distributed under the [Yanbai End User License Agreement](LICENSE.md) (Chinese version: [LICENSE_zh.md](LICENSE_zh.md)): you may download, install, and use them for personal or commercial purposes free of charge; redistributing, reselling, or publishing modified builds is not permitted. The source code is not public, and this license grants no access to it. Third-party components and their own license terms are listed in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). The installer shows this agreement before it copies any files, and once the app is installed you can read the full text at any time from the About button on the toolbar or the command palette (`Ctrl+K`).
 
 Copyright © 2026 SilentPerson. All rights reserved.

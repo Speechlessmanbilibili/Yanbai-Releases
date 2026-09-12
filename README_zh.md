@@ -92,6 +92,6 @@ cd Yanbai-<版本号>-linux-x86_64
 
 ## 版权说明
 
-本仓库分发的安装包按[最终用户使用许可协议](LICENSE_zh.md)（英文版：[LICENSE.md](LICENSE.md)）授权：可以免费下载、安装，并在个人或商业环境中使用；不得再分发、售卖或发布修改版。源码不公开，本许可不授予源码访问权。随软件分发的第三方组件及其许可条款见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
+本仓库分发的安装包按[最终用户使用许可协议](LICENSE_zh.md)（英文版：[LICENSE.md](LICENSE.md)）授权：可以免费下载、安装，并在个人或商业环境中使用；不得再分发、售卖或发布修改版。源码不公开，本许可不授予源码访问权。随软件分发的第三方组件及其许可条款见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。安装程序开始复制文件前会显示这份协议；装好之后，点工具栏右侧的「关于」按钮或用 `Ctrl+K` 命令面板也能随时查看全文。
 
 Copyright © 2026 SilentPerson. All rights reserved.
