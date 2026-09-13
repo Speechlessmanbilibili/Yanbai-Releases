@@ -64,6 +64,8 @@ Grab the build for your platform from the [latest release](https://github.com/Sp
 | **Windows** | ARM64 | `Yanbai-*-win-arm64.zip` | Portable, extract and run |
 | **Linux** | x86_64 | `Yanbai-*-linux-x86_64.tar.gz` | Prebuilt archive |
 | **Linux** | ARM64 | `Yanbai-*-linux-arm64.tar.gz` | Prebuilt archive |
+| **macOS** | Apple silicon | `Yanbai-*-macos-arm64.dmg` | Unsigned; right-click and Open on first launch |
+| **macOS** | Intel | `Yanbai-*-macos-x64.dmg` | Unsigned; right-click and Open on first launch |
 
 **Windows**: run the installer, or unzip the portable package and start `Yanbai.exe`.
 
@@ -75,12 +77,21 @@ cd Yanbai-<version>-linux-x86_64
 ./run.sh
 ```
 
+**macOS**: open the dmg and drag Yanbai into Applications. The builds are neither signed nor notarised, so Gatekeeper blocks the first launch: right-click the icon and choose Open, or run
+
+```bash
+xattr -dr com.apple.quarantine /Applications/Yanbai.app
+```
+
+If you would rather skip the dmg, `Yanbai-<version>-macos-<arch>.app.tar.gz` contains the `.app` itself.
+
 ---
 
 ## System Requirements
 
 - **Windows** 10 or 11, x64 or ARM64.
 - **Linux** x86_64 or aarch64 with the GTK 3 and `webkit2gtk-4.1` runtime libraries.
+- **macOS** 10.13 or later, Apple silicon or Intel.
 
 ---
 

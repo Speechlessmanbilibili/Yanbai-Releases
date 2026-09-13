@@ -64,6 +64,8 @@
 | **Windows** | ARM64 | `Yanbai-*-win-arm64.zip` | 便携包，解压即用 |
 | **Linux** | x86_64 | `Yanbai-*-linux-x86_64.tar.gz` | 预编译压缩包 |
 | **Linux** | ARM64 | `Yanbai-*-linux-arm64.tar.gz` | 预编译压缩包 |
+| **macOS** | Apple 芯片 | `Yanbai-*-macos-arm64.dmg` | 未签名，首次打开要右键「打开」 |
+| **macOS** | Intel | `Yanbai-*-macos-x64.dmg` | 未签名，首次打开要右键「打开」 |
 
 **Windows**：运行安装程序，或解压便携包后直接启动 `Yanbai.exe`。
 
@@ -75,12 +77,21 @@ cd Yanbai-<版本号>-linux-x86_64
 ./run.sh
 ```
 
+**macOS**：打开 dmg，把「砚白」拖进「应用程序」。产物没有签名与公证，第一次打开会被 Gatekeeper 拦住，右键点图标选「打开」即可；也可以在终端执行：
+
+```bash
+xattr -dr com.apple.quarantine /Applications/Yanbai.app
+```
+
+不想用 dmg 的可以直接解压 `Yanbai-<版本号>-macos-<架构>.app.tar.gz`，里面就是 `.app`。
+
 ---
 
 ## 系统要求
 
 - **Windows** 10 或 11，x64 或 ARM64。
 - **Linux** x86_64 或 aarch64，需要 GTK 3 与 `webkit2gtk-4.1` 运行库。
+- **macOS** 10.13 或更高，Apple 芯片或 Intel。
 
 ---
 
