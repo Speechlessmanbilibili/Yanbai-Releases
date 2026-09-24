@@ -33,6 +33,7 @@ This repository is the distribution point. It holds the installers, the prebuilt
 ### Document Engine Built in Pure Rust
 - **Zero-dependency Word 97-2003 (.doc) parsing**: reads the OLE2 compound file directly, no Office or LibreOffice involved, and turns legacy `.doc` files into clean Markdown.
 - **Bidirectional Word (.docx) conversion**: imports headings, formatting, lists, hyperlinks, and tables; exports standard OOXML with proper Chinese and Western typography.
+- **Text formats and Save As**: edit and save Markdown, JSON, YAML, TOML, CSV, HTML, and common source/configuration files under their original extensions; Save As can export Word (`.docx`). Imported Word files use Save As; an existing `.docx` is overwritten only after the user selects and confirms that path.
 - **Multi-encoding detection**: BOM check, strict UTF-8 validation, and `chardetng` detection with a GBK fallback, plus SHA-256 fingerprinting so a file is never silently rewritten in the wrong encoding.
 - **Session persistence and crash recovery**: debounced draft autosave with a 64 MB safety fuse.
 

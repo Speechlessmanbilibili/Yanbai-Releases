@@ -2,7 +2,7 @@
 
 **English** | [简体中文](LICENSE_zh.md)
 
-Version 1.5 · Effective 12 September 2026
+Version 1.6 · Effective 24 September 2026
 
 Copyright © 2026 SilentPerson. All rights reserved.
 
@@ -88,7 +88,7 @@ PLEASE READ THIS AGREEMENT CAREFULLY. This End User License Agreement (the “Ag
 
 6.5 This Section describes the Software itself. The operating system, the WebView runtime, and other software on your device may perform their own network activity, which is outside the Licensor's control.
 
-6.6 The Software keeps an encrypted crash-recovery draft of open documents in a file named `recovery.enc` inside its application data directory. That file stores the full text of the documents you have open, together with the file paths involved, in encrypted form using AES-256-GCM, with the encryption key protected by the current operating system user's login credentials (using Windows DPAPI on Windows, and strict user-level permission isolation on Unix-like systems). It cannot be decrypted outside the current user's login session. It is written while you edit and is cleared when you close the documents normally. Delete the file if you do not want the draft to remain.
+6.6 In this version, the Software keeps an encrypted crash-recovery draft of open documents in a file named `recovery.enc` inside its application data directory. That file stores the full text of the documents you have open, together with the file paths involved. The draft is encrypted locally and updated while you edit; it is cleared when you close the documents normally. Delete the file if you do not want the draft to remain.
 
 6.7 If a future version changes how data is handled, the Licensor will state the change in that version's release notes.
 
@@ -100,7 +100,7 @@ PLEASE READ THIS AGREEMENT CAREFULLY. This End User License Agreement (the “Ag
 
 ## 8. Feedback
 
-8.1 If you submit feedback, suggestions, or defect reports, you grant the Licensor a perpetual, worldwide, royalty-free, irrevocable license to use and incorporate them into the Software, without any obligation of confidentiality, attribution, or compensation. Feedback is not treated as confidential: do not include confidential information, personal data, or document content in a report. You are not required to submit feedback.
+8.1 If you submit feedback, suggestions, or defect reports, you grant the Licensor a perpetual, worldwide, royalty-free, irrevocable, non-exclusive license to use, reproduce, modify, distribute, and incorporate them into the Software, without any obligation of confidentiality, attribution, or compensation. Feedback is not treated as confidential: do not include confidential information, personal data, or document content in a report. You are not required to submit feedback.
 
 ## 9. Updates and Support
 
@@ -142,11 +142,11 @@ PLEASE READ THIS AGREEMENT CAREFULLY. This End User License Agreement (the “Ag
 
 13.1 You shall comply with all applicable export control and economic sanctions laws and regulations, and shall not export, re-export, transfer, or use the Software in violation of them, including by providing it to any person or entity on a restricted-party list, or for any restricted end use such as the development or production of weapons of mass destruction.
 
-13.2 The Software implements the SHA-256 digest algorithm for file fingerprinting, uses standard AES-256-GCM encryption combined with operating system user credential protection for local recovery draft protection, and does not encrypt communications. You are responsible for determining whether your use requires an export authorization or classification in your jurisdiction.
+13.2 In this version, the Software does not encrypt communications. You are responsible for determining whether your use requires an export authorization or classification in your jurisdiction.
 
 ## 14. Notices
 
-14.1 Notices to the Licensor must be sent by electronic mail to <speechlessmans@outlook.com>. Matters that are not confidential, such as a general question or a permission inquiry, may also be raised through the issue tracker of the Official Distribution Channel at <https://github.com/Speechlessmanbilibili/Yanbai-Releases/issues>. Notices of breach, requests for the written consent required by this Agreement, and anything containing confidential information must be sent by electronic mail. The Licensor will not disclose the contents of an electronic mail notice without your agreement.
+14.1 You may contact the Licensor by electronic mail at <speechlessmans@outlook.com>. Notices to the Licensor, including notices of breach and requests for written consent required by this Agreement, must be sent to that address. The email address is for contact and formal Notices only; it is not a channel for feedback, suggestions, defect reports, or confidential submissions. Feedback, suggestions, defect reports, and general non-confidential questions may be submitted through the issue tracker of the Official Distribution Channel at <https://github.com/Speechlessmanbilibili/Yanbai-Releases/issues>. Do not send confidential information, personal data, or document contents to the email address or include them in public submissions.
 
 14.2 Notices to you may be given by publishing a revised version of this Agreement or a notice on the Official Distribution Channel. Such notice takes effect on publication.
 
@@ -164,7 +164,7 @@ PLEASE READ THIS AGREEMENT CAREFULLY. This End User License Agreement (the “Ag
 
 16.3 No failure or delay by the Licensor in exercising any right under this Agreement constitutes a waiver of that right.
 
-16.4 This Agreement is executed in the English and Chinese languages. Both texts are equally authentic; in the event of any discrepancy, the English text prevails. Where mandatory law applicable to you requires that the local-language text govern, that requirement prevails over this Section 16.4.
+16.4 This Agreement is executed in the English and Chinese languages. Both texts are equally authentic; in the event of any ambiguity, the English text prevails. Where mandatory law applicable to you requires that the local-language text govern, that requirement prevails over this Section 16.4.
 
 ## 17. Governing Law and Dispute Resolution
 

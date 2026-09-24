@@ -7,7 +7,7 @@
 不需要下载或安装软件就能提。入口按内容选：
 
 - **公开渠道**：[Yanbai-Releases 的 Issues](https://github.com/Speechlessmanbilibili/Yanbai-Releases/issues)。一般缺陷、功能建议、用法疑问都走这里。
-- **电子邮件**：<speechlessmans@outlook.com>。含机密信息、个人信息，或不便公开的内容走这里。Issue 是公开且可检索的，请不要把这类内容贴进 Issue。
+- **电子邮件**：<speechlessmans@outlook.com>。仅用于联系许可方或发送许可协议要求的正式通知，不作为反馈渠道；请勿通过电子邮件发送机密信息、个人信息或文档内容。
 
 报告缺陷时，把这几项写清定位会快很多：
 
@@ -40,7 +40,7 @@ This file explains how to report a problem and how to suggest an improvement. Th
 You do not need to download or install the software to report something. Pick the channel that fits:
 
 - **Public channel**: [issues in Yanbai-Releases](https://github.com/Speechlessmanbilibili/Yanbai-Releases/issues). Use it for ordinary defects, feature suggestions, and questions about usage.
-- **Electronic mail**: <speechlessmans@outlook.com>. Use it for anything confidential, personal, or otherwise unsuitable for a public issue. Issues are public and searchable, so do not put such material in one.
+- **Electronic mail**: <speechlessmans@outlook.com>. Use it only to contact the Licensor or send formal notices required by the license; it is not a feedback channel. Do not email confidential information, personal data, or document contents.
 
 A defect report is much easier to act on when it states:
 
@@ -52,7 +52,7 @@ A defect report is much easier to act on when it states:
 
 ### Feedback license
 
-By submitting feedback, suggestions, or defect reports, you agree to the following license terms: you grant the Licensor a perpetual, worldwide, royalty-free, irrevocable, non-exclusive license to use, reproduce, modify, and distribute that material and to incorporate it into the software, without any obligation of confidentiality, attribution, or compensation. Feedback is not treated as confidential: do not include confidential information, personal data, or document content in a report. You are not required to submit feedback. In this file, “Licensor” means the copyright holder of Yanbai, as in `LICENSE.md` and `LICENSE_zh.md`.
+By submitting feedback, suggestions, or defect reports, you agree to the following license terms: you grant the Licensor a perpetual, worldwide, royalty-free, irrevocable, non-exclusive license to use, reproduce, modify, distribute, and incorporate that material into the Software, without any obligation of confidentiality, attribution, or compensation. Feedback is not treated as confidential: do not include confidential information, personal data, or document content in a report. You are not required to submit feedback. In this file, “Licensor” means the copyright holder of Yanbai, as in `LICENSE.md` and `LICENSE_zh.md`.
 
 ## About code changes
 
