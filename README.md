@@ -44,6 +44,7 @@ This repository is the distribution point. It holds the installers, the prebuilt
 - **Structured tables**: aligned and formatted without hand-tuning the pipes.
 
 ### Warm Terracotta Aesthetic and Desktop Integration
+- **Chinese and English interface**: Settings uses the system language by default, or remembers Chinese or English. Licence terms are on a secondary settings page.
 - **Warm terracotta palette** (primary `#a85d3e`, highlight `#e0a183`, ivory paper `#fdfbf7`) with light and dark themes.
 - **Windows 11 Mica and Acrylic** window materials.
 - **Multi-tab management**: unsaved-change dots, middle-click to close, and a confirmation dialog offering Save (S), Don't Save (D), or Cancel (Esc). `Ctrl+Shift+T` reopens recently closed tabs.
@@ -104,6 +105,6 @@ Found a bug or want a feature? Open an [issue](https://github.com/Speechlessmanb
 
 ## Copyright & License
 
-The builds in this repository are distributed under the [Yanbai End User License Agreement](LICENSE.md) (Chinese version: [LICENSE_zh.md](LICENSE_zh.md)): you may download, install, and use them for personal or commercial purposes free of charge; redistributing, reselling, or publishing modified builds is not permitted. The source code is not public, and this license grants no access to it. Third-party components and their own license terms are listed in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). The installer shows this agreement before it copies any files, and once the app is installed you can read the full text at any time from the About button on the toolbar or the command palette (`Ctrl+K`).
+The builds in this repository are distributed under the [Yanbai End User License Agreement](LICENSE.md) (Chinese version: [LICENSE_zh.md](LICENSE_zh.md)): you may download, install, and use them for personal or commercial purposes free of charge; redistributing, reselling, or publishing modified builds is not permitted. The source code is not public, and this license grants no access to it. Third-party components and their own license terms are listed in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). The installer shows this agreement before it copies any files. In the app, open Settings and select Licence and third-party notices to read the full text.
 
 Copyright © 2026 SilentPerson. All rights reserved.
