@@ -49,7 +49,7 @@ This repository is the distribution point. It holds the installers, the prebuilt
 
 ### Warm Terracotta Aesthetic and Desktop Integration
 - **Chinese and English interface**: Settings uses the system language by default, or remembers Chinese or English. Licence terms are on a secondary settings page.
-- **Warm terracotta palette** (primary `#a85d3e`, highlight `#e0a183`, ivory paper `#fdfbf7`) with light and dark themes.
+- **Warm terracotta palette** (primary `#a85d3e`, highlight `#e0a183`, ivory paper `#fdfbf7`) follows the system appearance by default. Choose Follow system, Light, or Dark in Settings; manual selections persist across restarts, and returning to Follow system clears the saved preference.
 - **Windows 11 Mica and Acrylic** window materials.
 - **Multi-tab management**: unsaved-change dots, middle-click to close, and a confirmation dialog offering Save (S), Don't Save (D), or Cancel (Esc). `Ctrl+Shift+T` reopens recently closed tabs.
 - **Windows integration**: optional `.md` / `.markdown` file association and an “Open with Yanbai” context menu entry, single-instance handling, and command-line file arguments.
