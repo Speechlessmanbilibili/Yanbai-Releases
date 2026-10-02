@@ -2,11 +2,11 @@
 
 **English** | [简体中文](LICENSE_zh.md)
 
-Version 1.6 · Effective 24 September 2026
-
 Copyright © 2026 SilentPerson. All rights reserved.
 
-PLEASE READ THIS AGREEMENT CAREFULLY. This End User License Agreement (the “Agreement”) is a legal agreement between you (“you”, the “Licensee”) and the copyright holder of the software known as Yanbai (砚白) (the “Licensor”), and it governs your use of that software. By downloading, installing, copying, or otherwise using the software, you confirm that you have read, understood, and agree to be bound by this Agreement. If you do not agree to any part of this Agreement, you must not download, install, or use the software.
+**Please read this Agreement carefully.** This End User License Agreement (the “Agreement”) is a legal agreement between you (“you”, the “Licensee”) and the copyright holder of the software known as Yanbai (砚白) (the “Licensor”), and it governs your use of that software. By downloading, installing, copying, or otherwise using the software, you confirm that you have read, understood, and agree to be bound by this Agreement. If you do not agree to any part of this Agreement, you must not download, install, or use the software.
+
+**Important terms: Please pay particular attention to the feedback license in Section 8.1, the warranty and support limitations in Section 9.2, termination under Section 10.2, the warranty disclaimers in Section 11, the liability limitations and exceptions in Section 12, assignment under Section 15.2, interpretation of the language texts under Section 16.4, and jurisdiction under Section 17.2.**
 
 ## 1. Definitions
 
@@ -100,43 +100,51 @@ PLEASE READ THIS AGREEMENT CAREFULLY. This End User License Agreement (the “Ag
 
 ## 8. Feedback
 
-8.1 If you submit feedback, suggestions, or defect reports, you grant the Licensor a perpetual, worldwide, royalty-free, irrevocable, non-exclusive license to use, reproduce, modify, distribute, and incorporate them into the Software, without any obligation of confidentiality, attribution, or compensation. Feedback is not treated as confidential: do not include confidential information, personal data, or document content in a report. You are not required to submit feedback.
+8.1 **If you submit feedback, suggestions, or defect reports, you grant the Licensor a perpetual, worldwide, royalty-free, irrevocable, non-exclusive license to use, reproduce, modify, distribute, and incorporate them into the Software, without any obligation of confidentiality, attribution, or compensation. Feedback is not treated as confidential: do not include confidential information, personal data, or document content in a report. You are not required to submit feedback.**
 
 ## 9. Updates and Support
 
 9.1 The Licensor may, but is not obliged to, release updates, upgrades, or new versions of the Software. Any such release is governed by this Agreement unless it is accompanied by a separate license agreement.
 
-9.2 The Licensor provides no warranty and assumes no support obligation under this Agreement, whether through an issue tracker, by electronic mail, or otherwise.
+9.2 **The Licensor provides no warranty and assumes no support obligation under this Agreement, whether through an issue tracker, by electronic mail, or otherwise.**
 
 ## 10. Term and Termination
 
 10.1 This Agreement takes effect upon your first download, installation, or use of the Software and continues until terminated.
 
-10.2 Your rights under this Agreement terminate if you materially breach any provision of this Agreement, the Licensor has given you Notice of the breach under Section 2.3, and you have failed to remedy it within the period stated in that Notice. Upon termination you must cease all use of the Software and delete or destroy all copies in your possession or control.
+10.2 **Your rights under this Agreement terminate if you materially breach any provision of this Agreement, the Licensor has given you Notice of the breach under Section 2.3, and you have failed to remedy it within the period stated in that Notice. Upon termination you must cease all use of the Software and delete or destroy all copies in your possession or control.**
 
-10.3 The Licensor may revise this Agreement for future releases. A release already distributed remains governed by the version of this Agreement that accompanied it.
+10.3 The Licensor may revise this Agreement for future releases. A release already distributed remains governed by the text of this Agreement that accompanied it.
 
 10.4 Sections 1, 3, 4, 5, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, and 17 survive termination of this Agreement.
 
 ## 11. Disclaimer of Warranty
 
-11.1 THE SOFTWARE IS PROVIDED “AS IS” AND “AS AVAILABLE”, WITHOUT WARRANTY OF ANY KIND, WHETHER EXPRESS, IMPLIED, STATUTORY, OR OTHERWISE, INCLUDING WITHOUT LIMITATION ANY WARRANTY OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT.
+11.1 **THE SOFTWARE IS PROVIDED “AS IS” AND “AS AVAILABLE”, WITHOUT WARRANTY OF ANY KIND, WHETHER EXPRESS, IMPLIED, STATUTORY, OR OTHERWISE, INCLUDING WITHOUT LIMITATION ANY WARRANTY OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT.**
 
-11.2 WITHOUT LIMITING SECTION 11.1, THE LICENSOR DOES NOT WARRANT THAT THE SOFTWARE WILL BE ERROR-FREE OR OPERATE WITHOUT INTERRUPTION, OR THAT IT WILL PRESERVE OR CORRECTLY PROCESS ANY DOCUMENT.
+11.2 **WITHOUT LIMITING SECTION 11.1, THE LICENSOR DOES NOT WARRANT THAT THE SOFTWARE WILL BE ERROR-FREE OR OPERATE WITHOUT INTERRUPTION, OR THAT IT WILL PRESERVE OR CORRECTLY PROCESS ANY DOCUMENT.**
 
-11.3 No advice or information, whether oral or written, obtained from the Licensor shall create any warranty not expressly stated in this Agreement.
+11.3 **No advice or information, whether oral or written, obtained from the Licensor shall create any warranty not expressly stated in this Agreement.**
 
-11.4 Some jurisdictions do not allow the exclusion of certain warranties. To the extent such a rule applies to you, the exclusions in this Section apply to the maximum extent permitted by applicable law.
+11.4 **Some jurisdictions do not allow the exclusion of certain warranties. To the extent such a rule applies to you, the exclusions in this Section apply to the maximum extent permitted by applicable law.**
 
 ## 12. Limitation of Liability
 
-12.1 TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE LICENSOR SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, PUNITIVE, OR CONSEQUENTIAL DAMAGES, OR FOR ANY LOSS OF DATA, CORRUPTION OF DOCUMENTS, LOSS OF PROFITS, LOSS OF GOODWILL, OR BUSINESS INTERRUPTION, HOWEVER CAUSED AND UNDER ANY THEORY OF LIABILITY, ARISING OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THIS AGREEMENT, EVEN IF THE LICENSOR HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+12.1 **TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE LICENSOR SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, PUNITIVE, OR CONSEQUENTIAL DAMAGES, OR FOR ANY LOSS OF DATA, CORRUPTION OF DOCUMENTS, LOSS OF PROFITS, LOSS OF GOODWILL, OR BUSINESS INTERRUPTION, HOWEVER CAUSED AND UNDER ANY THEORY OF LIABILITY, ARISING OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THIS AGREEMENT, EVEN IF THE LICENSOR HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.**
 
-12.2 TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE AGGREGATE LIABILITY OF THE LICENSOR UNDER OR IN CONNECTION WITH THIS AGREEMENT SHALL NOT EXCEED THE AMOUNT ACTUALLY PAID BY YOU TO THE LICENSOR FOR THE SOFTWARE, WHICH IS ZERO.
+12.2 **SUBJECT TO SECTION 12.3 AND ANY RIGHTS THAT CANNOT BE EXCLUDED OR LIMITED UNDER APPLICABLE LAW, AND TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE AGGREGATE LIABILITY OF THE LICENSOR UNDER OR IN CONNECTION WITH THIS AGREEMENT SHALL NOT EXCEED THE AMOUNT ACTUALLY PAID BY YOU TO THE LICENSOR FOR THE SOFTWARE, WHICH IS ZERO.**
 
-12.3 Nothing in this Agreement excludes or limits the Licensor's liability for: (a) death or personal injury caused by the Licensor's negligence; (b) fraud or fraudulent misrepresentation; (c) willful misconduct or gross negligence; or (d) any other liability that cannot be excluded or limited under applicable law.
+12.3 **Nothing in this Agreement excludes or limits the Licensor's liability for:**
 
-12.4 If you are a consumer, you may have statutory rights that cannot be waived by contract. Nothing in this Agreement affects those rights.
+**(a) death or personal injury caused by the Licensor's negligence;**
+
+**(b) fraud or fraudulent misrepresentation;**
+
+**(c) willful misconduct or gross negligence; or**
+
+**(d) any other liability that cannot be excluded or limited under applicable law.**
+
+12.4 **If you are a consumer, you may have statutory rights that cannot be waived by contract. Nothing in this Agreement affects those rights.**
 
 ## 13. Export Control and Sanctions
 
@@ -146,7 +154,11 @@ PLEASE READ THIS AGREEMENT CAREFULLY. This End User License Agreement (the “Ag
 
 ## 14. Notices
 
-14.1 You may contact the Licensor by electronic mail at <speechlessmans@outlook.com>. Notices to the Licensor, including notices of breach and requests for written consent required by this Agreement, must be sent to that address. The email address is for contact and formal Notices only; it is not a channel for feedback, suggestions, defect reports, or confidential submissions. Feedback, suggestions, defect reports, and general non-confidential questions may be submitted through the issue tracker of the Official Distribution Channel at <https://github.com/Speechlessmanbilibili/Yanbai-Releases/issues>. Do not send confidential information, personal data, or document contents to the email address or include them in public submissions.
+14.1 You may contact the Licensor by electronic mail at <speechlessmans@outlook.com>. Notices to the Licensor, including notices of breach and requests for written consent required by this Agreement, must be sent to that address. The email address is for contact and formal Notices only; it is not a channel for feedback, suggestions, defect reports, or confidential submissions.
+
+Feedback, suggestions, defect reports, and general non-confidential questions may be submitted through the issue tracker of the Official Distribution Channel at <https://github.com/Speechlessmanbilibili/Yanbai-Releases/issues>.
+
+Do not send confidential information, personal data, or document contents to the email address or include them in public submissions.
 
 14.2 Notices to you may be given by publishing a revised version of this Agreement or a notice on the Official Distribution Channel. Such notice takes effect on publication.
 
@@ -154,7 +166,7 @@ PLEASE READ THIS AGREEMENT CAREFULLY. This End User License Agreement (the “Ag
 
 15.1 You may not assign or transfer this Agreement, or any rights under it, without the prior written consent of the Licensor.
 
-15.2 The Licensor may assign this Agreement to an affiliate, or to a successor in connection with a merger, acquisition, or sale of substantially all of its assets, provided that the assignee assumes the Licensor's obligations under Section 6. The Licensor will give Notice of such an assignment.
+15.2 **The Licensor may assign this Agreement to an affiliate, or to a successor in connection with a merger, acquisition, or sale of substantially all of its assets, provided that the assignee assumes the Licensor's obligations under Section 6. The Licensor will give Notice of such an assignment.**
 
 ## 16. Miscellaneous
 
@@ -164,12 +176,12 @@ PLEASE READ THIS AGREEMENT CAREFULLY. This End User License Agreement (the “Ag
 
 16.3 No failure or delay by the Licensor in exercising any right under this Agreement constitutes a waiver of that right.
 
-16.4 This Agreement is executed in the English and Chinese languages. Both texts are equally authentic; in the event of any ambiguity, the English text prevails. Where mandatory law applicable to you requires that the local-language text govern, that requirement prevails over this Section 16.4.
+16.4 **This Agreement is executed in the English and Chinese languages. Both texts are equally authentic; in the event of any ambiguity, the English text prevails. Where mandatory law applicable to you requires that the local-language text govern, that requirement prevails over this Section 16.4.**
 
 ## 17. Governing Law and Dispute Resolution
 
 17.1 This Agreement is governed by the laws of the mainland of the People's Republic of China, without regard to its conflict-of-law rules.
 
-17.2 The Licensor's domicile is in the mainland of the People's Republic of China; it may be confirmed through the channel in Section 14. Any dispute arising out of or in connection with this Agreement shall be submitted to the competent people's court at the Licensor's domicile. If the Licensor assigns this Agreement under Section 15.2, the assignee's domicile replaces the Licensor's for the purposes of this Section.
+17.2 **The Licensor's domicile is in the mainland of the People's Republic of China; it may be confirmed through the channel in Section 14. Any dispute arising out of or in connection with this Agreement shall be submitted to the competent people's court at the Licensor's domicile. If the Licensor assigns this Agreement under Section 15.2, the assignee's domicile replaces the Licensor's for the purposes of this Section.**
 
-17.3 If you are a consumer, you may also bring proceedings before the courts of your place of residence where mandatory law so provides.
+17.3 **If you are a consumer, you may also bring proceedings before the courts of your place of residence where mandatory law so provides.**
