@@ -2,7 +2,7 @@
 
 # Yanbai Markdown Editor
 
-**A modern, in-place WYSIWYG bilingual Markdown editor built with Rust, Tauri 2.0, and React 19**
+**A bilingual Markdown editor with four writing views, built with Rust, Tauri 2, and React 19**
 
 [![Release](https://img.shields.io/github/v/release/Speechlessmanbilibili/Yanbai-Releases?color=a85d3e&logo=github)](https://github.com/Speechlessmanbilibili/Yanbai-Releases/releases/latest)
 [![Downloads](https://img.shields.io/github/downloads/Speechlessmanbilibili/Yanbai-Releases/total?color=a85d3e)](https://github.com/Speechlessmanbilibili/Yanbai-Releases/releases)
@@ -17,7 +17,7 @@
 
 ## Introduction
 
-**Yanbai** (砚白) inherits a warm terracotta aesthetic, crafted for writers and creators who value focused typography and a pure writing flow. It is built on a pure Rust document engine and Tauri 2.0: a compact footprint (the standalone installer is about 13 MB), fast cold start, low memory use, and bidirectional Word interoperability that needs no Microsoft Office or LibreOffice installed.
+**Yanbai** (砚白) combines a warm terracotta palette with focused typography. Choose a split editor and preview, edit on a continuous live canvas, work with Markdown text, or read the rendered document. Its Rust document engine supports Word import and export without Microsoft Office or LibreOffice.
 
 This repository is the distribution point. It holds the installers, the prebuilt archives, and this page; the source code is not public.
 
@@ -25,17 +25,21 @@ This repository is the distribution point. It holds the installers, the prebuilt
 
 ## Key Features
 
-### In-place Single-Canvas WYSIWYG
-- **Immersive single-canvas writing**: no split panes, just a centered sheet of paper.
-- **In-place render and edit**: formulas, tables, code blocks, diagrams, and callouts render in place. Click an element to edit it, click away to get the typeset result back.
-- **Interactive task lists**: click a `- [ ]` checkbox in the rendered view and the Markdown source follows.
+### Four Writing Views
+
+- **Split, Live, Raw text, and Preview**: start in Split view and restore your selected view on the next launch. Choosing Split returns to the default.
+- **Continuous live canvas**: read and write on a centered page with discreet editing cues. Single-click plain text to place the cursor at that position; click away to restore its rendered appearance.
+- **Rich content in place**: formulas, tables, code blocks, diagrams, and callouts render within the document and can be opened for editing.
+- **Task lists**: display tasks and their completion state; enter editing to change the Markdown checkboxes.
+- **Protected embedded images**: protect embedded image bytes in all four views. In text editing areas, images appear as protected objects that can be copied or removed as a whole without editing their encoded content.
+- **Paste and drop images**: paste a clipboard image or drop a PNG, JPEG, GIF, BMP, or WebP file to embed its original bytes directly in the document. Saved documents do not depend on the original image files.
 
 ### Document Engine Built in Pure Rust
 - **Zero-dependency Word 97-2003 (.doc) parsing**: reads the OLE2 compound file directly, no Office or LibreOffice involved, and turns legacy `.doc` files into clean Markdown.
-- **Bidirectional Word (.docx) conversion**: imports headings, formatting, lists, hyperlinks, and tables; exports standard OOXML with proper Chinese and Western typography.
+- **Bidirectional Word (.docx) conversion**: imports headings, formatting, lists, hyperlinks, tables, and supported images; exports standard OOXML with Chinese and Western typography.
 - **Text formats and Save As**: edit and save Markdown, JSON, YAML, TOML, CSV, HTML, and common source/configuration files under their original extensions; Save As can export Word (`.docx`). Imported Word files use Save As; an existing `.docx` is overwritten only after the user selects and confirms that path.
-- **Multi-encoding detection**: BOM check, strict UTF-8 validation, and `chardetng` detection with a GBK fallback, plus SHA-256 fingerprinting so a file is never silently rewritten in the wrong encoding.
-- **Session persistence and crash recovery**: debounced draft autosave with a 64 MB safety fuse.
+- **Encoding-aware saving**: preserve the detected encoding and BOM, or choose “Save as UTF-8…” to convert explicitly. Invalid encoded text and characters the original encoding cannot represent produce an error; external file changes are checked before saving.
+- **Session persistence and crash recovery**: automatically back up drafts and show backup status, with a 64 MiB recovery-file limit.
 
 ### Academic and Visual Typography
 - **KaTeX vector math**: inline `$E=mc^2$` and display blocks render in milliseconds.
@@ -48,8 +52,8 @@ This repository is the distribution point. It holds the installers, the prebuilt
 - **Warm terracotta palette** (primary `#a85d3e`, highlight `#e0a183`, ivory paper `#fdfbf7`) with light and dark themes.
 - **Windows 11 Mica and Acrylic** window materials.
 - **Multi-tab management**: unsaved-change dots, middle-click to close, and a confirmation dialog offering Save (S), Don't Save (D), or Cancel (Esc). `Ctrl+Shift+T` reopens recently closed tabs.
-- **Windows integration**: optional `.md` / `.markdown` file association and an "Open with Yanbai" context menu entry, single-instance handling, and command-line file arguments.
-- **Export**: Word (`.docx`), standalone offline HTML, and vector PDF printing.
+- **Windows integration**: optional `.md` / `.markdown` file association and an “Open with Yanbai” context menu entry, single-instance handling, and command-line file arguments.
+- **Export with embedded images**: Word (`.docx`) and standalone offline HTML embed supported local or `data:` images (PNG, JPEG, GIF, BMP, and WebP). Save web images locally and reference them from the document before exporting; SVG and unavailable images report an error. HTML exports include complete formulas and diagrams without rendering scripts. PDF printing is also available.
 - **Command palette**: `Ctrl+K` with fuzzy search over every action.
 
 ---

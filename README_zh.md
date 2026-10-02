@@ -2,7 +2,7 @@
 
 # 砚白 Markdown 编辑器
 
-**基于 Rust、Tauri 2.0 与 React 19 构建的现代单画布双语 Markdown 编辑器**
+**基于 Rust、Tauri 2 与 React 19 构建、提供四种写作视图的双语 Markdown 编辑器**
 
 [![Release](https://img.shields.io/github/v/release/Speechlessmanbilibili/Yanbai-Releases?color=a85d3e&logo=github)](https://github.com/Speechlessmanbilibili/Yanbai-Releases/releases/latest)
 [![Downloads](https://img.shields.io/github/downloads/Speechlessmanbilibili/Yanbai-Releases/total?color=a85d3e)](https://github.com/Speechlessmanbilibili/Yanbai-Releases/releases)
@@ -17,7 +17,7 @@
 
 ## 简介
 
-**砚白 (Yanbai)** 承袭温润陶土设计美学，专为追求专注排版与纯粹书写的创作者打造。它采用纯 Rust 文档引擎加 Tauri 2.0 构建：独立安装包约 13 MB，冷启动快、内存占用低，Word 双向互转不需要装 Office 或 LibreOffice。
+**砚白 (Yanbai)** 采用温润陶土配色与专注的正文排版，支持双栏对照、实时连续画布、Markdown 原文编辑和独立预览。Rust 文档引擎提供 Word 导入与导出，无需安装 Office 或 LibreOffice。
 
 这个仓库是分发页，只放安装包、预编译压缩包和这份说明；源码不公开。
 
@@ -25,17 +25,21 @@
 
 ## 核心特性
 
-### 单画布行内所见即所得 (In-place WYSIWYG)
-- **单画布沉浸创作**：不分左右双栏，居中一张纸写到底。
-- **原地渲染与编辑**：公式、表格、代码块、图表与 Callout 原地渲染，点一下就进编辑态，失焦自动回到排版结果。
-- **行内待办互动**：渲染状态下的 `- [ ]` 可以直接点选，勾选结果即时写回 Markdown 源码。
+### 四种写作视图
+
+- **双栏、实时、原文、预览**：默认使用双栏，下次启动恢复上次选择的模式；切回双栏即回到默认。
+- **实时连续画布**：居中呈现连续文稿，编辑提示收在页边；普通文本单击即可在对应位置输入，点击外部后恢复排版。
+- **内容原地编辑**：公式、表格、代码块、图表与 Callout 在文稿内呈现，可进入对应内容的编辑状态。
+- **任务列表**：呈现待办内容与完成状态，可进入编辑修改 Markdown 勾选标记。
+- **内嵌图片保护**：四种视图均保护内嵌图片字节；在文字编辑区显示为受保护的图片对象，可整图复制或删除，避免误改编码内容。
+- **粘贴与拖入图片**：粘贴剪贴板图片，或拖入 PNG、JPEG、GIF、BMP、WebP 文件，即将图片原始字节嵌入文档，保存后无需依赖原图片文件。
 
 ### 纯 Rust 打造的文档引擎
 - **Word 97-2003 (.doc) 零依赖解析**：纯 Rust 读取 OLE2 复合文档，无需 Office 或 LibreOffice，把旧版 `.doc` 解析成结构干净的 Markdown。
-- **双向 Word 文档 (.docx) 转换**：导入时识别标题层级、粗斜体、列表、超链接与表格；导出时生成标准 OOXML，自带规整的中文排版样式。
+- **双向 Word 文档 (.docx) 转换**：导入标题层级、粗斜体、列表、超链接、表格及受支持的图片；导出标准 OOXML，并提供中西文排版样式。
 - **多格式另存**：可编辑并按原扩展名保存 Markdown、JSON、YAML、TOML、CSV、HTML、常见代码/配置文本，也可另存为 Word (`.docx`)。打开的 Word 文档通过“另存为”保存；用户选择已有 `.docx` 路径并确认覆写后即可覆盖该文件。
-- **智能多编码探测**：BOM 校验、严格 UTF-8 检测与 `chardetng` 探测（回退 GBK / Windows-936），配合 SHA-256 指纹，保存时沿原编码写回，不产生乱码。
-- **会话持久化与崩溃防护**：后台防抖备份草稿，并有 64 MB 超大文件熔断。
+- **保留编码与显式转换**：保存沿用探测到的编码与 BOM，也可选择“另存为 UTF-8…”主动转换。损坏的编码文本或原编码无法表示的字符会明确报错，保存前还会检查文件是否被外部修改。
+- **会话持久化与崩溃恢复**：自动备份草稿并显示备份状态，恢复文件上限为 64 MiB。
 
 ### 学术与可视化排版
 - **KaTeX 矢量公式**：行内公式（如 `$E=mc^2$`）与块级公式毫秒级排版。
@@ -49,7 +53,7 @@
 - **Windows 11 Mica / Acrylic 材质**窗口效果。
 - **多标签页管理**：未保存圆点提醒、中键关标签，关闭未保存标签或退出时弹出「保存 (S) / 不保存 (D) / 取消 (Esc)」，`Ctrl+Shift+T` 恢复本次会话关闭过的标签。
 - **Windows 深度集成**：安装程序可选注册 `.md` / `.markdown` 关联与右键菜单「用砚白打开」，单实例运行，支持命令行传参打开文件。
-- **全格式导出**：Word (`.docx`)、单文件离线 HTML、矢量 PDF 打印。
+- **图片嵌入导出**：Word (`.docx`) 与单文件离线 HTML 可嵌入本地或 `data:` 图片，支持 PNG、JPEG、GIF、BMP 与 WebP。网络图片需先保存到本地并从文档引用；SVG 或无法取得的图片会报错。HTML 内含完整公式与图表，无需运行渲染脚本；另支持 PDF 打印。
 - **全局命令面板**：`Ctrl+K` 唤起，支持模糊搜索所有功能。
 
 ---
