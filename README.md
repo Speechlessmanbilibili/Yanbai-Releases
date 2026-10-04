@@ -72,22 +72,29 @@ Grab the build for your platform from the [latest release](https://github.com/Sp
 | **Linux** | x86_64 | `Yanbai-*-linux-x86_64.tar.gz` | Prebuilt archive |
 | **Linux** | ARM64 | `Yanbai-*-linux-arm64.tar.gz` | Prebuilt archive |
 | **macOS** | Apple silicon | `Yanbai-*-macos-arm64.dmg` | App installer image; no Developer ID signing or notarization |
-| **macOS** | Apple silicon | `Yanbai-*-macos-arm64.app.tar.gz` | App bundle archive; same app as the .dmg for this architecture |
+| **macOS** | Apple silicon | `Yanbai-*-macos-arm64.app.tar.gz` | App archive with the same `Yanbai.app` as the matching `.dmg`; choose either |
 | **macOS** | Intel | `Yanbai-*-macos-x64.dmg` | App installer image; no Developer ID signing or notarization |
-| **macOS** | Intel | `Yanbai-*-macos-x64.app.tar.gz` | App bundle archive; same app as the .dmg for this architecture |
+| **macOS** | Intel | `Yanbai-*-macos-x64.app.tar.gz` | App archive with the same `Yanbai.app` as the matching `.dmg`; choose either |
 
 **Windows**: run the installer, or unzip the portable package and start `Yanbai.exe`.
 
 **Linux**: replace `<version>` with the version and `<arch>` with `x86_64` or `arm64` (choose `arm64` when `uname -m` reports `aarch64`), using the name of the downloaded file:
 
+Replace `<version>` with the downloaded version. The commands select x86_64 or ARM64 from the current machine:
+
 ```bash
-archive="Yanbai-<version>-linux-<arch>.tar.gz"
-tar -xzf "$archive"
-cd "${archive%.tar.gz}"
+version='<version>'
+case "$(uname -m)" in
+  x86_64) arch=x86_64 ;;
+  aarch64|arm64) arch=arm64 ;;
+  *) printf '%s\n' 'Unsupported architecture' >&2; exit 1 ;;
+esac
+tar -xzf "Yanbai-${version}-linux-${arch}.tar.gz"
+cd "Yanbai-${version}-linux-${arch}"
 ./run.sh
 ```
 
-**macOS**: the `.dmg` and `.app.tar.gz` for a given architecture contain the same `Yanbai.app`; choose either. Open the `.dmg` and drag Yanbai to Applications, or extract `.app.tar.gz` and move `Yanbai.app` to Applications. Builds use ad-hoc signing and have no Developer ID signature or notarization. If macOS blocks launch, follow [Apple’s instructions for opening an app from an unidentified developer](https://support.apple.com/102445).
+**macOS**: the `.dmg` and `.app.tar.gz` for the same architecture contain the same `Yanbai.app`; download either format. Open the `.dmg` and drag Yanbai to Applications, or extract `.app.tar.gz` and move `Yanbai.app` to Applications. Both formats use the same ad-hoc signing and have no Developer ID signature or notarization. If macOS blocks launch, follow [Apple’s instructions for opening an app from an unidentified developer](https://support.apple.com/102445).
 
 ---
 
@@ -95,7 +102,7 @@ cd "${archive%.tar.gz}"
 
 - **Windows** 10 or 11, x64 or ARM64.
 - **Linux** x86_64 or aarch64 with the GTK 3 and `webkit2gtk-4.1` runtime libraries.
-- **macOS**: Apple silicon requires 11.0 or later; Intel requires 10.13 or later. These are the deployment minimums recorded in the v2.4.0 Mach-O binaries; compatibility on the oldest supported systems has not been verified on physical Macs.
+- **macOS** 11 (Big Sur) or later, Apple silicon or Intel; install system updates so the system WebKit is at Safari 16.4 or later. This minimum configuration has not been tested on a physical Mac.
 
 ---
 

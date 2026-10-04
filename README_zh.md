@@ -72,22 +72,29 @@
 | **Linux** | x86_64 | `Yanbai-*-linux-x86_64.tar.gz` | 预编译压缩包 |
 | **Linux** | ARM64 | `Yanbai-*-linux-arm64.tar.gz` | 预编译压缩包 |
 | **macOS** | Apple 芯片 | `Yanbai-*-macos-arm64.dmg` | 应用安装镜像；无开发者证书签名与公证 |
-| **macOS** | Apple 芯片 | `Yanbai-*-macos-arm64.app.tar.gz` | 应用包压缩档；与同架构 .dmg 内的应用相同 |
+| **macOS** | Apple 芯片 | `Yanbai-*-macos-arm64.app.tar.gz` | 应用压缩包，与同架构 `.dmg` 包含同一份 `Yanbai.app`，二选一即可 |
 | **macOS** | Intel | `Yanbai-*-macos-x64.dmg` | 应用安装镜像；无开发者证书签名与公证 |
-| **macOS** | Intel | `Yanbai-*-macos-x64.app.tar.gz` | 应用包压缩档；与同架构 .dmg 内的应用相同 |
+| **macOS** | Intel | `Yanbai-*-macos-x64.app.tar.gz` | 应用压缩包，与同架构 `.dmg` 包含同一份 `Yanbai.app`，二选一即可 |
 
 **Windows**：运行安装程序，或解压便携包后直接启动 `Yanbai.exe`。
 
 **Linux**：将 `<version>` 替换为版本号，`<arch>` 替换为 `x86_64` 或 `arm64`（`uname -m` 显示 `aarch64` 时选 `arm64`），使用已下载文件的名称：
 
+将 `<version>` 替换为下载的版本号；以下命令按本机架构选择 x86_64 或 ARM64：
+
 ```bash
-archive="Yanbai-<version>-linux-<arch>.tar.gz"
-tar -xzf "$archive"
-cd "${archive%.tar.gz}"
+version='<version>'
+case "$(uname -m)" in
+  x86_64) arch=x86_64 ;;
+  aarch64|arm64) arch=arm64 ;;
+  *) printf '%s\n' 'Unsupported architecture' >&2; exit 1 ;;
+esac
+tar -xzf "Yanbai-${version}-linux-${arch}.tar.gz"
+cd "Yanbai-${version}-linux-${arch}"
 ./run.sh
 ```
 
-**macOS**：同一架构的 `.dmg` 与 `.app.tar.gz` 包含相同的 `Yanbai.app`，任选一种即可：打开 `.dmg` 并将砚白拖入“应用程序”，或解压 `.app.tar.gz` 后将 `Yanbai.app` 移入“应用程序”。产物使用 ad-hoc 签名，没有开发者证书签名与公证；若 macOS 阻止启动，请按 [Apple 关于打开未识别开发者应用的说明](https://support.apple.com/zh-cn/102445)处理。
+**macOS**：同架构的 `.dmg` 与 `.app.tar.gz` 包含同一份 `Yanbai.app`，任选一种下载即可。打开 `.dmg` 并将砚白拖入“应用程序”；或解压 `.app.tar.gz`，再将 `Yanbai.app` 放入“应用程序”。两种格式使用相同的 ad-hoc 签名，没有开发者证书签名与公证；若 macOS 阻止启动，请按 [Apple 关于打开未识别开发者应用的说明](https://support.apple.com/zh-cn/102445)处理。
 
 ---
 
@@ -95,7 +102,7 @@ cd "${archive%.tar.gz}"
 
 - **Windows** 10 或 11，x64 或 ARM64。
 - **Linux** x86_64 或 aarch64，需要 GTK 3 与 `webkit2gtk-4.1` 运行库。
-- **macOS**：Apple 芯片需要 11.0 或更新版本，Intel 需要 10.13 或更新版本。这是 v2.4.0 实际 Mach-O 产物的部署声明下限，尚无最低版本真机兼容性验收记录。
+- **macOS** 11（Big Sur）或更新版本，Apple 芯片或 Intel；安装系统更新，使系统 WebKit 达到 Safari 16.4 或更新版本。最低配置尚无 Mac 实机验收记录。
 
 ---
 
