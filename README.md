@@ -72,19 +72,22 @@ Grab the build for your platform from the [latest release](https://github.com/Sp
 | **Linux** | x86_64 | `Yanbai-*-linux-x86_64.tar.gz` | Prebuilt archive |
 | **Linux** | ARM64 | `Yanbai-*-linux-arm64.tar.gz` | Prebuilt archive |
 | **macOS** | Apple silicon | `Yanbai-*-macos-arm64.dmg` | App installer image; no Developer ID signing or notarization |
+| **macOS** | Apple silicon | `Yanbai-*-macos-arm64.app.tar.gz` | App bundle archive; same app as the .dmg for this architecture |
 | **macOS** | Intel | `Yanbai-*-macos-x64.dmg` | App installer image; no Developer ID signing or notarization |
+| **macOS** | Intel | `Yanbai-*-macos-x64.app.tar.gz` | App bundle archive; same app as the .dmg for this architecture |
 
 **Windows**: run the installer, or unzip the portable package and start `Yanbai.exe`.
 
-**Linux**:
+**Linux**: replace `<version>` with the version and `<arch>` with `x86_64` or `arm64` (choose `arm64` when `uname -m` reports `aarch64`), using the name of the downloaded file:
 
 ```bash
-tar -xzf Yanbai-<version>-linux-x86_64.tar.gz
-cd Yanbai-<version>-linux-x86_64
+archive="Yanbai-<version>-linux-<arch>.tar.gz"
+tar -xzf "$archive"
+cd "${archive%.tar.gz}"
 ./run.sh
 ```
 
-**macOS**: open the `.dmg` and drag Yanbai to Applications, or extract the `.app.tar.gz` archive. Builds use ad-hoc signing and have no Developer ID signature or notarization. If macOS blocks launch, follow [Apple’s instructions for opening an app from an unidentified developer](https://support.apple.com/102445).
+**macOS**: the `.dmg` and `.app.tar.gz` for a given architecture contain the same `Yanbai.app`; choose either. Open the `.dmg` and drag Yanbai to Applications, or extract `.app.tar.gz` and move `Yanbai.app` to Applications. Builds use ad-hoc signing and have no Developer ID signature or notarization. If macOS blocks launch, follow [Apple’s instructions for opening an app from an unidentified developer](https://support.apple.com/102445).
 
 ---
 
@@ -92,6 +95,7 @@ cd Yanbai-<version>-linux-x86_64
 
 - **Windows** 10 or 11, x64 or ARM64.
 - **Linux** x86_64 or aarch64 with the GTK 3 and `webkit2gtk-4.1` runtime libraries.
+- **macOS**: Apple silicon requires 11.0 or later; Intel requires 10.13 or later. These are the deployment minimums recorded in the v2.4.0 Mach-O binaries; compatibility on the oldest supported systems has not been verified on physical Macs.
 
 ---
 
@@ -122,3 +126,4 @@ Found a bug or want a feature? Open an [issue](https://github.com/Speechlessmanb
 The official builds are distributed under the [Yanbai Software License](LICENSE.md) (Chinese version: [LICENSE_zh.md](LICENSE_zh.md)). Personal and commercial use, backups and internal deployment to affiliates, employees and contractors acting for your organization are free. External redistribution, sale, rental, public repository inclusion and bundled distribution require the Licensor's prior written permission; permitted internal deployment is exempt. The source code is not public, and this license grants no access to it. Third-party components and their own license terms are listed in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 
 Copyright © 2026 SilentPerson. All rights reserved.
+

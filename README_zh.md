@@ -72,19 +72,22 @@
 | **Linux** | x86_64 | `Yanbai-*-linux-x86_64.tar.gz` | 预编译压缩包 |
 | **Linux** | ARM64 | `Yanbai-*-linux-arm64.tar.gz` | 预编译压缩包 |
 | **macOS** | Apple 芯片 | `Yanbai-*-macos-arm64.dmg` | 应用安装镜像；无开发者证书签名与公证 |
+| **macOS** | Apple 芯片 | `Yanbai-*-macos-arm64.app.tar.gz` | 应用包压缩档；与同架构 .dmg 内的应用相同 |
 | **macOS** | Intel | `Yanbai-*-macos-x64.dmg` | 应用安装镜像；无开发者证书签名与公证 |
+| **macOS** | Intel | `Yanbai-*-macos-x64.app.tar.gz` | 应用包压缩档；与同架构 .dmg 内的应用相同 |
 
 **Windows**：运行安装程序，或解压便携包后直接启动 `Yanbai.exe`。
 
-**Linux**：
+**Linux**：将 `<version>` 替换为版本号，`<arch>` 替换为 `x86_64` 或 `arm64`（`uname -m` 显示 `aarch64` 时选 `arm64`），使用已下载文件的名称：
 
 ```bash
-tar -xzf Yanbai-<版本号>-linux-x86_64.tar.gz
-cd Yanbai-<版本号>-linux-x86_64
+archive="Yanbai-<version>-linux-<arch>.tar.gz"
+tar -xzf "$archive"
+cd "${archive%.tar.gz}"
 ./run.sh
 ```
 
-**macOS**：打开 `.dmg`，将砚白拖入“应用程序”，或直接解压 `.app.tar.gz`。产物使用 ad-hoc 签名，没有开发者证书签名与公证；若 macOS 阻止启动，请按 [Apple 关于打开未识别开发者应用的说明](https://support.apple.com/zh-cn/102445)处理。
+**macOS**：同一架构的 `.dmg` 与 `.app.tar.gz` 包含相同的 `Yanbai.app`，任选一种即可：打开 `.dmg` 并将砚白拖入“应用程序”，或解压 `.app.tar.gz` 后将 `Yanbai.app` 移入“应用程序”。产物使用 ad-hoc 签名，没有开发者证书签名与公证；若 macOS 阻止启动，请按 [Apple 关于打开未识别开发者应用的说明](https://support.apple.com/zh-cn/102445)处理。
 
 ---
 
@@ -92,6 +95,7 @@ cd Yanbai-<版本号>-linux-x86_64
 
 - **Windows** 10 或 11，x64 或 ARM64。
 - **Linux** x86_64 或 aarch64，需要 GTK 3 与 `webkit2gtk-4.1` 运行库。
+- **macOS**：Apple 芯片需要 11.0 或更新版本，Intel 需要 10.13 或更新版本。这是 v2.4.0 实际 Mach-O 产物的部署声明下限，尚无最低版本真机兼容性验收记录。
 
 ---
 
@@ -122,3 +126,4 @@ cd Yanbai-<版本号>-linux-x86_64
 官方产物按[砚白软件使用许可](LICENSE_zh.md)（英文版：[LICENSE.md](LICENSE.md)）授权：免费用于个人与商业目的，允许备份及向代表组织开展内部工作的关联方、员工和承包商部署。对外再分发、售卖、出租、公开软件仓库收录及打包分发须事先取得许可方的书面同意；已允许的内部部署不受此限。源码不公开，本许可不授予源码访问权。 随软件分发的第三方组件及其许可条款见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
 
 Copyright © 2026 SilentPerson. All rights reserved.
+
