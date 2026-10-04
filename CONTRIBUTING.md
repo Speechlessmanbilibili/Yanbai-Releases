@@ -7,7 +7,7 @@
 不需要下载或安装软件就能提。入口按内容选：
 
 - **公开渠道**：[Yanbai-Releases 的 Issues](https://github.com/Speechlessmanbilibili/Yanbai-Releases/issues)。一般缺陷、功能建议、用法疑问都走这里。
-- **电子邮件**：<speechlessmans@outlook.com>。仅用于联系许可方或发送许可协议要求的正式通知，不作为反馈渠道；请勿通过电子邮件发送机密信息、个人信息或文档内容。
+- **电子邮件**：<speechlessmans@outlook.com>。仅用于联系许可方或发送许可协议要求的正式通知，不作为反馈渠道。
 
 报告缺陷时，把这几项写清定位会快很多：
 
@@ -15,11 +15,11 @@
 2. 系统版本与架构（Windows 10/11、x64 还是 ARM64；Linux 的发行版与内核）；
 3. 复现步骤，越具体越好；
 4. 期望的结果与实际结果；
-5. 能公开的最小样例文档。**不要附含机密或个人信息的文档**，需要时请自行脱敏或另造一份样例。
+5. 能公开的最小样例文档。Issue 公开可见，建议另造最小样例，或在分享前脱敏。
 
 ### 反馈许可
 
-你提交反馈、建议或缺陷报告，即表示你同意以下条款：你授予许可方一项永久的、全球范围的、免许可费的、不可撤销的、非独占的许可，用于使用、复制、修改、分发这些内容并将其纳入本软件；许可方不承担保密、署名或支付报酬的义务。反馈不按保密信息处理：请不要在报告中写入机密信息、个人信息或文档内容。你并无提交反馈的义务。本文件中的“许可方”指砚白的著作权人，含义与 `LICENSE.md`、`LICENSE_zh.md` 一致。
+反馈授权、保密、署名与报酬的约定统一见[砚白软件使用许可第五节](LICENSE_zh.md#5-反馈)。反馈由你自愿提交；本指引中的样例与脱敏建议不改变许可正文。
 
 ## 关于代码改动
 
@@ -40,7 +40,7 @@ This file explains how to report a problem and how to suggest an improvement. Th
 You do not need to download or install the software to report something. Pick the channel that fits:
 
 - **Public channel**: [issues in Yanbai-Releases](https://github.com/Speechlessmanbilibili/Yanbai-Releases/issues). Use it for ordinary defects, feature suggestions, and questions about usage.
-- **Electronic mail**: <speechlessmans@outlook.com>. Use it only to contact the Licensor or send formal notices required by the license; it is not a feedback channel. Do not email confidential information, personal data, or document contents.
+- **Electronic mail**: <speechlessmans@outlook.com>. Use it only to contact the Licensor or send formal notices required by the license; it is not a feedback channel.
 
 A defect report is much easier to act on when it states:
 
@@ -48,11 +48,11 @@ A defect report is much easier to act on when it states:
 2. your operating system and architecture (Windows 10 or 11, x64 or ARM64; the distribution and kernel version on Linux);
 3. the steps that reproduce the problem, as precisely as you can;
 4. what you expected and what happened instead;
-5. a minimal sample document that can be shared. **Do not attach documents that contain confidential or personal information**; redact them or build a sample instead.
+5. a minimal sample document that can be shared. Issues are public; consider a synthetic minimal sample or redact it before sharing.
 
 ### Feedback license
 
-By submitting feedback, suggestions, or defect reports, you agree to the following license terms: you grant the Licensor a perpetual, worldwide, royalty-free, irrevocable, non-exclusive license to use, reproduce, modify, distribute, and incorporate that material into the Software, without any obligation of confidentiality, attribution, or compensation. Feedback is not treated as confidential: do not include confidential information, personal data, or document content in a report. You are not required to submit feedback. In this file, “Licensor” means the copyright holder of Yanbai, as in `LICENSE.md` and `LICENSE_zh.md`.
+Feedback permissions, confidentiality, attribution and compensation are governed by [Section 5 of the Yanbai Software License](LICENSE.md#5-feedback). Feedback is voluntary. The sample and redaction suggestions in this guide do not change the license.
 
 ## About code changes
 

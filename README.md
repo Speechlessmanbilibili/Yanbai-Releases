@@ -28,18 +28,18 @@ This repository is the distribution point. It holds the installers, the prebuilt
 ### Four Writing Views
 
 - **Split, Live, Raw text, and Preview**: start in Split view and restore your selected view on the next launch. Choosing Split returns to the default.
-- **Continuous live canvas**: read and write on a centered page with discreet editing cues. Single-click plain text to place the cursor at that position; click away to restore its rendered appearance.
+- **Continuous live canvas**: read and write on a centered page with discreet editing cues. Click text, formatting, code, or formula symbols to edit at the corresponding source position; click away to restore the rendered view. Alt-click links to edit their text.
 - **Rich content in place**: formulas, tables, code blocks, diagrams, and callouts render within the document and can be opened for editing.
 - **Task lists**: display tasks and their completion state; enter editing to change the Markdown checkboxes.
 - **Protected embedded images**: protect embedded image bytes in all four views. In text editing areas, images appear as protected objects that can be copied or removed as a whole without editing their encoded content.
-- **Paste and drop images**: paste a clipboard image or drop a PNG, JPEG, GIF, BMP, or WebP file to embed its original bytes directly in the document. Saved documents do not depend on the original image files.
+- **Paste and drop images**: insert PNG, JPEG, GIF, BMP, or WebP originals as short relative references. Saving copies images directly beside the document. Existing images with identical hashes are reused; different content prompts for a choice. The native save window includes a checked “Include image resources” option; clear it to save readable image placeholders.
 
 ### Document Engine Built in Pure Rust
 - **Zero-dependency Word 97-2003 (.doc) parsing**: reads the OLE2 compound file directly, no Office or LibreOffice involved, and turns legacy `.doc` files into clean Markdown.
-- **Bidirectional Word (.docx) conversion**: imports headings, formatting, lists, hyperlinks, tables, and supported images; exports standard OOXML with Chinese and Western typography.
-- **Text formats and Save As**: edit and save Markdown, JSON, YAML, TOML, CSV, HTML, and common source/configuration files under their original extensions; Save As can export Word (`.docx`). Imported Word files use Save As; an existing `.docx` is overwritten only after the user selects and confirms that path.
-- **Encoding-aware saving**: preserve the detected encoding and BOM, or choose “Save as UTF-8…” to convert explicitly. Invalid encoded text and characters the original encoding cannot represent produce an error; external file changes are checked before saving.
-- **Session persistence and crash recovery**: automatically back up drafts and show backup status, with a 64 MiB recovery-file limit.
+- **Bidirectional Word (.docx) conversion**: imports headings, formatting, lists, hyperlinks, and tables; exports standard OOXML with proper Chinese and Western typography.
+- **Common text file editing and Save As**: open and save Markdown, JSON, YAML, TOML, CSV, HTML, code, and configuration files under their original extensions; Save As can also export Word (`.docx`).
+- **Encoding-aware saving**: preserve the detected encoding and BOM, or choose “Save as UTF-8…” to convert explicitly. Invalid encoded text and characters the original encoding cannot represent produce an error. Saving, including Save As to the current file, checks external changes; Save As prevents overwriting another open document.
+- **Session persistence and crash recovery**: debounced encrypted backups share identical content and save baselines in a content pool, preserving compatibility with older recovery files.
 
 ### Academic and Visual Typography
 - **KaTeX vector math**: inline `$E=mc^2$` and display blocks render in milliseconds.
@@ -70,8 +70,8 @@ Grab the build for your platform from the [latest release](https://github.com/Sp
 | **Windows** | ARM64 | `Yanbai-*-win-arm64.zip` | Portable, extract and run |
 | **Linux** | x86_64 | `Yanbai-*-linux-x86_64.tar.gz` | Prebuilt archive |
 | **Linux** | ARM64 | `Yanbai-*-linux-arm64.tar.gz` | Prebuilt archive |
-| **macOS** | Apple silicon | `Yanbai-*-macos-arm64.dmg` | Unsigned; right-click and Open on first launch |
-| **macOS** | Intel | `Yanbai-*-macos-x64.dmg` | Unsigned; right-click and Open on first launch |
+| **macOS** | Apple silicon | `Yanbai-*-macos-arm64.dmg` | App installer image; no Developer ID signing or notarization |
+| **macOS** | Intel | `Yanbai-*-macos-x64.dmg` | App installer image; no Developer ID signing or notarization |
 
 **Windows**: run the installer, or unzip the portable package and start `Yanbai.exe`.
 
@@ -83,13 +83,7 @@ cd Yanbai-<version>-linux-x86_64
 ./run.sh
 ```
 
-**macOS**: open the dmg and drag Yanbai into Applications. The builds are neither signed nor notarised, so Gatekeeper blocks the first launch: right-click the icon and choose Open, or run
-
-```bash
-xattr -dr com.apple.quarantine /Applications/Yanbai.app
-```
-
-If you would rather skip the dmg, `Yanbai-<version>-macos-<arch>.app.tar.gz` contains the `.app` itself.
+**macOS**: open the `.dmg` and drag Yanbai to Applications, or extract the `.app.tar.gz` archive. Builds use ad-hoc signing and have no Developer ID signature or notarization. If macOS blocks launch, follow [Apple’s instructions for opening an app from an unidentified developer](https://support.apple.com/102445).
 
 ---
 
@@ -97,18 +91,33 @@ If you would rather skip the dmg, `Yanbai-<version>-macos-<arch>.app.tar.gz` con
 
 - **Windows** 10 or 11, x64 or ARM64.
 - **Linux** x86_64 or aarch64 with the GTK 3 and `webkit2gtk-4.1` runtime libraries.
-- **macOS** 10.13 or later, Apple silicon or Intel.
 
 ---
 
+## First launch and local data
+
+First launch displays a native license window with the complete Chinese and English texts and prominent terms. “Accept and continue” atomically saves `license-acceptance.json` in the application data directory, recording the SHA-256 of both license texts, app version, acceptance time and displayed language, then opens the editor. An unchanged license is not asked about again because of an app version or interface language change. Changed text, a missing record or a damaged record requires confirmation again. The editor does not open if the record cannot be saved.
+
+“Decline and exit”, closing the window or Escape exits without saving the refusal or creating the editor's WebView, preferences, logs, drafts or image cache. The prompt appears next time. Declining a new license does not clear existing data from an older version. Operating-system process records are outside the app's control.
+
+The application data directory is `%APPDATA%/com.speechlessmanbilibili.yanbai` on Windows, `$XDG_DATA_HOME/com.speechlessmanbilibili.yanbai` on Linux (default `~/.local/share/com.speechlessmanbilibili.yanbai`), and `~/Library/Application Support/com.speechlessmanbilibili.yanbai` on macOS.
+
+- Recovery drafts: only tabs with unsaved changes are backed up. They include text, saved baseline, encoding, file and image base directories, cursor and scroll positions, and other recovery state. Edits are backed up after about three seconds to locally encrypted `recovery.enc`; drafts are cleared when no unsaved changes remain or after a normal confirmed exit. Legacy `recovery.json` can still be migrated. Read, decryption or key errors preserve the original files and pause overwrite and cleanup.
+- Recovery key: `recovery.key` is stored beside the draft and retained after normal exit. Windows protects it with the current user's DPAPI; Linux/macOS rely on local file permissions. Encryption does not replace device access control. Deleting a draft while editing does not turn off backup, and it may be recreated. Do not change or delete the key while the app is running.
+- Image resources: originals pasted, dropped or imported from Word are staged in `image-resources` and reused by content hash; saving places resources beside the document according to “Include image resources”. Closing a document does not automatically delete the cache. You may clean it after exit, but images not yet saved beside a document and recovery drafts may still refer to it.
+- Preferences and runtime caches: language, theme and view preferences use WebView local storage; the WebView also maintains its own profile and caches. These are separate from recovery drafts and are not cleared when documents close.
+- Logs: local diagnostic logging starts after acceptance. It records runtime/framework diagnostics and does not deliberately record document text; error details may contain paths. The default rotates at about 40 KB per file and retains the current log and one previous log. Normal exit does not delete logs. Windows logs are in `%LOCALAPPDATA%/com.speechlessmanbilibili.yanbai/logs`, Linux logs are in `logs` under the application data directory above, and macOS logs are in `~/Library/Logs/com.speechlessmanbilibili.yanbai`.
+
+The Software does not upload this local data. External image addresses in Markdown are retained, but the current app's content security policy blocks loading external images in the document, and saving does not download them. Actively opening external links may open a browser and cause network activity; standalone HTML exports also restrict external resources. Exit normally and back up needed documents and images before cleaning local files.
+
 ## Feedback
 
-Found a bug or want a feature? Open an [issue](https://github.com/Speechlessmanbilibili/Yanbai-Releases/issues). Describe the steps that triggered the problem and, if you can, a minimal sample that reproduces it. Do not attach documents that contain confidential or personal information: issues are public, and the license treats feedback as non-confidential. Submitting an issue means you agree to the feedback license in [CONTRIBUTING.md](CONTRIBUTING.md).
+Found a bug or want a feature? Open an [issue](https://github.com/Speechlessmanbilibili/Yanbai-Releases/issues). Describe the steps that triggered the problem and, if you can, a minimal sample that reproduces it. Issues are public; consider a synthetic minimal sample or redaction. Feedback permissions and confidentiality terms are in Section 5 of the software license.
 
 ---
 
 ## Copyright & License
 
-The builds in this repository are distributed under the [Yanbai End User License Agreement](LICENSE.md) (Chinese version: [LICENSE_zh.md](LICENSE_zh.md)): you may download, install, and use them for personal or commercial purposes free of charge; redistributing, reselling, or publishing modified builds is not permitted. The source code is not public, and this license grants no access to it. Third-party components and their own license terms are listed in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). The installer shows this agreement before it copies any files. In the app, open Settings and select Licence and third-party notices to read the full text.
+The official builds are distributed under the [Yanbai Software License](LICENSE.md) (Chinese version: [LICENSE_zh.md](LICENSE_zh.md)). Personal and commercial use, backups and internal deployment to affiliates, employees and contractors acting for your organization are free. External redistribution, sale, rental, public repository inclusion and bundled distribution require the Licensor's prior written permission; permitted internal deployment is exempt. The source code is not public, and this license grants no access to it. Third-party components and their own license terms are listed in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 
 Copyright © 2026 SilentPerson. All rights reserved.

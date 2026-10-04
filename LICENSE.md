@@ -1,187 +1,75 @@
-# Yanbai End User License Agreement
+# Yanbai Software License
 
 **English** | [简体中文](LICENSE_zh.md)
 
 Copyright © 2026 SilentPerson. All rights reserved.
 
-**Please read this Agreement carefully.** This End User License Agreement (the “Agreement”) is a legal agreement between you (“you”, the “Licensee”) and the copyright holder of the software known as Yanbai (砚白) (the “Licensor”), and it governs your use of that software. By downloading, installing, copying, or otherwise using the software, you confirm that you have read, understood, and agree to be bound by this Agreement. If you do not agree to any part of this Agreement, you must not download, install, or use the software.
+This license sets out the permission to use Yanbai (砚白), its installers, archives and accompanying documentation (the “Software”). The copyright holder is the “Licensor”. The Licensor permits you to download official copies and run the installer or license prompt solely to view this license and decide whether to accept it; permission to install and otherwise use the Software takes effect upon your express acceptance. You may accept this license through an express acceptance option in the installer or the Software. Downloading or viewing this license alone does not establish that you have read, understood or accepted it. If you do not accept it, do not install or continue using the Software; you may close its license prompt without entering the editor.
 
-**Important terms: Please pay particular attention to the feedback license in Section 8.1, the warranty and support limitations in Section 9.2, termination under Section 10.2, the warranty disclaimers in Section 11, the liability limitations and exceptions in Section 12, assignment under Section 15.2, interpretation of the language texts under Section 16.4, and jurisdiction under Section 17.2.**
+**Important terms: Please pay particular attention to the feedback permission in Section 5, the warranty disclaimers, loss exclusions, zero liability cap and mandatory exceptions in Section 6, termination in Section 7, and the language and court provisions in Sections 8.3 and 8.4. You may request an explanation through the contact address below before accepting.**
 
-## 1. Definitions
+## 1. Permission to use
 
-1.1 “Software” means the computer program known as Yanbai (砚白) in object code form, together with the installers, archives, documentation, and any updates or supplements distributed by the Licensor, but excluding the Third-Party Components defined in Section 1.6.
+1.1 If you accept and comply with this license, the Licensor grants you a non-exclusive, royalty-free license to download and install official copies, use the Software for personal or commercial purposes, make a reasonable number of backup and archival copies, and deploy it internally within your organization. The number of documents, number of users and duration of use are not limited. The license continues unless terminated under Section 7.
 
-1.2 “Official Distribution Channel” means the repository published by the Licensor at <https://github.com/Speechlessmanbilibili/Yanbai-Releases>, including its release pages and its issue tracker.
+1.2 Internal deployment includes copies supplied to your organization's affiliates, employees and contractors solely for internal work on its behalf, including internal software sources, system images and device management. Such deployment must not make the Software available to the public or charge a fee for the Software. If you accept on an organization's behalf, you must have authority to do so.
 
-1.3 “you” and “Licensee” mean the individual person, or the legal entity, that downloads, installs, or uses the Software. Where a legal entity is the Licensee, “you” also includes (a) that entity's affiliates, and (b) the employees and contractors of that entity and of its affiliates, in each case only when they act on the entity's behalf. Where you use the Software on behalf of a legal entity, you represent that you are authorized to bind that entity to this Agreement.
+1.3 Official copies and new releases are available at <https://github.com/Speechlessmanbilibili/Yanbai-Releases>. Rights not expressly granted are reserved. Except for the internal deployment expressly allowed here or the Licensor's prior written permission, this license is not transferable and does not permit sublicensing.
 
-1.4 “Commercial Use” means any use of the Software by a commercial entity, or any use for or on behalf of a commercial entity, or in the course of a trade, business, or profession, whether or not for direct monetary compensation.
+## 2. Restrictions
 
-1.5 “Internal Deployment” means reproduction and distribution of the Software within your organization, that is, between you and your affiliates and to your employees and contractors, for internal business purposes, provided that the Software is not made available to the public and no fee is charged for it.
+2.1 Except for internal deployment allowed by Section 1.2 or the Licensor's prior written permission, you must not redistribute, sublicense, sell, resell, rent, lease, lend or otherwise supply the Software outside your organization, or distribute it within another product, installation medium, bundle, package manager or public software repository. Written permission may be requested at the contact address below.
 
-1.6 “Third-Party Components” means the software libraries, runtimes, and fonts, in source or binary form, that are incorporated in or distributed with the Software and that are owned by parties other than the Licensor. A list is provided in the file `THIRD_PARTY_NOTICES.md` distributed with the Software.
+2.2 You must not remove, obscure or alter copyright notices, attribution or license texts, including `LICENSE.md`, `LICENSE_zh.md` and `THIRD_PARTY_NOTICES.md`; present a modified or derivative build as originating from or endorsed by the Licensor through use of the Software's or Licensor's name; or use the Software unlawfully. Reverse engineering, decompilation and disassembly are prohibited except to the extent applicable law does not permit that restriction. You must comply with applicable export control and sanctions laws.
 
-1.7 “Notice” means a written communication sent through the channel designated in Section 14.
+2.3 The Software's source code is not public. This license grants no right to access, use or modify that source code and is not an open source license. No patent, trademark or other intellectual property license is granted except as expressly stated.
 
-1.8 “your organization” means you and, where you are a legal entity, your affiliates, together with the employees and contractors of each of them.
+## 3. Third-party components and documents
 
-## 2. Grant of License
+3.1 Third-party libraries, runtimes and fonts are governed by their own licenses. This license does not modify, restrict or replace those licenses or rights granted under them. The component list, versions, license expressions and selected options are in `THIRD_PARTY_NOTICES.md`; bundled font license texts are in `THIRD_PARTY_LICENSES/`. You must comply with the applicable third-party terms.
 
-2.1 Subject to your compliance with this Agreement, the Licensor grants you a limited, non-exclusive, non-transferable, non-sublicensable, royalty-free license, terminable only as provided in Section 2.3, to:
+3.2 Creating, opening, editing, pasting, saving or exporting a document with the Software does not change the existing rights of you or other lawful right holders in that document. The Licensor claims no ownership of, or license to, document content merely because it is processed by the Software. You are responsible for backing up documents you consider important.
 
-(a) download and install copies of the Software obtained from the Official Distribution Channel;
+## 4. Local processing and updates
 
-(b) use the Software for personal purposes and for Commercial Use, without limitation as to the number of documents, the number of users, or duration;
+4.1 The Software processes documents locally. It does not collect telemetry, usage statistics or crash reports, or automatically upload document content to the Licensor or third parties. Its fonts, mathematics and diagram resources are bundled and loaded locally. Local settings, license acceptance records, recovery drafts, image resources and logs are not uploaded by the Software.
 
-(c) reproduce a reasonable number of copies of the Software for backup and archival purposes, including copies held by colleagues within your organization as part of Internal Deployment; and
+4.2 If you actively open an external link or access an external service, the browser or service may make network requests and handle information under its own terms. The operating system, WebView runtime and other software on your device may also have their own network activity. This license's description of local processing does not describe those independent activities.
 
-(d) carry out Internal Deployment.
+4.3 The Software does not automatically install updates. You obtain new versions from the official distribution channel. Changes to data handling will be described in the relevant release notes. Practical details of local recovery, image resources and logs are provided in the accompanying instructions.
 
-2.2 All rights not expressly granted in this Agreement are reserved by the Licensor.
+## 5. Feedback
 
-2.3 The license granted in this Section 2 remains in effect for as long as you comply with this Agreement. The Licensor may terminate it only on the grounds set out in Section 10.2, and, except where the breach is incapable of remedy (for example, unauthorized redistribution of the Software) or where continued use would cause irreparable harm, the Licensor will first give you Notice and a reasonable period of at least thirty (30) days to remedy the breach. No refund is due on termination, as no fee was paid.
+**5.1 Feedback is voluntary. If you submit feedback, suggestions or defect reports, to the extent you are entitled to license those rights, you grant the Licensor a perpetual, worldwide, royalty-free, irrevocable, non-exclusive license to use, reproduce, modify, distribute and incorporate that material into the Software. Except as required by law or separately agreed, the Licensor has no obligation of confidentiality, attribution or compensation in relation to that feedback.**
 
-## 3. Restrictions
+5.2 Submit feedback through <https://github.com/Speechlessmanbilibili/Yanbai-Releases/issues>. The contact email below is for contacting the Licensor, requesting written permission or explanations, and delivering formal notices. The feedback instructions describe how to prepare useful examples.
 
-3.1 You shall not, and shall not permit any third party to:
+## 6. Warranties and liability
 
-(a) distribute, sublicense, sell, resell, rent, lease, lend, or otherwise make the Software available to any person or entity outside your organization; Internal Deployment within your organization is permitted under Section 2.1(d);
+**6.1 To the maximum extent permitted by applicable law, the Software is provided “as is” and “as available”, without express, implied, statutory or other warranties, including merchantability, fitness for a particular purpose or non-infringement. The Licensor does not warrant that it will be error-free, operate without interruption, or preserve or correctly process any document. There is no obligation to provide updates or support through issues, email or any other channel. Oral or written advice does not create a warranty not expressly stated in this license.**
 
-(b) incorporate the Software into another product, installation medium, or software repository for distribution outside your organization, or distribute it as part of such a bundle, without the prior written consent of the Licensor. This does not restrict internal software sources, system images, or device-management distribution within your organization as permitted by Section 2.1(d);
+**6.2 Subject to Section 6.4 and to the maximum extent permitted by applicable law, the Licensor is not liable for any indirect, incidental, special, exemplary, punitive or consequential damages, or any loss of data, corruption of documents, loss of profits, loss of goodwill or business interruption arising out of or in connection with the Software or this license, however caused and under any theory of liability, even if advised of the possibility of such losses. The listed loss exclusions are not limited to losses classified as indirect.**
 
-(c) reverse engineer, decompile, or disassemble the Software, except to the extent that such a restriction is expressly prohibited by applicable law;
+**6.3 Separately from the loss exclusions above, subject to Section 6.4 and to the maximum extent permitted by applicable law, the Licensor's aggregate liability arising out of or in connection with the Software or this license must not exceed the amount you actually paid to the Licensor for the Software. The Software is licensed free of charge, so that amount and the liability cap are zero.**
 
-(d) remove, obscure, or alter any copyright notice, attribution, or license text contained in or displayed by the Software, including the files `LICENSE.md`, `LICENSE_zh.md`, and `THIRD_PARTY_NOTICES.md` distributed with it;
+**6.4 All warranty exclusions, loss exclusions and liability limits in this license are subject to mandatory law. They do not exclude or limit liability for death or personal injury caused by the Licensor's negligence, fraud or fraudulent misrepresentation, willful misconduct or gross negligence, or any other liability that cannot lawfully be excluded or limited. Non-waivable consumer rights are unaffected. If applicable law prohibits an exclusion or limit, it applies only to the extent the law permits.**
 
-(e) use the names “Yanbai” or “砚白”, or the name of the Licensor, to promote a modified or derivative build in a manner that suggests that the build originates from, or is endorsed by, the Licensor; or
+## 7. Duration, termination and notices
 
-(f) use the Software for any purpose that is unlawful under applicable law.
+7.1 This license takes effect when you expressly accept it. Revised terms apply only to releases accompanied by those terms; a previously distributed release remains governed by the text that accompanied it. Updating the Software does not itself amend the license for an older release.
 
-3.2 Package managers, public software repositories, and other distributors that wish to carry the official artifacts must obtain the prior written consent of the Licensor. Such consent may be requested through the channel in Section 14.
+**7.2 For a material breach that can be remedied, the Licensor may deliver a written notice identifying the breach and allowing a reasonable cure period of at least thirty days after receipt. The notice must state that the license will terminate at the end of that period if the breach has not been remedied. The license terminates at that deadline only if the breach remains unremedied. For a material breach that cannot be remedied, the Licensor may deliver a written notice terminating the license immediately upon receipt.**
 
-3.3 No patent license, trademark license, or other intellectual property license is granted under this Agreement except as expressly stated. All product names, trade names, and trademarks remain the property of their respective owners.
+**7.3 On termination, cease using the Software and delete or destroy copies you possess or control, subject to rights that applicable law does not permit this license to restrict. Termination does not change document rights or rights under third-party licenses. Terms concerning retained rights, restrictions, feedback, warranties and liability, notices and disputes continue to apply to the extent their nature requires.**
 
-## 4. Third-Party Components
+7.4 Contact the Licensor and send formal notices to <speechlessmans@outlook.com>. Notices to you must be delivered in writing to a contact address you provide or by another legally effective method. Merely publishing an announcement or new license on the official channel does not make an individual notice effective against every user.
 
-4.1 The Software incorporates Third-Party Components, including components of the Rust ecosystem, Tauri, KaTeX, Mermaid, and the HarmonyOS Sans SC font. The complete list, with versions and licenses, is the file `THIRD_PARTY_NOTICES.md` distributed with the Software.
+## 8. Other terms
 
-4.2 Third-Party Components are governed exclusively by their own license terms. This Agreement does not modify, restrict, or supersede those terms, and it grants no rights in respect of Third-Party Components beyond those conferred by their own licenses. Where a Third-Party Component is offered under more than one license, the Licensor relies on the option recorded in the “Selected” column of `THIRD_PARTY_NOTICES.md`.
+8.1 This license sets out the terms for the Software, subject to separate written permissions or agreements and mandatory law. An invalid or unenforceable provision does not affect the remaining provisions. Failure or delay in exercising a right does not waive it.
 
-4.3 Within the scope of your use of the Software under this Agreement, you are responsible for complying with those terms. The license texts of the bundled fonts are distributed in the directory `THIRD_PARTY_LICENSES/`.
+8.2 This license does not contain advance consent to transfer the entire license relationship or the Licensor's obligations to another person. Any such transfer must comply with applicable law.
 
-## 5. Source Code
+**8.3 The English and Chinese texts have equal effect. In case of ambiguity, the English text prevails, unless mandatory law requires the local-language text to govern.**
 
-5.1 The Software is distributed solely in object code form. The source code of the Software is not published by the Licensor, and this Agreement grants no right of access to the source code and no right to use or modify it.
-
-5.2 Nothing in this Agreement shall be construed as an open source license. This Section does not restrict any right you may have under the license of a Third-Party Component.
-
-## 6. Data, Privacy, and Updates
-
-6.1 The Software does not collect telemetry, usage statistics, or crash reports, and does not transmit your documents or any part of their content to the Licensor or to any third party.
-
-6.2 The Software does not perform network requests on its own initiative. Its font, mathematics, and diagram resources are bundled and loaded locally.
-
-6.3 Any log files the Software writes are stored locally on your device and are not uploaded.
-
-6.4 The Software does not install updates automatically; new versions are obtained by you from the Official Distribution Channel. Section 9 applies to such releases.
-
-6.5 This Section describes the Software itself. The operating system, the WebView runtime, and other software on your device may perform their own network activity, which is outside the Licensor's control.
-
-6.6 In this version, the Software keeps an encrypted crash-recovery draft of open documents in a file named `recovery.enc` inside its application data directory. That file stores the full text of the documents you have open, together with the file paths involved. The draft is encrypted locally and updated while you edit; it is cleared when you close the documents normally. Delete the file if you do not want the draft to remain.
-
-6.7 If a future version changes how data is handled, the Licensor will state the change in that version's release notes.
-
-## 7. Your Content
-
-7.1 You retain all rights, title, and interest in the documents you create, open, edit, save, paste into, or export with the Software. The Licensor claims no ownership of, and no license to, that content.
-
-7.2 The Software processes your documents locally on your device. You are responsible for maintaining backups of documents you consider important.
-
-## 8. Feedback
-
-**8.1 If you submit feedback, suggestions, or defect reports, you grant the Licensor a perpetual, worldwide, royalty-free, irrevocable, non-exclusive license to use, reproduce, modify, distribute, and incorporate them into the Software, without any obligation of confidentiality, attribution, or compensation. Feedback is not treated as confidential: do not include confidential information, personal data, or document content in a report. You are not required to submit feedback.**
-
-## 9. Updates and Support
-
-9.1 The Licensor may, but is not obliged to, release updates, upgrades, or new versions of the Software. Any such release is governed by this Agreement unless it is accompanied by a separate license agreement.
-
-**9.2 The Licensor provides no warranty and assumes no support obligation under this Agreement, whether through an issue tracker, by electronic mail, or otherwise.**
-
-## 10. Term and Termination
-
-10.1 This Agreement takes effect upon your first download, installation, or use of the Software and continues until terminated.
-
-**10.2 Your rights under this Agreement terminate if you materially breach any provision of this Agreement, the Licensor has given you Notice of the breach under Section 2.3, and you have failed to remedy it within the period stated in that Notice. Upon termination you must cease all use of the Software and delete or destroy all copies in your possession or control.**
-
-10.3 The Licensor may revise this Agreement for future releases. A release already distributed remains governed by the text of this Agreement that accompanied it.
-
-10.4 Sections 1, 3, 4, 5, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, and 17 survive termination of this Agreement.
-
-## 11. Disclaimer of Warranty
-
-**11.1 THE SOFTWARE IS PROVIDED “AS IS” AND “AS AVAILABLE”, WITHOUT WARRANTY OF ANY KIND, WHETHER EXPRESS, IMPLIED, STATUTORY, OR OTHERWISE, INCLUDING WITHOUT LIMITATION ANY WARRANTY OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT.**
-
-**11.2 WITHOUT LIMITING SECTION 11.1, THE LICENSOR DOES NOT WARRANT THAT THE SOFTWARE WILL BE ERROR-FREE OR OPERATE WITHOUT INTERRUPTION, OR THAT IT WILL PRESERVE OR CORRECTLY PROCESS ANY DOCUMENT.**
-
-**11.3 No advice or information, whether oral or written, obtained from the Licensor shall create any warranty not expressly stated in this Agreement.**
-
-**11.4 Some jurisdictions do not allow the exclusion of certain warranties. To the extent such a rule applies to you, the exclusions in this Section apply to the maximum extent permitted by applicable law.**
-
-## 12. Limitation of Liability
-
-**12.1 TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE LICENSOR SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, PUNITIVE, OR CONSEQUENTIAL DAMAGES, OR FOR ANY LOSS OF DATA, CORRUPTION OF DOCUMENTS, LOSS OF PROFITS, LOSS OF GOODWILL, OR BUSINESS INTERRUPTION, HOWEVER CAUSED AND UNDER ANY THEORY OF LIABILITY, ARISING OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THIS AGREEMENT, EVEN IF THE LICENSOR HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.**
-
-**12.2 SUBJECT TO SECTION 12.3 AND ANY RIGHTS THAT CANNOT BE EXCLUDED OR LIMITED UNDER APPLICABLE LAW, AND TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE AGGREGATE LIABILITY OF THE LICENSOR UNDER OR IN CONNECTION WITH THIS AGREEMENT SHALL NOT EXCEED THE AMOUNT ACTUALLY PAID BY YOU TO THE LICENSOR FOR THE SOFTWARE, WHICH IS ZERO.**
-
-**12.3 Nothing in this Agreement excludes or limits the Licensor's liability for:**
-
-**(a) death or personal injury caused by the Licensor's negligence;**
-
-**(b) fraud or fraudulent misrepresentation;**
-
-**(c) willful misconduct or gross negligence; or**
-
-**(d) any other liability that cannot be excluded or limited under applicable law.**
-
-**12.4 If you are a consumer, you may have statutory rights that cannot be waived by contract. Nothing in this Agreement affects those rights.**
-
-## 13. Export Control and Sanctions
-
-13.1 You shall comply with all applicable export control and economic sanctions laws and regulations, and shall not export, re-export, transfer, or use the Software in violation of them, including by providing it to any person or entity on a restricted-party list, or for any restricted end use such as the development or production of weapons of mass destruction.
-
-13.2 In this version, the Software does not encrypt communications. You are responsible for determining whether your use requires an export authorization or classification in your jurisdiction.
-
-## 14. Notices
-
-14.1 You may contact the Licensor by electronic mail at <speechlessmans@outlook.com>. Notices to the Licensor, including notices of breach and requests for written consent required by this Agreement, must be sent to that address. The email address is for contact and formal Notices only; it is not a channel for feedback, suggestions, defect reports, or confidential submissions.
-
-Feedback, suggestions, defect reports, and general non-confidential questions may be submitted through the issue tracker of the Official Distribution Channel at <https://github.com/Speechlessmanbilibili/Yanbai-Releases/issues>.
-
-Do not send confidential information, personal data, or document contents to the email address or include them in public submissions.
-
-14.2 Notices to you may be given by publishing a revised version of this Agreement or a notice on the Official Distribution Channel. Such notice takes effect on publication.
-
-## 15. Assignment
-
-15.1 You may not assign or transfer this Agreement, or any rights under it, without the prior written consent of the Licensor.
-
-**15.2 The Licensor may assign this Agreement to an affiliate, or to a successor in connection with a merger, acquisition, or sale of substantially all of its assets, provided that the assignee assumes the Licensor's obligations under Section 6. The Licensor will give Notice of such an assignment.**
-
-## 16. Miscellaneous
-
-16.1 This Agreement constitutes the entire agreement between you and the Licensor with respect to the Software and supersedes all prior or contemporaneous understandings regarding its subject matter.
-
-16.2 If any provision of this Agreement is held to be invalid or unenforceable, that provision shall be severed and the remaining provisions shall remain in full force and effect.
-
-16.3 No failure or delay by the Licensor in exercising any right under this Agreement constitutes a waiver of that right.
-
-**16.4 This Agreement is executed in the English and Chinese languages. Both texts are equally authentic; in the event of any ambiguity, the English text prevails. Where mandatory law applicable to you requires that the local-language text govern, that requirement prevails over this Section 16.4.**
-
-## 17. Governing Law and Dispute Resolution
-
-17.1 This Agreement is governed by the laws of the mainland of the People's Republic of China, without regard to its conflict-of-law rules.
-
-**17.2 The Licensor's domicile is in the mainland of the People's Republic of China; it may be confirmed through the channel in Section 14. Any dispute arising out of or in connection with this Agreement shall be submitted to the competent people's court at the Licensor's domicile. If the Licensor assigns this Agreement under Section 15.2, the assignee's domicile replaces the Licensor's for the purposes of this Section.**
-
-**17.3 If you are a consumer, you may also bring proceedings before the courts of your place of residence where mandatory law so provides.**
+**8.4 This license is governed by the laws of the mainland of the People's Republic of China, without regard to conflict-of-law rules. Disputes arising out of or in connection with it shall be submitted to the competent people's court at the Licensor's domicile in mainland China, which may be confirmed through the contact address above. Mandatory jurisdiction rules prevail; consumers may bring proceedings at their place of residence where mandatory law so provides.**

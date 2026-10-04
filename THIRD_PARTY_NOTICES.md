@@ -1,8 +1,8 @@
 # Third-Party Notices
 
-Yanbai (砚白) incorporates the third-party components listed below. They are distributed in binary form as part of the Software and remain governed by their own license terms; nothing in the Yanbai End User License Agreement modifies or replaces those terms.
+Yanbai (砚白) incorporates the third-party components listed below. They are distributed in binary form as part of the Software and remain governed by their own license terms; nothing in the Yanbai Software License modifies or replaces those terms.
 
-本文件列出随砚白以二进制形式分发的第三方组件，各组件仍适用其自身的许可条款，《砚白最终用户使用许可协议》不改变也不替代这些条款。
+本文件列出随砚白以二进制形式分发的第三方组件，各组件仍适用其自身的许可条款，《砚白软件使用许可》不改变也不替代这些条款。
 
 ## How this list is built / 清单的生成方式
 
@@ -13,7 +13,7 @@ Yanbai (砚白) incorporates the third-party components listed below. They are d
 - 中文：保留原始许可表达式，“Selected”列按受版本管理的显式配置选择；未登记的复合表达式或缺少许可的组件会使生成中止，等待人工核对。
 - Components under MPL-2.0 and LGPL are used unmodified; their source is available from the component’s published distribution (crates.io or npm).
 
-## Rust crates (378)
+## Rust crates (379)
 
 | Component | Version | Source | Licenses | Selected |
 | --- | --- | --- | --- | --- |
@@ -154,6 +154,7 @@ Yanbai (砚白) incorporates the third-party components listed below. They are d
 | hex | 0.4.3 | registry+https://github.com/rust-lang/crates.io-index | MIT OR Apache-2.0 | MIT |
 | html5ever | 0.38.0 | registry+https://github.com/rust-lang/crates.io-index | MIT OR Apache-2.0 | MIT |
 | http | 1.5.0 | registry+https://github.com/rust-lang/crates.io-index | MIT OR Apache-2.0 | MIT |
+| http-range | 0.1.5 | registry+https://github.com/rust-lang/crates.io-index | MIT | MIT |
 | iana-time-zone | 0.1.65 | registry+https://github.com/rust-lang/crates.io-index | MIT OR Apache-2.0 | MIT |
 | ico | 0.5.0 | registry+https://github.com/rust-lang/crates.io-index | MIT | MIT |
 | icu_collections | 2.3.0 | registry+https://github.com/rust-lang/crates.io-index | Unicode-3.0 | Unicode-3.0 |

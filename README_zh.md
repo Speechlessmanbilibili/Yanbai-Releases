@@ -28,18 +28,18 @@
 ### 四种写作视图
 
 - **双栏、实时、原文、预览**：默认使用双栏，下次启动恢复上次选择的模式；切回双栏即回到默认。
-- **实时连续画布**：居中呈现连续文稿，编辑提示收在页边；普通文本单击即可在对应位置输入，点击外部后恢复排版。
+- **实时连续画布**：居中呈现连续文稿，编辑提示收在页边；单击正文、格式文本、代码或公式字形，在对应原文位置编辑，点击外部后恢复排版。按住 Alt 单击链接可编辑链接文字。
 - **内容原地编辑**：公式、表格、代码块、图表与 Callout 在文稿内呈现，可进入对应内容的编辑状态。
 - **任务列表**：呈现待办内容与完成状态，可进入编辑修改 Markdown 勾选标记。
 - **内嵌图片保护**：四种视图均保护内嵌图片字节；在文字编辑区显示为受保护的图片对象，可整图复制或删除，避免误改编码内容。
-- **粘贴与拖入图片**：粘贴剪贴板图片，或拖入 PNG、JPEG、GIF、BMP、WebP 文件，即将图片原始字节嵌入文档，保存后无需依赖原图片文件。
+- **粘贴与拖入图片**：PNG、JPEG、GIF、BMP、WebP 原图以短相对路径插入，保存时直接复制到文档所在目录。同名图片哈希一致时复用，内容不同时提供选择。原生保存窗口默认勾选“包含图片资源”；取消勾选后保存可读的图片占位符。
 
 ### 纯 Rust 打造的文档引擎
 - **Word 97-2003 (.doc) 零依赖解析**：纯 Rust 读取 OLE2 复合文档，无需 Office 或 LibreOffice，把旧版 `.doc` 解析成结构干净的 Markdown。
-- **双向 Word 文档 (.docx) 转换**：导入标题层级、粗斜体、列表、超链接、表格及受支持的图片；导出标准 OOXML，并提供中西文排版样式。
-- **多格式另存**：可编辑并按原扩展名保存 Markdown、JSON、YAML、TOML、CSV、HTML、常见代码/配置文本，也可另存为 Word (`.docx`)。打开的 Word 文档通过“另存为”保存；用户选择已有 `.docx` 路径并确认覆写后即可覆盖该文件。
-- **保留编码与显式转换**：保存沿用探测到的编码与 BOM，也可选择“另存为 UTF-8…”主动转换。损坏的编码文本或原编码无法表示的字符会明确报错，保存前还会检查文件是否被外部修改。
-- **会话持久化与崩溃恢复**：自动备份草稿并显示备份状态，恢复文件上限为 64 MiB。
+- **双向 Word 文档 (.docx) 转换**：导入时识别标题层级、粗斜体、列表、超链接与表格；导出时生成标准 OOXML，自带规整的中文排版样式。
+- **常见文本文件编辑与另存**：可打开并按原扩展名保存 Markdown、JSON、YAML、TOML、CSV、HTML、代码与配置文件；“另存为”也可导出 Word (`.docx`)。
+- **保留编码与显式转换**：保存沿用探测到的编码与 BOM，也可选择“另存为 UTF-8…”主动转换。损坏的编码文本或原编码无法表示的字符会明确报错。保存及另存回当前文件前检查外部修改；另存为时阻止覆盖其他已打开文档。
+- **会话持久化与崩溃防护**：后台防抖备份草稿，用加密内容池复用相同正文与存盘基线，兼容旧版恢复文件。
 
 ### 学术与可视化排版
 - **KaTeX 矢量公式**：行内公式（如 `$E=mc^2$`）与块级公式毫秒级排版。
@@ -70,8 +70,8 @@
 | **Windows** | ARM64 | `Yanbai-*-win-arm64.zip` | 便携包，解压即用 |
 | **Linux** | x86_64 | `Yanbai-*-linux-x86_64.tar.gz` | 预编译压缩包 |
 | **Linux** | ARM64 | `Yanbai-*-linux-arm64.tar.gz` | 预编译压缩包 |
-| **macOS** | Apple 芯片 | `Yanbai-*-macos-arm64.dmg` | 未签名，首次打开要右键「打开」 |
-| **macOS** | Intel | `Yanbai-*-macos-x64.dmg` | 未签名，首次打开要右键「打开」 |
+| **macOS** | Apple 芯片 | `Yanbai-*-macos-arm64.dmg` | 应用安装镜像；无开发者证书签名与公证 |
+| **macOS** | Intel | `Yanbai-*-macos-x64.dmg` | 应用安装镜像；无开发者证书签名与公证 |
 
 **Windows**：运行安装程序，或解压便携包后直接启动 `Yanbai.exe`。
 
@@ -83,13 +83,7 @@ cd Yanbai-<版本号>-linux-x86_64
 ./run.sh
 ```
 
-**macOS**：打开 dmg，把「砚白」拖进「应用程序」。产物没有签名与公证，第一次打开会被 Gatekeeper 拦住，右键点图标选「打开」即可；也可以在终端执行：
-
-```bash
-xattr -dr com.apple.quarantine /Applications/Yanbai.app
-```
-
-不想用 dmg 的可以直接解压 `Yanbai-<版本号>-macos-<架构>.app.tar.gz`，里面就是 `.app`。
+**macOS**：打开 `.dmg`，将砚白拖入“应用程序”，或直接解压 `.app.tar.gz`。产物使用 ad-hoc 签名，没有开发者证书签名与公证；若 macOS 阻止启动，请按 [Apple 关于打开未识别开发者应用的说明](https://support.apple.com/zh-cn/102445)处理。
 
 ---
 
@@ -97,18 +91,33 @@ xattr -dr com.apple.quarantine /Applications/Yanbai.app
 
 - **Windows** 10 或 11，x64 或 ARM64。
 - **Linux** x86_64 或 aarch64，需要 GTK 3 与 `webkit2gtk-4.1` 运行库。
-- **macOS** 10.13 或更高，Apple 芯片或 Intel。
 
 ---
 
+## 首次启动与本地数据
+
+首次启动先显示原生许可窗口，提供中英文全文与重点提示。选择“同意并继续”后，在应用数据目录原子保存 `license-acceptance.json`，记录双语许可正文的 SHA-256、软件版本、同意时间及显示语言，然后打开编辑器。相同许可不会因版本或界面语言变化再次询问；正文变化、记录缺失或损坏时重新确认。记录无法保存时，不会进入编辑器。
+
+选择“不同意并退出”、关闭窗口或按 Esc，不保存拒绝结果，不创建编辑器的 WebView、偏好、日志、草稿或图片缓存；下次启动再次询问。拒绝新许可不会清除旧版已经保存的数据。操作系统自身的进程记录不由应用控制。
+
+应用数据目录在 Windows 为 `%APPDATA%/com.speechlessmanbilibili.yanbai`，Linux 为 `$XDG_DATA_HOME/com.speechlessmanbilibili.yanbai`（缺省 `~/.local/share/com.speechlessmanbilibili.yanbai`），macOS 为 `~/Library/Application Support/com.speechlessmanbilibili.yanbai`。
+
+- 恢复草稿：仅备份当前有未保存更改的标签页，包含正文、存盘基线、编码、文件与图片基础目录、光标及滚动位置等恢复状态。编辑后约三秒写入本地加密的 `recovery.enc`；没有未保存更改时、正常确认退出后会清除草稿。旧的 `recovery.json` 仍可迁移读取。读取、解密或密钥异常时保留原文件，并暂停覆盖与清理。
+- 恢复密钥：`recovery.key` 与草稿放在同一目录，正常关闭后保留。Windows 使用当前用户的 DPAPI 保护密钥，Linux/macOS 的密钥依赖本地文件权限。加密不代替设备访问控制。编辑期间删除草稿不会关闭自动备份，之后可能重新生成；请勿在应用运行时删改密钥。
+- 图片资源：粘贴、拖入及 Word 导入的图片原件暂存于 `image-resources`，按内容哈希复用；保存时按“包含图片资源”的选择放入文档同目录。资源缓存不会随关闭文档自动删除；退出应用后可自行清理，但尚未保存到文档目录的图片及恢复草稿可能仍引用它。
+- 偏好与运行时缓存：语言、主题和视图偏好由 WebView 本地存储保存；WebView 另维护自身的配置与缓存。它们不在恢复草稿中，关闭文档不会清除。
+- 日志：同意许可后才启用本地诊断日志，记录运行时/框架诊断，不主动记录文档正文；错误信息可能包含路径。默认每份约 40 KB 后轮转，保留当前日志和一份旧日志，不在正常退出时删除。Windows 日志位于 `%LOCALAPPDATA%/com.speechlessmanbilibili.yanbai/logs`，Linux 位于上述应用数据目录的 `logs`，macOS 位于 `~/Library/Logs/com.speechlessmanbilibili.yanbai`。
+
+这些本地数据不会由软件上传。Markdown 中的外链图片地址会保留，但当前应用的内容安全策略阻止正文直接加载外部图片，保存不会自动下载外链图片。主动打开外部链接可能交给浏览器并产生网络访问；独立 HTML 导出也限制外部资源加载。清理本地文件前请先正常退出并备份需要的文档和图片。
+
 ## 问题反馈
 
-用着有问题或者想要新功能，到 [Issues](https://github.com/Speechlessmanbilibili/Yanbai-Releases/issues) 提。写清触发步骤，能给一个最小复现样例最好。不要附含机密信息或个人信息的内容：Issue 是公开的，协议也把反馈按非保密信息处理。提交 Issue 即表示你同意[贡献指南](CONTRIBUTING.md)里的反馈许可条款。
+用着有问题或者想要新功能，到 [Issues](https://github.com/Speechlessmanbilibili/Yanbai-Releases/issues) 提。写清触发步骤，能给一个最小复现样例最好。Issue 公开可见，建议另造最小样例或先脱敏；反馈授权和保密等约定见使用许可第五节。
 
 ---
 
 ## 版权说明
 
-本仓库分发的安装包按[最终用户使用许可协议](LICENSE_zh.md)（英文版：[LICENSE.md](LICENSE.md)）授权：可以免费下载、安装，并在个人或商业环境中使用；不得再分发、售卖或发布修改版。源码不公开，本许可不授予源码访问权。随软件分发的第三方组件及其许可条款见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。安装程序开始复制文件前会显示这份协议；装好之后，打开“设置”中的“使用许可与第三方声明”即可查看全文。
+官方产物按[砚白软件使用许可](LICENSE_zh.md)（英文版：[LICENSE.md](LICENSE.md)）授权：免费用于个人与商业目的，允许备份及向代表组织开展内部工作的关联方、员工和承包商部署。对外再分发、售卖、出租、公开软件仓库收录及打包分发须事先取得许可方的书面同意；已允许的内部部署不受此限。源码不公开，本许可不授予源码访问权。 随软件分发的第三方组件及其许可条款见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
 
 Copyright © 2026 SilentPerson. All rights reserved.
