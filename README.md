@@ -31,6 +31,7 @@ This repository is the distribution point. It holds the installers, the prebuilt
 - **Continuous live canvas**: read and write on a centered page with discreet editing cues. Click text, formatting, code, or formula symbols to edit at the corresponding source position; click away to restore the rendered view. Alt-click links to edit their text.
 - **Rich content in place**: formulas, tables, code blocks, diagrams, and callouts render within the document and can be opened for editing.
 - **Task lists**: display tasks and their completion state; enter editing to change the Markdown checkboxes.
+- **Document links**: open HTTP(S), `mailto` and `tel` links in the system’s associated app; jump to anchors in the current document. Relative links open supported documents from the current document directory and reuse existing tabs. Save a new document before opening relative file links.
 - **Protected embedded images**: protect embedded image bytes in all four views. In text editing areas, images appear as protected objects that can be copied or removed as a whole without editing their encoded content.
 - **Paste and drop images**: insert PNG, JPEG, GIF, BMP, or WebP originals as short relative references. Saving copies images directly beside the document. Existing images with identical hashes are reused; different content prompts for a choice. The native save window includes a checked “Include image resources” option; clear it to save readable image placeholders.
 
@@ -38,7 +39,7 @@ This repository is the distribution point. It holds the installers, the prebuilt
 - **Zero-dependency Word 97-2003 (.doc) parsing**: reads the OLE2 compound file directly, no Office or LibreOffice involved, and turns legacy `.doc` files into clean Markdown.
 - **Bidirectional Word (.docx) conversion**: imports headings, formatting, lists, hyperlinks, and tables; exports standard OOXML with proper Chinese and Western typography.
 - **Common text file editing and Save As**: open and save Markdown, JSON, YAML, TOML, CSV, HTML, code, and configuration files under their original extensions; Save As can also export Word (`.docx`).
-- **Encoding-aware saving**: preserve the detected encoding and BOM, or choose “Save as UTF-8…” to convert explicitly. Invalid encoded text and characters the original encoding cannot represent produce an error. Saving, including Save As to the current file, checks external changes; Save As prevents overwriting another open document.
+- **Encoding-aware saving**: preserve the detected encoding and BOM, or choose “Save as UTF-8…” to convert explicitly. Invalid encoded text and characters the original encoding cannot represent produce an error. Saving, including Save As to the current file, checks external changes; Save As and Word/HTML export prevent overwriting another open document.
 - **Session persistence and crash recovery**: debounced encrypted backups share identical content and save baselines in a content pool, preserving compatibility with older recovery files.
 
 ### Academic and Visual Typography
@@ -52,7 +53,7 @@ This repository is the distribution point. It holds the installers, the prebuilt
 - **Warm terracotta palette** (primary `#a85d3e`, highlight `#e0a183`, ivory paper `#fdfbf7`) follows the system appearance by default. Choose Follow system, Light, or Dark in Settings; manual selections persist across restarts, and returning to Follow system clears the saved preference.
 - **Windows 11 Mica and Acrylic** window materials.
 - **Multi-tab management**: unsaved-change dots, middle-click to close, and a confirmation dialog offering Save (S), Don't Save (D), or Cancel (Esc). `Ctrl+Shift+T` reopens recently closed tabs.
-- **Windows integration**: optional `.md` / `.markdown` file association and an “Open with Yanbai” context menu entry, single-instance handling, and command-line file arguments.
+- **Windows integration**: optional `.md` / `.markdown` file association and an "Open with Yanbai" context menu entry, single-instance handling, and command-line file arguments.
 - **Export with embedded images**: Word (`.docx`) and standalone offline HTML embed supported local or `data:` images (PNG, JPEG, GIF, BMP, and WebP). Save web images locally and reference them from the document before exporting; SVG and unavailable images report an error. HTML exports include complete formulas and diagrams without rendering scripts. PDF printing is also available.
 - **Command palette**: `Ctrl+K` with fuzzy search over every action.
 
