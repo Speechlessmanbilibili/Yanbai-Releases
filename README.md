@@ -25,13 +25,21 @@ This repository is the distribution point. It holds the installers, the prebuilt
 
 ## Key Features
 
+### Writing Workbench
+
+- A workspace header manages files and tabs, while a rounded document canvas holds editing tools, content, and status. Outline and search panels open independently, preserving document width and scroll position.
+- The toolbar, complete context menu, shortcuts, command palette, and line-start `/` insertion share editing commands. Without a text selection, formatting acts at the caret and paragraph commands act on the current paragraph.
+- Table actions insert, remove, move, align, select, and clear rows or columns, with Markdown/plain text/CSV/HTML copying. Editing and display share column widths and cell typography.
+- Tab menus support batch closing, reopening, copying paths, and opening the containing folder. Unsaved documents are listed together for confirmation. File errors remain visible with details and Save As actions; saving and copying use lightweight success feedback.
+- Settings groups interface, editing, and application information, with document size, line width, line numbers, and motion preferences. Read the full licence and third-party notices. Both themes retain their palette, with coordinated rounded shapes, interruptible transitions, and reduced motion support.
+
 ### Four Writing Views
 
 - **Split, Live, Raw text, and Preview**: start in Split view and restore your selected view on the next launch. Choosing Split returns to the default.
-- **Continuous live canvas**: read and write on a centered page with discreet editing cues. Click text, formatting, code, or formula symbols to edit at the corresponding source position; click away to restore the rendered view. Alt-click links to edit their text.
-- **Rich content in place**: formulas, tables, code blocks, diagrams, and callouts render within the document and can be opened for editing.
-- **Task lists**: display tasks and their completion state; enter editing to change the Markdown checkboxes.
-- **Document links**: open HTTP(S), `mailto` and `tel` links in the system’s associated app; jump to anchors in the current document. Relative links open supported documents from the current document directory and reuse existing tabs. Save a new document before opening relative file links.
+- **Continuous live canvas**: edit the entire document on a centered page. Bold, italic, strikethrough, highlight, and inline code retain their styling while you type; their Markdown delimiters appear when the cursor enters the span and hide when it leaves. Selection, copying, undo, search, and replace work across the document, with history preserved between editing views and tabs.
+- **Rich content in place**: formulas and Mermaid diagrams show their source together with a preview while editing. Edit Markdown table cells directly or open table source; render safe merged HTML tables, images, footnotes, reference links, document properties, quotes, callouts, and collapsible details in place. Common fenced code languages have syntax highlighting and a copy button.
+- **Task lists**: click a checkbox to update its Markdown source and undo the change normally; Enter continues lists and quotes.
+- **Document links**: click to edit in Live view; use Ctrl/Cmd-click, the middle mouse button, or Ctrl/Cmd+Enter to open. Click normally in Preview. HTTP(S), `mailto` and `tel` open the system’s associated app; anchors jump within the document. Relative links open supported documents from its directory and reuse existing tabs. Save a new document before opening relative file links.
 - **Protected embedded images**: protect embedded image bytes in all four views. In text editing areas, images appear as protected objects that can be copied or removed as a whole without editing their encoded content.
 - **Paste and drop images**: insert PNG, JPEG, GIF, BMP, or WebP originals as short relative references. Saving copies images directly beside the document. Existing images with identical hashes are reused; different content prompts for a choice. The native save window includes a checked “Include image resources” option; clear it to save readable image placeholders.
 

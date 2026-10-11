@@ -397,15 +397,41 @@ Yanbai (砚白) incorporates the third-party components listed below. They are d
 | zvariant_derive | 5.15.0 | registry+https://github.com/rust-lang/crates.io-index | MIT | MIT |
 | zvariant_utils | 4.2.0 | registry+https://github.com/rust-lang/crates.io-index | MIT | MIT |
 
-## Frontend packages (91)
+## Frontend packages (120)
 
 | Component | Version | Source | Licenses | Selected |
 | --- | --- | --- | --- | --- |
 | @antfu/install-pkg | 2.0.1 | https://registry.npmjs.org/@antfu/install-pkg/-/install-pkg-2.0.1.tgz | MIT | MIT |
 | @braintree/sanitize-url | 7.1.2 | https://registry.npmjs.org/@braintree/sanitize-url/-/sanitize-url-7.1.2.tgz | MIT | MIT |
 | @chevrotain/types | 11.1.2 | https://registry.npmjs.org/@chevrotain/types/-/types-11.1.2.tgz | Apache-2.0 | Apache-2.0 |
+| @codemirror/autocomplete | 6.20.3 | https://registry.npmjs.org/@codemirror/autocomplete/-/autocomplete-6.20.3.tgz | MIT | MIT |
+| @codemirror/commands | 6.11.1 | https://registry.npmjs.org/@codemirror/commands/-/commands-6.11.1.tgz | MIT | MIT |
+| @codemirror/lang-css | 6.3.1 | https://registry.npmjs.org/@codemirror/lang-css/-/lang-css-6.3.1.tgz | MIT | MIT |
+| @codemirror/lang-html | 6.4.12 | https://registry.npmjs.org/@codemirror/lang-html/-/lang-html-6.4.12.tgz | MIT | MIT |
+| @codemirror/lang-javascript | 6.2.5 | https://registry.npmjs.org/@codemirror/lang-javascript/-/lang-javascript-6.2.5.tgz | MIT | MIT |
+| @codemirror/lang-json | 6.0.2 | https://registry.npmjs.org/@codemirror/lang-json/-/lang-json-6.0.2.tgz | MIT | MIT |
+| @codemirror/lang-markdown | 6.5.2 | https://registry.npmjs.org/@codemirror/lang-markdown/-/lang-markdown-6.5.2.tgz | MIT | MIT |
+| @codemirror/lang-python | 6.2.1 | https://registry.npmjs.org/@codemirror/lang-python/-/lang-python-6.2.1.tgz | MIT | MIT |
+| @codemirror/lang-rust | 6.0.2 | https://registry.npmjs.org/@codemirror/lang-rust/-/lang-rust-6.0.2.tgz | MIT | MIT |
+| @codemirror/language | 6.13.1 | https://registry.npmjs.org/@codemirror/language/-/language-6.13.1.tgz | MIT | MIT |
+| @codemirror/lint | 6.9.7 | https://registry.npmjs.org/@codemirror/lint/-/lint-6.9.7.tgz | MIT | MIT |
+| @codemirror/search | 6.7.2 | https://registry.npmjs.org/@codemirror/search/-/search-6.7.2.tgz | MIT | MIT |
+| @codemirror/state | 6.7.6 | https://registry.npmjs.org/@codemirror/state/-/state-6.7.6.tgz | MIT | MIT |
+| @codemirror/streamparser | 6.0.0 | https://registry.npmjs.org/@codemirror/streamparser/-/streamparser-6.0.0.tgz | MIT | MIT |
+| @codemirror/view | 6.43.14 | https://registry.npmjs.org/@codemirror/view/-/view-6.43.14.tgz | MIT | MIT |
 | @iconify/types | 2.0.0 | https://registry.npmjs.org/@iconify/types/-/types-2.0.0.tgz | MIT | MIT |
 | @iconify/utils | 3.1.6 | https://registry.npmjs.org/@iconify/utils/-/utils-3.1.6.tgz | MIT | MIT |
+| @lezer/common | 1.5.3 | https://registry.npmjs.org/@lezer/common/-/common-1.5.3.tgz | MIT | MIT |
+| @lezer/css | 1.3.8 | https://registry.npmjs.org/@lezer/css/-/css-1.3.8.tgz | MIT | MIT |
+| @lezer/highlight | 1.2.5 | https://registry.npmjs.org/@lezer/highlight/-/highlight-1.2.5.tgz | MIT | MIT |
+| @lezer/html | 1.3.13 | https://registry.npmjs.org/@lezer/html/-/html-1.3.13.tgz | MIT | MIT |
+| @lezer/javascript | 1.5.6 | https://registry.npmjs.org/@lezer/javascript/-/javascript-1.5.6.tgz | MIT | MIT |
+| @lezer/json | 1.0.3 | https://registry.npmjs.org/@lezer/json/-/json-1.0.3.tgz | MIT | MIT |
+| @lezer/lr | 1.4.10 | https://registry.npmjs.org/@lezer/lr/-/lr-1.4.10.tgz | MIT | MIT |
+| @lezer/markdown | 1.7.2 | https://registry.npmjs.org/@lezer/markdown/-/markdown-1.7.2.tgz | MIT | MIT |
+| @lezer/python | 1.1.19 | https://registry.npmjs.org/@lezer/python/-/python-1.1.19.tgz | MIT | MIT |
+| @lezer/rust | 1.0.3 | https://registry.npmjs.org/@lezer/rust/-/rust-1.0.3.tgz | MIT | MIT |
+| @marijn/find-cluster-break | 1.0.4 | https://registry.npmjs.org/@marijn/find-cluster-break/-/find-cluster-break-1.0.4.tgz | MIT | MIT |
 | @mermaid-js/parser | 1.2.1 | https://registry.npmjs.org/@mermaid-js/parser/-/parser-1.2.1.tgz | MIT | MIT |
 | @tauri-apps/api | 2.11.1 | https://registry.npmjs.org/@tauri-apps/api/-/api-2.11.1.tgz | Apache-2.0 OR MIT | MIT |
 | @tauri-apps/plugin-dialog | 2.7.3 | https://registry.npmjs.org/@tauri-apps/plugin-dialog/-/plugin-dialog-2.7.3.tgz | MIT OR Apache-2.0 | MIT |
@@ -417,6 +443,7 @@ Yanbai (砚白) incorporates the third-party components listed below. They are d
 | commander | 8.3.0 | https://registry.npmjs.org/commander/-/commander-8.3.0.tgz | MIT | MIT |
 | cose-base | 1.0.3 | https://registry.npmjs.org/cose-base/-/cose-base-1.0.3.tgz | MIT | MIT |
 | cose-base | 2.2.0 | https://registry.npmjs.org/cose-base/-/cose-base-2.2.0.tgz | MIT | MIT |
+| crelt | 1.0.7 | https://registry.npmjs.org/crelt/-/crelt-1.0.7.tgz | MIT | MIT |
 | cytoscape | 3.34.2 | https://registry.npmjs.org/cytoscape/-/cytoscape-3.34.2.tgz | MIT | MIT |
 | cytoscape-cose-bilkent | 4.1.0 | https://registry.npmjs.org/cytoscape-cose-bilkent/-/cytoscape-cose-bilkent-4.1.0.tgz | MIT | MIT |
 | cytoscape-fcose | 2.2.0 | https://registry.npmjs.org/cytoscape-fcose/-/cytoscape-fcose-2.2.0.tgz | MIT | MIT |
@@ -487,11 +514,13 @@ Yanbai (砚白) incorporates the third-party components listed below. They are d
 | safer-buffer | 2.1.2 | https://registry.npmjs.org/safer-buffer/-/safer-buffer-2.1.2.tgz | MIT | MIT |
 | scheduler | 0.27.0 | https://registry.npmjs.org/scheduler/-/scheduler-0.27.0.tgz | MIT | MIT |
 | strictdom | 1.0.1 | https://registry.npmjs.org/strictdom/-/strictdom-1.0.1.tgz | MIT | MIT |
+| style-mod | 4.1.4 | https://registry.npmjs.org/style-mod/-/style-mod-4.1.4.tgz | MIT | MIT |
 | stylis | 4.4.0 | https://registry.npmjs.org/stylis/-/stylis-4.4.0.tgz | MIT | MIT |
 | tailwind-merge | 3.6.0 | https://registry.npmjs.org/tailwind-merge/-/tailwind-merge-3.6.0.tgz | MIT | MIT |
 | tinyexec | 1.3.1 | https://registry.npmjs.org/tinyexec/-/tinyexec-1.3.1.tgz | MIT | MIT |
 | ts-dedent | 2.3.0 | https://registry.npmjs.org/ts-dedent/-/ts-dedent-2.3.0.tgz | MIT | MIT |
 | uuid | 14.0.2 | https://registry.npmjs.org/uuid/-/uuid-14.0.2.tgz | MIT | MIT |
+| w3c-keyname | 2.2.8 | https://registry.npmjs.org/w3c-keyname/-/w3c-keyname-2.2.8.tgz | MIT | MIT |
 
 ## Fonts
 
