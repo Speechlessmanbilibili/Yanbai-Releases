@@ -1,94 +1,96 @@
 <div align="center">
 
-# Yanbai Markdown Editor
+<img src="https://raw.githubusercontent.com/Speechlessmanbilibili/Yanbai-Releases/main/assets/readme/icon.png" width="80" height="80" alt="Yanbai app icon">
 
-**A bilingual Markdown editor with four writing views, built with Rust, Tauri 2, and React 19**
+# 砚白 · Yanbai
 
-[![Release](https://img.shields.io/github/v/release/Speechlessmanbilibili/Yanbai-Releases?color=a85d3e&logo=github)](https://github.com/Speechlessmanbilibili/Yanbai-Releases/releases/latest)
-[![Downloads](https://img.shields.io/github/downloads/Speechlessmanbilibili/Yanbai-Releases/total?color=a85d3e)](https://github.com/Speechlessmanbilibili/Yanbai-Releases/releases)
+### Make room for the words.
+
+A warm, focused workspace for Markdown.<br>Write on a continuous live canvas. Bring math and diagrams into the page. Move between Markdown and Word.
+
+[![Latest release](https://img.shields.io/github/v/release/Speechlessmanbilibili/Yanbai-Releases?style=flat-square&color=a85d3e&label=Release)](https://github.com/Speechlessmanbilibili/Yanbai-Releases/releases/latest)
+![Platforms](https://img.shields.io/badge/Windows%20%C2%B7%20Linux%20%C2%B7%20macOS-a85d3e?style=flat-square)
+[![Downloads](https://img.shields.io/github/downloads/Speechlessmanbilibili/Yanbai-Releases/total?style=flat-square&color=a85d3e)](https://github.com/Speechlessmanbilibili/Yanbai-Releases/releases)
+
+**[Download Yanbai](https://github.com/Speechlessmanbilibili/Yanbai-Releases/releases/latest)** · [Explore](#space-for-your-writing) · [Get started](#download--installation) · [Feedback](https://github.com/Speechlessmanbilibili/Yanbai-Releases/issues)
 
 **English** | [简体中文](README_zh.md)
 
-[Features](#key-features) • [Download & Installation](#download--installation) • [System Requirements](#system-requirements) • [Feedback](#feedback) • [Copyright & License](#copyright--license)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Speechlessmanbilibili/Yanbai-Releases/main/assets/readme/workspace-dark.png">
+  <img src="https://raw.githubusercontent.com/Speechlessmanbilibili/Yanbai-Releases/main/assets/readme/workspace-light.png" alt="Yanbai Live view with continuous text, inline math, tasks, and a table in a warm, rounded workspace" width="1200">
+</picture>
+
+<sub>Actual Live view · Light and dark images follow your reading theme · Windows screenshot</sub>
 
 </div>
 
 ---
 
-## Introduction
+## Space for your writing
 
-**Yanbai** (砚白) combines a warm terracotta palette with focused typography. Choose a split editor and preview, edit on a continuous live canvas, work with Markdown text, or read the rendered document. Its Rust document engine supports Word import and export without Microsoft Office or LibreOffice.
+| Write in context | Make ideas clear | Share your work |
+| :--- | :--- | :--- |
+| Edit styled text on a continuous page, with Markdown markers revealed at the cursor. | Bring formulas, diagrams, tables, and code into the same document. | Open Word files and export `.docx`, standalone HTML, or print to PDF. |
 
-This repository is the distribution point. It holds the installers, the prebuilt archives, and this page; the source code is not public.
+### Keep the thought moving
 
----
+Bold, italic, highlight, and inline code stay styled as you type. Markdown markers appear when the cursor enters their range and hide when it leaves. Select across paragraphs, search and replace, and keep each document’s undo history as you switch tabs or editing views.
 
-## Key Features
+| View | Use it for |
+| :--- | :--- |
+| **Live** | Write and edit directly on a continuous, formatted page. |
+| **Raw text** | Work directly with Markdown syntax. |
+| **Split** | Keep Markdown and its preview side by side. |
+| **Preview** | Read the rendered document. |
 
-### Writing Workbench
+Split is the default; Yanbai remembers your selected view. The toolbar, context menu, shortcuts, command palette, and line-start `/` insertion give you the same editing tools, including when nothing is selected.
 
-- A workspace header manages files and tabs, while a rounded document canvas holds editing tools, content, and status. Outline and search panels open independently, preserving document width and scroll position.
-- The toolbar, complete context menu, shortcuts, command palette, and line-start `/` insertion share editing commands. Without a text selection, formatting acts at the caret and paragraph commands act on the current paragraph.
-- Table actions insert, remove, move, align, select, and clear rows or columns, with Markdown/plain text/CSV/HTML copying. Editing and display share column widths and cell typography.
-- Tab menus support batch closing, reopening, copying paths, and opening the containing folder. Unsaved documents are listed together for confirmation. File errors remain visible with details and Save As actions; saving and copying use lightweight success feedback.
-- Settings groups interface, editing, and application information, with document size, line width, line numbers, and motion preferences. Read the full licence and third-party notices. Both themes retain their palette, with coordinated rounded shapes, interruptible transitions, and reduced motion support.
+### Give complex content a clear shape
 
-### Four Writing Views
+- **Math and diagrams**: KaTeX renders inline and display math; Mermaid supports flowcharts, sequence diagrams, Gantt charts, mindmaps, and more. Edit formula or diagram source alongside its preview.
+- **Tables you can work in**: edit cells directly; insert, remove, move, and align rows or columns. Copy tables as Markdown, plain text, CSV, or HTML.
+- **Details that belong in a document**: code highlighting and copying, task lists, callouts, footnotes, reference links, document properties, and collapsible sections.
+- **Images beside your words**: paste or drop PNG, JPEG, GIF, BMP, or WebP. Save originals beside the document using relative references; matching content is reused, and conflicting files prompt for a choice.
 
-- **Split, Live, Raw text, and Preview**: start in Split view and restore your selected view on the next launch. Choosing Split returns to the default.
-- **Continuous live canvas**: edit the entire document on a centered page. Bold, italic, strikethrough, highlight, and inline code retain their styling while you type; their Markdown delimiters appear when the cursor enters the span and hide when it leaves. Selection, copying, undo, search, and replace work across the document, with history preserved between editing views and tabs.
-- **Rich content in place**: formulas and Mermaid diagrams show their source together with a preview while editing. Edit Markdown table cells directly or open table source; render safe merged HTML tables, images, footnotes, reference links, document properties, quotes, callouts, and collapsible details in place. Common fenced code languages have syntax highlighting and a copy button.
-- **Task lists**: click a checkbox to update its Markdown source and undo the change normally; Enter continues lists and quotes.
-- **Document links**: click to edit in Live view; use Ctrl/Cmd-click, the middle mouse button, or Ctrl/Cmd+Enter to open. Click normally in Preview. HTTP(S), `mailto` and `tel` open the system’s associated app; anchors jump within the document. Relative links open supported documents from its directory and reuse existing tabs. Save a new document before opening relative file links.
-- **Protected embedded images**: protect embedded image bytes in all four views. In text editing areas, images appear as protected objects that can be copied or removed as a whole without editing their encoded content.
-- **Paste and drop images**: insert PNG, JPEG, GIF, BMP, or WebP originals as short relative references. Saving copies images directly beside the document. Existing images with identical hashes are reused; different content prompts for a choice. The native save window includes a checked “Include image resources” option; clear it to save readable image placeholders.
+### From an existing document to a finished draft
 
-### Document Engine Built in Pure Rust
-- **Zero-dependency Word 97-2003 (.doc) parsing**: reads the OLE2 compound file directly, no Office or LibreOffice involved, and turns legacy `.doc` files into clean Markdown.
-- **Bidirectional Word (.docx) conversion**: imports headings, formatting, lists, hyperlinks, and tables; exports standard OOXML with proper Chinese and Western typography.
-- **Common text file editing and Save As**: open and save Markdown, JSON, YAML, TOML, CSV, HTML, code, and configuration files under their original extensions; Save As can also export Word (`.docx`).
-- **Encoding-aware saving**: preserve the detected encoding and BOM, or choose “Save as UTF-8…” to convert explicitly. Invalid encoded text and characters the original encoding cannot represent produce an error. Saving, including Save As to the current file, checks external changes; Save As and Word/HTML export prevent overwriting another open document.
-- **Session persistence and crash recovery**: debounced encrypted backups share identical content and save baselines in a content pool, preserving compatibility with older recovery files.
+| Start with | Continue in Yanbai | Take it with you |
+| :--- | :--- | :--- |
+| Markdown and common text files | Edit with the original encoding and BOM; explicitly convert with “Save as UTF-8…” when needed. | Save text under its original extension. |
+| Word `.doc` and `.docx` | Import headings, formatting, lists, links, tables, and images through the Rust document engine. | Export `.docx` without installing Office or LibreOffice. |
+| Formulas, diagrams, and local images | Prepare the document in one workspace. | Export standalone HTML with complete formulas, diagrams, and supported embedded images, or print to PDF. |
 
-### Academic and Visual Typography
-- **KaTeX vector math**: inline `$E=mc^2$` and display blocks render in milliseconds.
-- **Mermaid diagrams**: flowcharts, sequence diagrams, Gantt charts, class diagrams, state diagrams, and mindmaps out of the box.
-- **Callout blocks**: the GitHub and Obsidian syntax for `[!NOTE]`, `[!TIP]`, `[!IMPORTANT]`, `[!WARNING]`, and `[!CAUTION]`.
-- **Structured tables**: aligned and formatted without hand-tuning the pipes.
+Choose your line width and text size, follow the system’s light or dark appearance, and use Chinese or English throughout the interface. Tabs, outline, search, and a rounded canvas keep the workspace organized; reduced motion is available in Settings.
 
-### Warm Terracotta Aesthetic and Desktop Integration
-- **Chinese and English interface**: Settings uses the system language by default, or remembers Chinese or English. Licence terms are on a secondary settings page.
-- **Warm terracotta palette** (primary `#a85d3e`, highlight `#e0a183`, ivory paper `#fdfbf7`) follows the system appearance by default. Choose Follow system, Light, or Dark in Settings; manual selections persist across restarts, and returning to Follow system clears the saved preference.
-- **Windows 11 Mica and Acrylic** window materials.
-- **Multi-tab management**: unsaved-change dots, middle-click to close, and a confirmation dialog offering Save (S), Don't Save (D), or Cancel (Esc). `Ctrl+Shift+T` reopens recently closed tabs.
-- **Windows integration**: optional `.md` / `.markdown` file association and an "Open with Yanbai" context menu entry, single-instance handling, and command-line file arguments.
-- **Export with embedded images**: Word (`.docx`) and standalone offline HTML embed supported local or `data:` images (PNG, JPEG, GIF, BMP, and WebP). Save web images locally and reference them from the document before exporting; SVG and unavailable images report an error. HTML exports include complete formulas and diagrams without rendering scripts. PDF printing is also available.
-- **Command palette**: `Ctrl+K` with fuzzy search over every action.
+Saving checks for external file changes and protects other open documents from accidental overwrites. Local encrypted recovery drafts preserve unsaved work between interrupted sessions.
 
----
+## Download & installation
 
-## Download & Installation
+Go to the [latest release](https://github.com/Speechlessmanbilibili/Yanbai-Releases/releases/latest) and choose your system and architecture. The `*` in the names below stands for a version such as `2.5.0`.
 
-Grab the build for your platform from the [latest release](https://github.com/Speechlessmanbilibili/Yanbai-Releases/releases/latest):
+For Windows, most Intel/AMD PCs use x64; Windows on ARM devices use ARM64. For macOS, choose Apple silicon or Intel.
 
-| Platform | Architecture | File | Notes |
+| Platform | Architecture | File | Use |
 | :--- | :--- | :--- | :--- |
-| **Windows** | x64 | `Yanbai-*-win64-installer.exe` | Recommended. NSIS installer, can register file associations and the context menu entry |
-| **Windows** | x64 | `Yanbai-*-win64.zip` | Portable, extract and run |
-| **Windows** | ARM64 | `Yanbai-*-win-arm64-installer.exe` | NSIS installer for Windows on ARM, native ARM64 build |
-| **Windows** | ARM64 | `Yanbai-*-win-arm64.zip` | Portable, extract and run |
+| **Windows** | x64 | `Yanbai-*-win64-installer.exe` | Installer · file associations |
+| **Windows** | x64 | `Yanbai-*-win64.zip` | Portable archive |
+| **Windows** | ARM64 | `Yanbai-*-win-arm64-installer.exe` | Native ARM64 installer |
+| **Windows** | ARM64 | `Yanbai-*-win-arm64.zip` | Native ARM64 portable archive |
 | **Linux** | x86_64 | `Yanbai-*-linux-x86_64.tar.gz` | Prebuilt archive |
 | **Linux** | ARM64 | `Yanbai-*-linux-arm64.tar.gz` | Prebuilt archive |
-| **macOS** | Apple silicon | `Yanbai-*-macos-arm64.dmg` | App installer image; no Developer ID signing or notarization |
-| **macOS** | Apple silicon | `Yanbai-*-macos-arm64.app.tar.gz` | App archive with the same `Yanbai.app` as the matching `.dmg`; choose either |
-| **macOS** | Intel | `Yanbai-*-macos-x64.dmg` | App installer image; no Developer ID signing or notarization |
-| **macOS** | Intel | `Yanbai-*-macos-x64.app.tar.gz` | App archive with the same `Yanbai.app` as the matching `.dmg`; choose either |
+| **macOS** | Apple silicon | `Yanbai-*-macos-arm64.dmg` | Drag to Applications |
+| **macOS** | Apple silicon | `Yanbai-*-macos-arm64.app.tar.gz` | Same app, compressed archive |
+| **macOS** | Intel | `Yanbai-*-macos-x64.dmg` | Drag to Applications |
+| **macOS** | Intel | `Yanbai-*-macos-x64.app.tar.gz` | Same app, compressed archive |
 
-**Windows**: run the installer, or unzip the portable package and start `Yanbai.exe`.
+### Windows
 
-**Linux**: replace `<version>` with the version and `<arch>` with `x86_64` or `arm64` (choose `arm64` when `uname -m` reports `aarch64`), using the name of the downloaded file:
+Run the installer, or extract the portable archive and open `Yanbai.exe`. The installer offers optional `.md` / `.markdown` file associations and an “Open with Yanbai” context menu entry.
 
-Replace `<version>` with the downloaded version. The commands select x86_64 or ARM64 from the current machine:
+### Linux
+
+Download the archive for your machine and open a terminal in the download directory. Change only `<version>` in `version='<version>'` to the downloaded version number, such as `2.5.0`, without the `v` prefix. The commands use `uname -m` to detect the architecture automatically; no manual `arch` value is needed.
 
 ```bash
 version='<version>'
@@ -102,43 +104,71 @@ cd "Yanbai-${version}-linux-${arch}"
 ./run.sh
 ```
 
-**macOS**: the `.dmg` and `.app.tar.gz` for the same architecture contain the same `Yanbai.app`; download either format. Open the `.dmg` and drag Yanbai to Applications, or extract `.app.tar.gz` and move `Yanbai.app` to Applications. Both formats use the same ad-hoc signing and have no Developer ID signature or notarization. If macOS blocks launch, follow [Apple’s instructions for opening an app from an unidentified developer](https://support.apple.com/102445).
+### macOS
 
----
+The `.dmg` and `.app.tar.gz` for the same architecture contain the same `Yanbai.app`; choose either. Open the `.dmg` and drag Yanbai to Applications, or extract `.app.tar.gz` and move `Yanbai.app` to Applications.
 
-## System Requirements
+Both formats use ad-hoc signing, without Developer ID signing or notarization. If the system blocks launch, follow [Apple’s opening instructions](https://support.apple.com/102445).
+
+### System requirements
 
 - **Windows** 10 or 11, x64 or ARM64.
 - **Linux** x86_64 or aarch64 with the GTK 3 and `webkit2gtk-4.1` runtime libraries.
-- **macOS** 11 (Big Sur) or later, Apple silicon or Intel; install system updates so the system WebKit is at Safari 16.4 or later. This minimum configuration has not been tested on a physical Mac.
+- **macOS** 11 (Big Sur) or later, Apple silicon or Intel; install system updates so the system WebKit is at Safari 16.4 or later.
 
----
+## A few useful moves
 
-## First launch and local data
+| To do this | Use this |
+| :--- | :--- |
+| Find an action | Open the command palette with `Ctrl+K`. |
+| Insert content | Type `/` at the start of a line, or open the context menu. |
+| Open a document link | In Live, use `Ctrl/Cmd + click`, middle-click, or `Ctrl/Cmd + Enter`; in Preview, click normally. |
+| Edit a table | Click a cell; use `Tab` / `Shift+Tab` to move, and `Enter` / `Esc` to finish. |
+| Reopen a tab | Use `Ctrl+Shift+T` for recently closed tabs in the current session. |
+
+Anchors stay in the current document; relative file links use its directory. Save a new draft before opening a relative link. External links open through the system’s associated app.
+
+## Your documents and local data
+
+Documents are processed locally, with fonts, math, and diagram resources included in the app. First launch asks you to accept the software license and saves that decision before opening the editor. An unchanged license stays accepted across app updates and language changes.
+
+The native save window defaults to “Include image resources”. Clear it to save a copy with readable image placeholders while retaining the full editing draft. Word and HTML exports can embed supported local or `data:` images.
+
+<details>
+<summary>Read more: first launch, recovery drafts, images, keys, and logs</summary>
 
 First launch displays a native license window with the complete Chinese and English texts and prominent terms. “Accept and continue” atomically saves `license-acceptance.json` in the application data directory, recording the SHA-256 of both license texts, app version, acceptance time and displayed language, then opens the editor. An unchanged license is not asked about again because of an app version or interface language change. Changed text, a missing record or a damaged record requires confirmation again. The editor does not open if the record cannot be saved.
 
-“Decline and exit”, closing the window or Escape exits without saving the refusal or creating the editor's WebView, preferences, logs, drafts or image cache. The prompt appears next time. Declining a new license does not clear existing data from an older version. Operating-system process records are outside the app's control.
+“Decline and exit”, closing the window or Escape exits without saving the refusal or creating the editor’s WebView, preferences, logs, drafts or image cache. The prompt appears next time. Declining a new license does not clear existing data from an older version. Operating-system process records are outside the app's control.
 
 The application data directory is `%APPDATA%/com.speechlessmanbilibili.yanbai` on Windows, `$XDG_DATA_HOME/com.speechlessmanbilibili.yanbai` on Linux (default `~/.local/share/com.speechlessmanbilibili.yanbai`), and `~/Library/Application Support/com.speechlessmanbilibili.yanbai` on macOS.
 
 - Recovery drafts: only tabs with unsaved changes are backed up. They include text, saved baseline, encoding, file and image base directories, cursor and scroll positions, and other recovery state. Edits are backed up after about three seconds to locally encrypted `recovery.enc`; drafts are cleared when no unsaved changes remain or after a normal confirmed exit. Legacy `recovery.json` can still be migrated. Read, decryption or key errors preserve the original files and pause overwrite and cleanup.
-- Recovery key: `recovery.key` is stored beside the draft and retained after normal exit. Windows protects it with the current user's DPAPI; Linux/macOS rely on local file permissions. Encryption does not replace device access control. Deleting a draft while editing does not turn off backup, and it may be recreated. Do not change or delete the key while the app is running.
+- Recovery key: `recovery.key` is stored beside the draft and retained after normal exit. Windows protects it with the current user’s DPAPI; Linux/macOS rely on local file permissions. Encryption does not replace device access control. Deleting a draft while editing does not turn off backup, and it may be recreated. Do not change or delete the key while the app is running.
 - Image resources: originals pasted, dropped or imported from Word are staged in `image-resources` and reused by content hash; saving places resources beside the document according to “Include image resources”. Closing a document does not automatically delete the cache. You may clean it after exit, but images not yet saved beside a document and recovery drafts may still refer to it.
 - Preferences and runtime caches: language, theme and view preferences use WebView local storage; the WebView also maintains its own profile and caches. These are separate from recovery drafts and are not cleared when documents close.
 - Logs: local diagnostic logging starts after acceptance. It records runtime/framework diagnostics and does not deliberately record document text; error details may contain paths. The default rotates at about 40 KB per file and retains the current log and one previous log. Normal exit does not delete logs. Windows logs are in `%LOCALAPPDATA%/com.speechlessmanbilibili.yanbai/logs`, Linux logs are in `logs` under the application data directory above, and macOS logs are in `~/Library/Logs/com.speechlessmanbilibili.yanbai`.
 
 The Software does not upload this local data. External image addresses in Markdown are retained, but the current app's content security policy blocks loading external images in the document, and saving does not download them. Actively opening external links may open a browser and cause network activity; standalone HTML exports also restrict external resources. Exit normally and back up needed documents and images before cleaning local files.
 
-## Feedback
+</details>
 
-Found a bug or want a feature? Open an [issue](https://github.com/Speechlessmanbilibili/Yanbai-Releases/issues). Describe the steps that triggered the problem and, if you can, a minimal sample that reproduces it. Issues are public; consider a synthetic minimal sample or redaction. Feedback permissions and confidentiality terms are in Section 5 of the software license.
+## Feedback and ideas
+
+Found a problem, or have an idea? Open an [issue](https://github.com/Speechlessmanbilibili/Yanbai-Releases/issues) with your steps, system, version, and a minimal sample when useful. Issues are public; consider a synthetic or redacted example. Feedback permissions and confidentiality terms are in Section 5 of the software license.
+
+## License
+
+Official builds use the [Yanbai Software License](LICENSE.md) ([Chinese version](LICENSE_zh.md)). Personal and commercial use, backups, and internal deployment to affiliates, employees, and contractors acting for your organization are free. External redistribution, sale, rental, public repository inclusion, and bundled distribution require the Licensor’s prior written permission; permitted internal deployment is exempt. The source code is not public, and this license grants no access to it.
+
+Third-party components and their license terms are listed in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 
 ---
 
-## Copyright & License
+<div align="center">
 
-The official builds are distributed under the [Yanbai Software License](LICENSE.md) (Chinese version: [LICENSE_zh.md](LICENSE_zh.md)). Personal and commercial use, backups and internal deployment to affiliates, employees and contractors acting for your organization are free. External redistribution, sale, rental, public repository inclusion and bundled distribution require the Licensor's prior written permission; permitted internal deployment is exempt. The source code is not public, and this license grants no access to it. Third-party components and their own license terms are listed in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+A place for your ideas. A page for your work.
 
-Copyright © 2026 SilentPerson. All rights reserved.
+<sub>Copyright © 2026 SilentPerson. All rights reserved.</sub>
 
+</div>

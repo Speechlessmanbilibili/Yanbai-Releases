@@ -1,94 +1,96 @@
 <div align="center">
 
-# 砚白 Markdown 编辑器
+<img src="https://raw.githubusercontent.com/Speechlessmanbilibili/Yanbai-Releases/main/assets/readme/icon.png" width="80" height="80" alt="砚白应用图标">
 
-**基于 Rust、Tauri 2 与 React 19 构建、提供四种写作视图的双语 Markdown 编辑器**
+# 砚白 · Yanbai
 
-[![Release](https://img.shields.io/github/v/release/Speechlessmanbilibili/Yanbai-Releases?color=a85d3e&logo=github)](https://github.com/Speechlessmanbilibili/Yanbai-Releases/releases/latest)
-[![Downloads](https://img.shields.io/github/downloads/Speechlessmanbilibili/Yanbai-Releases/total?color=a85d3e)](https://github.com/Speechlessmanbilibili/Yanbai-Releases/releases)
+### 把精力留给内容。
+
+一款温润、专注的 Markdown 文稿工作台。<br>连续实时编辑，清晰呈现公式与图表，自在往返 Markdown 与 Word。
+
+[![最新版本](https://img.shields.io/github/v/release/Speechlessmanbilibili/Yanbai-Releases?style=flat-square&color=a85d3e&label=Release)](https://github.com/Speechlessmanbilibili/Yanbai-Releases/releases/latest)
+![支持的平台](https://img.shields.io/badge/Windows%20%C2%B7%20Linux%20%C2%B7%20macOS-a85d3e?style=flat-square)
+[![下载次数](https://img.shields.io/github/downloads/Speechlessmanbilibili/Yanbai-Releases/total?style=flat-square&color=a85d3e)](https://github.com/Speechlessmanbilibili/Yanbai-Releases/releases)
+
+**[下载砚白](https://github.com/Speechlessmanbilibili/Yanbai-Releases/releases/latest)** · [了解功能](#为写作留出空间) · [安装指引](#下载与安装) · [反馈与建议](https://github.com/Speechlessmanbilibili/Yanbai-Releases/issues)
 
 [English](README.md) | **简体中文**
 
-[核心特性](#核心特性) • [下载与安装](#下载与安装) • [系统要求](#系统要求) • [问题反馈](#问题反馈) • [版权说明](#版权说明)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Speechlessmanbilibili/Yanbai-Releases/main/assets/readme/workspace-dark.png">
+  <img src="https://raw.githubusercontent.com/Speechlessmanbilibili/Yanbai-Releases/main/assets/readme/workspace-light.png" alt="砚白实时模式：连续正文、行内公式、任务列表与表格，采用温润陶土配色和圆角画布" width="1200">
+</picture>
+
+<sub>实时模式的实际界面 · 随阅读主题切换深浅配图 · Windows 截图</sub>
 
 </div>
 
 ---
 
-## 简介
+## 为写作留出空间
 
-**砚白 (Yanbai)** 采用温润陶土配色与专注的正文排版，支持双栏对照、实时连续画布、Markdown 原文编辑和独立预览。Rust 文档引擎提供 Word 导入与导出，无需安装 Office 或 LibreOffice。
+| 连贯地写 | 清晰地表达 | 从容地交付 |
+| :--- | :--- | :--- |
+| 在连续页面里直接编辑，Markdown 符号随光标展开。 | 把公式、图表、表格与代码放回文稿之中。 | 接续 Word 材料，导出 `.docx`、独立 HTML，或打印为 PDF。 |
 
-这个仓库是分发页，只放安装包、预编译压缩包和这份说明；源码不公开。
+### 让思路连贯，让格式自然
 
----
+粗体、斜体、高亮和行内代码在输入时保留样式；光标进入对应范围时显示 Markdown 符号，离开后隐藏。跨段选择、查找替换、撤销与重做都在同一份文稿中完成，切换标签或编辑视图后延续各文档的撤销历史。
 
-## 核心特性
+| 写作视图 | 适合此刻的工作 |
+| :--- | :--- |
+| **实时** | 在连续排版的正文里直接写作与修改。 |
+| **原文** | 专注 Markdown 文本与语法。 |
+| **双栏** | 一边编辑原文，一边对照预览。 |
+| **预览** | 阅读完整排版后的文稿。 |
 
-### 文稿工作台
+默认使用双栏，下次启动记住你的选择。工具栏、右键菜单、快捷键、命令面板和行首 `/` 插入提供一致的编辑能力；没有选中文字时，同样可以从光标位置开始操作。
 
-- 工作区顶栏集中管理文件与标签；大圆角画布容纳编辑工具、正文和状态。大纲与查找以独立面板展开，正文宽度与滚动位置保持稳定。
-- 工具栏、完整右键菜单、快捷键、命令面板及行首 `/` 插入共用编辑命令。未选中文字时，格式作用于光标位置，段落命令作用于当前段落。
-- 表格提供插入、删除、移动行列、对齐、选择、清空，以及 Markdown/纯文本/CSV/HTML 复制；输入与显示共用列宽和单元格排版。
-- 标签右键提供批量关闭、重新打开、复制路径与打开所在文件夹；未保存文档统一列出确认。文件错误持续显示原因、复制详情与另存为入口，保存和复制成功使用轻量提示。
-- 设置分为界面与外观、编辑与显示、关于；可调整正文大小、行宽、行号和动态效果，并阅读完整许可与第三方声明。深浅主题沿用原有配色，菜单、面板和弹窗采用统一圆角与连贯过渡，支持减少动态效果。
+### 复杂的内容，也能清晰可读
 
-### 四种写作视图
+- **公式与图表**：KaTeX 排版行内和块级公式，Mermaid 支持流程图、时序图、甘特图、思维导图等；编辑时源码与预览并存。
+- **直接在表格里工作**：修改单元格，插入、删除、移动和对齐行列；按需复制为 Markdown、纯文本、CSV 或 HTML。
+- **文稿需要的细节**：代码着色与复制、任务列表、Callout 提示框、脚注、引用式链接、文档属性和折叠内容。
+- **图片跟着文稿走**：粘贴或拖入 PNG、JPEG、GIF、BMP、WebP，保存时将原图放在文档同目录，以相对路径引用；相同内容直接复用，文件冲突时提供选择。
 
-- **双栏、实时、原文、预览**：默认使用双栏，下次启动恢复上次选择的模式；切回双栏即回到默认。
-- **实时连续画布**：整篇文稿在居中页面内连续编辑。粗体、斜体、删除线、高亮和行内代码在输入时保留样式，光标进入对应范围时显示 Markdown 符号，离开后隐藏。支持跨段选区、复制、撤销、查找与替换，切换编辑视图和标签后延续各文档的历史。
-- **内容原地编辑**：公式和 Mermaid 图表在编辑时同时显示源码与预览；Markdown 表格可直接修改单元格，也可展开源码。支持安全的合并 HTML 表格、图片、脚注、引用式链接、文档属性、引用、Callout 与 details 折叠内容；常用围栏代码语言提供着色和复制按钮。
-- **任务列表**：单击复选框直接更新 Markdown，并可正常撤销；回车续写列表和引用。
-- **正文链接**：实时模式单击编辑，Ctrl/Cmd + 单击、中键或 Ctrl/Cmd + Enter 打开；预览模式直接单击。HTTP(S)、`mailto` 与 `tel` 交给系统关联应用，锚点在当前文档内定位；相对路径从当前文档目录打开受支持的文件，并复用已有标签。未保存的新文档需先保存，再打开相对文件链接。
-- **内嵌图片保护**：四种视图均保护内嵌图片字节；在文字编辑区显示为受保护的图片对象，可整图复制或删除，避免误改编码内容。
-- **粘贴与拖入图片**：PNG、JPEG、GIF、BMP、WebP 原图以短相对路径插入，保存时直接复制到文档所在目录。同名图片哈希一致时复用，内容不同时提供选择。原生保存窗口默认勾选“包含图片资源”；取消勾选后保存可读的图片占位符。
+### 从已有材料，写到正式交付
 
-### 纯 Rust 打造的文档引擎
-- **Word 97-2003 (.doc) 零依赖解析**：纯 Rust 读取 OLE2 复合文档，无需 Office 或 LibreOffice，把旧版 `.doc` 解析成结构干净的 Markdown。
-- **双向 Word 文档 (.docx) 转换**：导入时识别标题层级、粗斜体、列表、超链接与表格；导出时生成标准 OOXML，自带规整的中文排版样式。
-- **常见文本文件编辑与另存**：可打开并按原扩展名保存 Markdown、JSON、YAML、TOML、CSV、HTML、代码与配置文件；“另存为”也可导出 Word (`.docx`)。
-- **保留编码与显式转换**：保存沿用探测到的编码与 BOM，也可选择“另存为 UTF-8…”主动转换。损坏的编码文本或原编码无法表示的字符会明确报错。保存及另存回当前文件前检查外部修改；另存为和 Word/HTML 导出时阻止覆盖其他已打开文档。
-- **会话持久化与崩溃防护**：后台防抖备份草稿，用加密内容池复用相同正文与存盘基线，兼容旧版恢复文件。
+| 从这里开始 | 在砚白里继续 | 带走你的成果 |
+| :--- | :--- | :--- |
+| Markdown 与常见文本文件 | 保留原编码与 BOM，需要时通过“另存为 UTF-8…”明确转换。 | 按原扩展名保存文本。 |
+| Word `.doc` 与 `.docx` | 由 Rust 文档引擎导入标题、格式、列表、链接、表格与图片。 | 无需安装 Office 或 LibreOffice，即可导出 `.docx`。 |
+| 公式、图表与本地图片 | 在同一个工作台中整理文稿。 | 导出内含完整公式、图表及受支持图片的独立 HTML，或打印为 PDF。 |
 
-### 学术与可视化排版
-- **KaTeX 矢量公式**：行内公式（如 `$E=mc^2$`）与块级公式毫秒级排版。
-- **Mermaid 结构图表**：流程图、时序图、甘特图、类图、状态图、思维导图开箱可用。
-- **Callout 提示框**：完整支持 GitHub 与 Obsidian 语法（`[!NOTE]`、`[!TIP]`、`[!IMPORTANT]`、`[!WARNING]`、`[!CAUTION]`）。
-- **结构化表格**：自动对齐排版，不用手工数竖线。
+按习惯调整字号和行宽，让深浅主题跟随系统，在中文与英文界面间自由切换。标签、大纲、查找与圆角画布让工作区保持有序；设置中也提供减少动态效果的选项。
 
-### 暖陶土设计美学与系统集成
-- **中英文界面与设置**：默认跟随系统语言，也可选择中文或英文并保留选择；许可全文在设置的次级页面查看。
-- **温润陶土配色**（主色 `#a85d3e`、提亮 `#e0a183`、象牙纸底 `#fdfbf7`），默认跟随系统深浅色。设置提供“跟随系统”“浅色”“深色”；手动选择在重启后保留，切回跟随系统时清除额外偏好。
-- **Windows 11 Mica / Acrylic 材质**窗口效果。
-- **多标签页管理**：未保存圆点提醒、中键关标签，关闭未保存标签或退出时弹出「保存 (S) / 不保存 (D) / 取消 (Esc)」，`Ctrl+Shift+T` 恢复本次会话关闭过的标签。
-- **Windows 深度集成**：安装程序可选注册 `.md` / `.markdown` 关联与右键菜单「用砚白打开」，单实例运行，支持命令行传参打开文件。
-- **图片嵌入导出**：Word (`.docx`) 与单文件离线 HTML 可嵌入本地或 `data:` 图片，支持 PNG、JPEG、GIF、BMP 与 WebP。网络图片需先保存到本地并从文档引用；SVG 或无法取得的图片会报错。HTML 内含完整公式与图表，无需运行渲染脚本；另支持 PDF 打印。
-- **全局命令面板**：`Ctrl+K` 唤起，支持模糊搜索所有功能。
-
----
+保存前检查外部修改，避免覆盖其他已打开文档；本地加密恢复草稿保留尚未保存的工作，供中断后恢复。
 
 ## 下载与安装
 
-前往[最新版本](https://github.com/Speechlessmanbilibili/Yanbai-Releases/releases/latest)按平台取用：
+前往[最新版本](https://github.com/Speechlessmanbilibili/Yanbai-Releases/releases/latest)，按系统与架构选择文件。文件名中的 `*` 表示版本号，例如 `2.5.0`。
 
-| 平台 | 架构 | 文件名 | 说明 |
+Windows 的 Intel/AMD 设备通常选 x64，Windows on ARM 设备选 ARM64；macOS 按 Apple 芯片或 Intel 选择。
+
+| 平台 | 架构 | 文件 | 用途 |
 | :--- | :--- | :--- | :--- |
-| **Windows** | x64 | `Yanbai-*-win64-installer.exe` | 推荐。NSIS 安装程序，可注册文件关联与右键菜单 |
+| **Windows** | x64 | `Yanbai-*-win64-installer.exe` | 安装器，可设置文件关联 |
 | **Windows** | x64 | `Yanbai-*-win64.zip` | 便携包，解压即用 |
-| **Windows** | ARM64 | `Yanbai-*-win-arm64-installer.exe` | Windows on ARM 的 NSIS 安装程序，原生 ARM64 构建 |
-| **Windows** | ARM64 | `Yanbai-*-win-arm64.zip` | 便携包，解压即用 |
+| **Windows** | ARM64 | `Yanbai-*-win-arm64-installer.exe` | 原生 ARM64 安装器 |
+| **Windows** | ARM64 | `Yanbai-*-win-arm64.zip` | 原生 ARM64 便携包 |
 | **Linux** | x86_64 | `Yanbai-*-linux-x86_64.tar.gz` | 预编译压缩包 |
 | **Linux** | ARM64 | `Yanbai-*-linux-arm64.tar.gz` | 预编译压缩包 |
-| **macOS** | Apple 芯片 | `Yanbai-*-macos-arm64.dmg` | 应用安装镜像；无开发者证书签名与公证 |
-| **macOS** | Apple 芯片 | `Yanbai-*-macos-arm64.app.tar.gz` | 应用压缩包，与同架构 `.dmg` 包含同一份 `Yanbai.app`，二选一即可 |
-| **macOS** | Intel | `Yanbai-*-macos-x64.dmg` | 应用安装镜像；无开发者证书签名与公证 |
-| **macOS** | Intel | `Yanbai-*-macos-x64.app.tar.gz` | 应用压缩包，与同架构 `.dmg` 包含同一份 `Yanbai.app`，二选一即可 |
+| **macOS** | Apple 芯片 | `Yanbai-*-macos-arm64.dmg` | 拖入“应用程序” |
+| **macOS** | Apple 芯片 | `Yanbai-*-macos-arm64.app.tar.gz` | 同一应用的压缩包 |
+| **macOS** | Intel | `Yanbai-*-macos-x64.dmg` | 拖入“应用程序” |
+| **macOS** | Intel | `Yanbai-*-macos-x64.app.tar.gz` | 同一应用的压缩包 |
 
-**Windows**：运行安装程序，或解压便携包后直接启动 `Yanbai.exe`。
+### Windows
 
-**Linux**：将 `<version>` 替换为版本号，`<arch>` 替换为 `x86_64` 或 `arm64`（`uname -m` 显示 `aarch64` 时选 `arm64`），使用已下载文件的名称：
+运行安装器，或解压便携包并打开 `Yanbai.exe`。安装器可选设置 `.md` / `.markdown` 文件关联及“用砚白打开”右键菜单。
 
-将 `<version>` 替换为下载的版本号；以下命令按本机架构选择 x86_64 或 ARM64：
+### Linux
+
+先下载适合本机架构的压缩包，在下载目录打开终端。只需把 `version='<version>'` 中的 `<version>` 改为下载版本号（例如 `2.5.0`，不带 `v`）；以下命令通过 `uname -m` 自动识别架构，无需手动填写 `arch`。
 
 ```bash
 version='<version>'
@@ -102,19 +104,38 @@ cd "Yanbai-${version}-linux-${arch}"
 ./run.sh
 ```
 
-**macOS**：同架构的 `.dmg` 与 `.app.tar.gz` 包含同一份 `Yanbai.app`，任选一种下载即可。打开 `.dmg` 并将砚白拖入“应用程序”；或解压 `.app.tar.gz`，再将 `Yanbai.app` 放入“应用程序”。两种格式使用相同的 ad-hoc 签名，没有开发者证书签名与公证；若 macOS 阻止启动，请按 [Apple 关于打开未识别开发者应用的说明](https://support.apple.com/zh-cn/102445)处理。
+### macOS
 
----
+同架构的 `.dmg` 与 `.app.tar.gz` 包含同一份 `Yanbai.app`，任选一种即可。打开 `.dmg` 后将砚白拖入“应用程序”；或解压 `.app.tar.gz`，再将 `Yanbai.app` 移入“应用程序”。
 
-## 系统要求
+两种格式均采用 ad-hoc 签名，未使用开发者证书签名或公证。若系统阻止启动，请参阅 [Apple 的打开说明](https://support.apple.com/zh-cn/102445)。
+
+### 系统要求
 
 - **Windows** 10 或 11，x64 或 ARM64。
 - **Linux** x86_64 或 aarch64，需要 GTK 3 与 `webkit2gtk-4.1` 运行库。
-- **macOS** 11（Big Sur）或更新版本，Apple 芯片或 Intel；安装系统更新，使系统 WebKit 达到 Safari 16.4 或更新版本。最低配置尚无 Mac 实机验收记录。
+- **macOS** 11（Big Sur）或更新版本，Apple 芯片或 Intel；安装系统更新，使系统 WebKit 达到 Safari 16.4 或更新版本。
 
----
+## 几个顺手的操作
 
-## 首次启动与本地数据
+| 想做什么 | 操作 |
+| :--- | :--- |
+| 查找功能 | `Ctrl+K` 打开命令面板。 |
+| 插入内容 | 在行首输入 `/`，或使用右键菜单。 |
+| 打开正文链接 | 实时模式用 `Ctrl/Cmd + 单击`、中键或 `Ctrl/Cmd + Enter`；预览模式直接单击。 |
+| 编辑表格 | 单击单元格进入，`Tab` / `Shift+Tab` 换格，`Enter` / `Esc` 结束。 |
+| 重新打开标签 | `Ctrl+Shift+T` 恢复当前会话最近关闭的标签。 |
+
+正文锚点在当前文档内定位，相对文件链接以文档所在目录为准；新建草稿先保存，再打开相对链接。外部链接交给系统关联应用。
+
+## 文稿与本地数据
+
+文档在本地处理，字体、公式与图表资源随应用提供。首次启动确认使用许可，同意记录保存后进入编辑器；相同许可无需因软件升级或切换语言再次确认。
+
+原生保存窗口默认勾选“包含图片资源”；取消勾选时保存带可读图片占位符的副本，并保留完整编辑稿。Word 与 HTML 导出支持嵌入受支持的本地或 `data:` 图片。
+
+<details>
+<summary>展开：首次启动、草稿、图片、密钥与日志</summary>
 
 首次启动先显示原生许可窗口，提供中英文全文与重点提示。选择“同意并继续”后，在应用数据目录原子保存 `license-acceptance.json`，记录双语许可正文的 SHA-256、软件版本、同意时间及显示语言，然后打开编辑器。相同许可不会因版本或界面语言变化再次询问；正文变化、记录缺失或损坏时重新确认。记录无法保存时，不会进入编辑器。
 
@@ -130,15 +151,24 @@ cd "Yanbai-${version}-linux-${arch}"
 
 这些本地数据不会由软件上传。Markdown 中的外链图片地址会保留，但当前应用的内容安全策略阻止正文直接加载外部图片，保存不会自动下载外链图片。主动打开外部链接可能交给浏览器并产生网络访问；独立 HTML 导出也限制外部资源加载。清理本地文件前请先正常退出并备份需要的文档和图片。
 
-## 问题反馈
+</details>
 
-用着有问题或者想要新功能，到 [Issues](https://github.com/Speechlessmanbilibili/Yanbai-Releases/issues) 提。写清触发步骤，能给一个最小复现样例最好。Issue 公开可见，建议另造最小样例或先脱敏；反馈授权和保密等约定见使用许可第五节。
+## 反馈与建议
+
+遇到问题，或有想要的功能？欢迎前往 [Issues](https://github.com/Speechlessmanbilibili/Yanbai-Releases/issues)。请写清操作步骤、系统和版本，必要时附上最小复现样例。Issue 公开可见，建议使用另造的样例或先脱敏；反馈授权与保密约定见使用许可第五节。
+
+## 使用许可
+
+官方产物按[砚白软件使用许可](LICENSE_zh.md)（[英文版](LICENSE.md)）授权。免费用于个人与商业目的，允许备份，以及向代表组织开展内部工作的关联方、员工和承包商部署。对外再分发、售卖、出租、公开软件仓库收录及打包分发，须事先取得许可方的书面同意；已允许的内部部署不受此限。源码不公开，本许可不授予源码访问权。
+
+第三方组件及其许可见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
 
 ---
 
-## 版权说明
+<div align="center">
 
-官方产物按[砚白软件使用许可](LICENSE_zh.md)（英文版：[LICENSE.md](LICENSE.md)）授权：免费用于个人与商业目的，允许备份及向代表组织开展内部工作的关联方、员工和承包商部署。对外再分发、售卖、出租、公开软件仓库收录及打包分发须事先取得许可方的书面同意；已允许的内部部署不受此限。源码不公开，本许可不授予源码访问权。 随软件分发的第三方组件及其许可条款见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
+写下想法，留下作品。
 
-Copyright © 2026 SilentPerson. All rights reserved.
+<sub>Copyright © 2026 SilentPerson. All rights reserved.</sub>
 
+</div>
