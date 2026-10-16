@@ -1,64 +1,97 @@
-# 参与砚白
+# 反馈与参与指南
 
-这份文件说明怎么反馈问题、怎么提改进建议。软件的使用条款在 `LICENSE.md` 与 `LICENSE_zh.md`，本文件不改变那些条款。
+**简体中文** | [English](#feedback-and-participation-guide)
 
-## 反馈问题与提问
+感谢您对砚白（Yanbai）的关注。欢迎通过问题报告、使用咨询和功能建议，帮助改进软件与使用体验。
 
-不需要下载或安装软件就能提。入口按内容选：
+本指南说明反馈渠道、建议提供的信息及参与方式。软件使用与反馈相关条款见[砚白软件使用许可](LICENSE_zh.md)（[英文版](LICENSE.md)）。
 
-- **公开渠道**：[Yanbai-Releases 的 Issues](https://github.com/Speechlessmanbilibili/Yanbai-Releases/issues)。一般缺陷、功能建议、用法疑问都走这里。
-- **电子邮件**：<speechlessmans@outlook.com>。仅用于联系许可方或发送许可协议要求的正式通知，不作为反馈渠道。
+## 反馈渠道
 
-报告缺陷时，把这几项写清定位会快很多：
+软件问题、使用咨询与功能建议，请通过 [Yanbai-Releases 的 GitHub Issues](https://github.com/Speechlessmanbilibili/Yanbai-Releases/issues) 提交。提交前，建议先查阅已有讨论；如已有相同或相近的问题，可以在原 Issue 中补充情况。
 
-1. 版本号（安装目录里 `Yanbai.exe` 的文件版本，或压缩包文件名）；
-2. 系统版本与架构（Windows 10/11、x64 还是 ARM64；Linux 的发行版与内核）；
-3. 复现步骤，越具体越好；
-4. 期望的结果与实际结果；
-5. 能公开的最小样例文档。Issue 公开可见，建议另造最小样例，或在分享前脱敏。
+申请书面许可、咨询许可条款、联系许可方或发送正式通知，请使用电子邮箱 <speechlessmans@outlook.com>。软件反馈请统一通过 Issues 提交，便于集中记录与跟进。
 
-### 反馈许可
+无须先下载或安装软件，也可以提出使用咨询和建议。
 
-反馈授权、保密、署名与报酬的约定统一见[砚白软件使用许可第五节](LICENSE_zh.md#5-反馈)。反馈由你自愿提交；本指引中的样例与脱敏建议不改变许可正文。
+## 报告问题
 
-## 关于代码改动
+为便于了解和定位问题，建议尽量提供以下信息。信息尚不完整时，也欢迎先描述已知情况。
 
-源码不公开，仓库不接受外部 Pull Request 或补丁。功能建议与改进想法欢迎提，写在 Issue 里，说清使用场景与期望结果即可。是否采纳、何时实现由作者自行决定；提出建议不产生任何实现或支持义务，作者也没有必须回复的义务。
+1. **软件版本**：可在设置中查看版本号，或提供下载文件的名称。
+2. **运行环境**：操作系统、系统版本和硬件架构；使用 Linux 时，可一并注明发行版与内核版本。
+3. **操作步骤**：按顺序说明执行了哪些操作，以及问题出现在哪一步。
+4. **预期与实际结果**：说明期望的结果和实际表现；如有错误提示，建议保留提示原文。
+5. **辅助材料**：如方便，可附截图、错误详情或能够重现问题的最小样例文档。
 
-## 语言
+如果问题偶尔出现，也可以补充发生频率、前后操作及其他有助于判断的情况。
 
-反馈与讨论用中文或英文都可以。仓库优先中文，但不必为了统一语言把自己的描述改写成中文。
+## 提出功能建议
+
+功能建议可以围绕实际使用场景展开：您正在完成什么工作，现有方式有哪些不便，以及希望获得怎样的改进。相关示例或参考资料可作为补充，便于理解需求。
+
+相互独立的问题或建议，可分别建立 Issue，以便讨论和查阅。
+
+## 样例材料与反馈约定
+
+GitHub Issues 及其附件公开可见。准备截图、日志或文档时，建议另行制作最小样例，或先对其中的个人信息、机密内容及不必要的文件路径进行脱敏。样例只需保留有助于说明或重现问题的内容。
+
+反馈由您自愿提交。反馈授权、保密、署名与报酬的约定，统一见[砚白软件使用许可第五节](LICENSE_zh.md#5-反馈)。本指南中的样例准备与脱敏建议属于操作指引，不改变许可正文。
+
+## 参与说明
+
+砚白的源码未公开，目前通过 Issues 接收外部的问题报告与改进建议，不接收外部 Pull Request 或代码补丁。
+
+建议的采纳、实现时间及反馈处理安排，由作者结合项目定位、维护计划和实际情况决定。
+
+欢迎使用中文或英文提交反馈和参与讨论。仓库以中文为主要交流语言，您可以选择更便于准确表达的语言。
 
 ---
 
-# Contributing to Yanbai (English)
+# Feedback and participation guide
 
-This file explains how to report a problem and how to suggest an improvement. The terms for using the software are in `LICENSE.md` and `LICENSE_zh.md`; this file does not change them.
+[简体中文](#反馈与参与指南) | **English**
 
-## Reporting a problem or asking a question
+Thank you for your interest in Yanbai. Bug reports, questions, and feature suggestions help improve the application and the experience of using it.
 
-You do not need to download or install the software to report something. Pick the channel that fits:
+This guide explains where to send feedback, what information is helpful, and how to participate. Terms governing software use and feedback are set out in the [Yanbai Software License](LICENSE.md) ([Chinese version](LICENSE_zh.md)).
 
-- **Public channel**: [issues in Yanbai-Releases](https://github.com/Speechlessmanbilibili/Yanbai-Releases/issues). Use it for ordinary defects, feature suggestions, and questions about usage.
-- **Electronic mail**: <speechlessmans@outlook.com>. Use it only to contact the Licensor or send formal notices required by the license; it is not a feedback channel.
+## Feedback channels
 
-A defect report is much easier to act on when it states:
+Please submit software issues, usage questions, and feature suggestions through [GitHub Issues in Yanbai-Releases](https://github.com/Speechlessmanbilibili/Yanbai-Releases/issues). Before opening an issue, consider checking existing discussions. If the same or a similar issue is already recorded, you can add your information there.
 
-1. the version (the file version of `Yanbai.exe` in the installation directory, or the archive file name);
-2. your operating system and architecture (Windows 10 or 11, x64 or ARM64; the distribution and kernel version on Linux);
-3. the steps that reproduce the problem, as precisely as you can;
-4. what you expected and what happened instead;
-5. a minimal sample document that can be shared. Issues are public; consider a synthetic minimal sample or redact it before sharing.
+For written permission requests, questions about license terms, other contact with the Licensor, or formal notices, please use <speechlessmans@outlook.com>. Please submit software feedback through Issues so that it can be recorded and followed in one place.
 
-### Feedback license
+Questions and suggestions are welcome even if you have not downloaded or installed the app.
 
-Feedback permissions, confidentiality, attribution and compensation are governed by [Section 5 of the Yanbai Software License](LICENSE.md#5-feedback). Feedback is voluntary. The sample and redaction suggestions in this guide do not change the license.
+## Reporting a problem
 
-## About code changes
+The following information helps with understanding and investigating a problem. Please provide what you can; a report is welcome even when some details are not yet available.
 
-The source code is not public, and the repository does not accept external pull requests or patches. Feature suggestions and improvement ideas are welcome: open an issue and describe the situation and the result you expect. Whether to adopt an idea and when to implement it are the author's decision alone; suggesting something creates no obligation to implement it or to provide support, and the author is not obliged to reply.
+1. **Software version**: the version shown in Settings, or the name of the downloaded file.
+2. **Environment**: your operating system, its version, and hardware architecture. For Linux, please also include the distribution and kernel version where available.
+3. **Steps**: the actions you took, in order, and the point at which the problem appeared.
+4. **Expected and actual results**: what you expected to happen and what happened instead. Where possible, include the original wording of any error message.
+5. **Supporting material**: screenshots, error details, or a minimal sample document that reproduces the problem, if convenient.
 
-## Language
+If the problem occurs intermittently, its frequency, the surrounding actions, and any other relevant circumstances may also be useful.
 
-Feedback and discussion may be in Chinese or English. Chinese is preferred in this repository, but you do not need to rewrite your report in Chinese for consistency.
+## Suggesting a feature
 
+Suggestions are easier to understand when they describe a practical situation: the task you are trying to complete, any difficulty with the current approach, and the improvement you would find helpful. Examples or references may provide useful context.
+
+Consider opening separate issues for unrelated problems or independent suggestions so that each discussion is easy to follow.
+
+## Sample materials and feedback terms
+
+GitHub Issues and their attachments are publicly visible. When preparing screenshots, logs, or documents, consider creating a minimal example or redacting personal information, confidential material, and unnecessary file paths. A sample only needs the content that helps explain or reproduce the problem.
+
+Feedback is voluntary. Permissions, confidentiality, attribution, and compensation are governed by [Section 5 of the Yanbai Software License](LICENSE.md#5-feedback). The suggestions about examples and redaction are practical guidance and do not change the license.
+
+## Participation
+
+Yanbai’s source code is not public. The project currently welcomes external bug reports and improvement suggestions through Issues and does not accept external pull requests or code patches.
+
+The author decides whether to adopt suggestions, when to implement them, and how to handle feedback in light of the project’s scope, maintenance plans, and practical circumstances.
+
+Feedback and discussions are welcome in Chinese or English. Chinese is the main language used in this repository; please choose the language that helps you express the details accurately.
