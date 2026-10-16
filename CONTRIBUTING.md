@@ -6,6 +6,18 @@
 
 本指南说明反馈渠道、建议提供的信息及参与方式。软件使用与反馈相关条款见[砚白软件使用许可](LICENSE_zh.md)（[英文版](LICENSE.md)）。
 
+## 提交前请阅读
+
+反馈由您自愿提交。请在提交前阅读[使用许可第五节](https://github.com/Speechlessmanbilibili/Yanbai-Releases/blob/0e158928864d9f3cd23b68d4e63938fd367d017f/LICENSE_zh.md#5-反馈)（[英文版](https://github.com/Speechlessmanbilibili/Yanbai-Releases/blob/0e158928864d9f3cd23b68d4e63938fd367d017f/LICENSE.md#5-feedback)）。
+
+**提交反馈、建议或缺陷报告，即表示您同意按第五节，在您有权授予许可的范围内，授予许可方一项永久的、全球范围的、免许可费的、不可撤销的、非独占的许可，用于使用、复制、修改、分发这些内容并将其纳入本软件。**
+
+**除法律要求或另行约定外，许可方对这些反馈不承担保密、署名或支付报酬的义务。**
+
+新建 Issue 的反馈表单会展示上述提示，并要求主动勾选确认。通过评论、API/CLI 等方式首次提交反馈时，请在正文中明确确认；可使用以下文字：
+
+> 我已阅读并同意[使用许可第五节](https://github.com/Speechlessmanbilibili/Yanbai-Releases/blob/0e158928864d9f3cd23b68d4e63938fd367d017f/LICENSE_zh.md#5-反馈)中的反馈授权，以及保密、署名和报酬安排，并自愿按该节授予反馈许可。
+
 ## 反馈渠道
 
 软件问题、使用咨询与功能建议，请通过 [Yanbai-Releases 的 GitHub Issues](https://github.com/Speechlessmanbilibili/Yanbai-Releases/issues) 提交。提交前，建议先查阅已有讨论；如已有相同或相近的问题，可以在原 Issue 中补充情况。
@@ -32,11 +44,11 @@
 
 相互独立的问题或建议，可分别建立 Issue，以便讨论和查阅。
 
-## 样例材料与反馈约定
+## 样例材料与公开信息
 
 GitHub Issues 及其附件公开可见。准备截图、日志或文档时，建议另行制作最小样例，或先对其中的个人信息、机密内容及不必要的文件路径进行脱敏。样例只需保留有助于说明或重现问题的内容。
 
-反馈由您自愿提交。反馈授权、保密、署名与报酬的约定，统一见[砚白软件使用许可第五节](LICENSE_zh.md#5-反馈)。本指南中的样例准备与脱敏建议属于操作指引，不改变许可正文。
+本指南中的样例准备与脱敏建议属于操作指引，不改变许可正文。
 
 ## 参与说明
 
@@ -55,6 +67,18 @@ GitHub Issues 及其附件公开可见。准备截图、日志或文档时，建
 Thank you for your interest in Yanbai. Bug reports, questions, and feature suggestions help improve the application and the experience of using it.
 
 This guide explains where to send feedback, what information is helpful, and how to participate. Terms governing software use and feedback are set out in the [Yanbai Software License](LICENSE.md) ([Chinese version](LICENSE_zh.md)).
+
+## Before submitting feedback
+
+Feedback is voluntary. Please read [Section 5 of the software license](https://github.com/Speechlessmanbilibili/Yanbai-Releases/blob/0e158928864d9f3cd23b68d4e63938fd367d017f/LICENSE.md#5-feedback) ([Chinese version](https://github.com/Speechlessmanbilibili/Yanbai-Releases/blob/0e158928864d9f3cd23b68d4e63938fd367d017f/LICENSE_zh.md#5-反馈)) before submitting.
+
+**By submitting feedback, suggestions, or defect reports, you agree to Section 5 and, to the extent you are entitled to license those rights, grant the Licensor a perpetual, worldwide, royalty-free, irrevocable, non-exclusive license to use, reproduce, modify, distribute, and incorporate that material into the Software.**
+
+**Except as required by law or separately agreed, the Licensor has no obligation of confidentiality, attribution, or compensation in relation to that feedback.**
+
+The new-issue feedback form displays this notice and requires an explicit confirmation. When first submitting feedback through a comment, API/CLI, or another route, please include an explicit confirmation in your text. You may use the following wording:
+
+> I have read and agree to [Section 5 of the software license](https://github.com/Speechlessmanbilibili/Yanbai-Releases/blob/0e158928864d9f3cd23b68d4e63938fd367d017f/LICENSE.md#5-feedback), including its feedback license and confidentiality, attribution, and compensation terms, and voluntarily grant that license.
 
 ## Feedback channels
 
@@ -82,11 +106,11 @@ Suggestions are easier to understand when they describe a practical situation: t
 
 Consider opening separate issues for unrelated problems or independent suggestions so that each discussion is easy to follow.
 
-## Sample materials and feedback terms
+## Sample materials and public information
 
 GitHub Issues and their attachments are publicly visible. When preparing screenshots, logs, or documents, consider creating a minimal example or redacting personal information, confidential material, and unnecessary file paths. A sample only needs the content that helps explain or reproduce the problem.
 
-Feedback is voluntary. Permissions, confidentiality, attribution, and compensation are governed by [Section 5 of the Yanbai Software License](LICENSE.md#5-feedback). The suggestions about examples and redaction are practical guidance and do not change the license.
+The suggestions about examples and redaction are practical guidance and do not change the license.
 
 ## Participation
 
